@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+/* TODO: crea el contenedor Flexbox y permite varias líneas. */
+.tarjetas {
+}
+
+/* TODO: usa flex para que las tarjetas crezcan y se reduzcan. */
+.tarjeta {
+    border: 1px solid #cbd5e1;
+    padding: 1rem;
+}

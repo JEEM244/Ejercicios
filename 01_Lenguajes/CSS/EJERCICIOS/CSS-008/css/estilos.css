@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+/* TODO: define el contenedor Grid y las áreas. */
+.pagina {
+}
+
+/* TODO: asigna un nombre de área a cada sección. */
+.encabezado {}
+.menu {}
+.contenido {}
+.pie {}
+
+/* TODO: en una ventana estrecha convierte el layout en una columna. */

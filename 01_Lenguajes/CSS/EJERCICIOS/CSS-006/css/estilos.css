@@ -1,0 +1,20 @@
+/* CSS-006: conserva el contenido en el flujo normal. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+}
+
+/* TODO: establece el contexto de posición de la tarjeta. */
+.tarjeta {
+    /* position, ancho, borde, espacio interno */
+}
+
+/* TODO: coloca la etiqueta en la esquina superior derecha. */
+.etiqueta {
+    /* position, top, right */
+}
+
+/* TODO: limita la altura y permite desplazamiento vertical. */
+.lista-recursos {
+}

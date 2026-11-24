@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+}
+
+.tarjeta {
+    position: relative;
+    width: 100%;
+    max-width: 34rem;
+    margin-inline: auto;
+    padding: 2rem 1.25rem 1.25rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.75rem;
+    background: white;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    background: #1d4ed8;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.lista-recursos {
+    max-height: 7rem;
+    overflow-y: auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid #cbd5e1;
+}

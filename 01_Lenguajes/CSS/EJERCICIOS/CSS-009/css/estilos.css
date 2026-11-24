@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+/* TODO: limita el ancho y centra el contenedor. */
+.contenedor {
+}
+
+/* TODO: usa Grid con una columna por defecto. */
+.catalogo {
+}
+
+/* TODO: define un tamaño de título fluido usando clamp(). */
+
+/* TODO: agrega breakpoints basados en el espacio disponible. */

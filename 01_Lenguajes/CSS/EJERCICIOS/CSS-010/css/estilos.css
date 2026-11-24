@@ -1,0 +1,12 @@
+/* CSS-010: define valores reutilizables. */
+:root {
+    /* TODO: declara --color-principal, --color-texto, --color-fondo y --espacio */
+}
+
+/* TODO: usa las variables para el fondo, texto y separación. */
+body {
+}
+
+/* TODO: crea estilos comunes para .tarjeta y .boton. */
+
+/* TODO: cambia solo una variable dentro de .tarjeta-alternativa. */

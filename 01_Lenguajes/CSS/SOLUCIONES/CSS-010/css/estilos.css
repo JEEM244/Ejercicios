@@ -1,0 +1,49 @@
+:root {
+    --color-principal: #1d4ed8;
+    --color-texto: #1f2937;
+    --color-fondo: #f1f5f9;
+    --espacio: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: var(--espacio);
+    color: var(--color-texto);
+    background: var(--color-fondo);
+    font-family: Arial, sans-serif;
+}
+
+.catalogo {
+    display: grid;
+    gap: var(--espacio);
+    max-width: 55rem;
+    margin-inline: auto;
+}
+
+.tarjeta {
+    padding: calc(var(--espacio) * 1.5);
+    border: 1px solid #cbd5e1;
+    border-radius: 0.75rem;
+    background: white;
+}
+
+.tarjeta h1,
+.tarjeta h2 {
+    color: var(--color-principal);
+}
+
+.boton {
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 0.4rem;
+    color: white;
+    background: var(--color-principal);
+}
+
+.tarjeta-alternativa {
+    --color-principal: #0f766e;
+}
