@@ -55,7 +55,9 @@ body {
         animation: none;
     }
 
-    .boton {
+    .boton,
+    .boton:hover {
         transition: none;
+        transform: none;
     }
 }
