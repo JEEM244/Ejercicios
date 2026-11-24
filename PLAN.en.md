@@ -1,0 +1,32 @@
+# Development roadmap
+
+CodeVault is developed in stages. Each phase should become useful before the scope expands.
+
+| Phase | Scope | Status |
+|---|---|---|
+| 0. Specification | Goal, scope, and conventions | Complete |
+| 1. Repository foundation | Structure, master documents, and templates | In progress |
+| 2. Fundamentals | Logic, algorithms, data structures, and problem solving | Planned |
+| 3. Technical libraries | Guides and references for the 11 languages | Planned |
+| 4. Practice | Exercises, challenges, debugging, and assessments | Planned |
+| 5. Projects | Integrated projects by difficulty | Planned |
+| 6. CLI | Optional Python utility | Planned |
+| 7. Validation | Review links, examples, versions, and language consistency | Planned |
+
+## Work order
+
+1. Stabilize the specification and structure.
+2. Build shared fundamentals.
+3. Develop languages in small, connected units.
+4. Create exercises with test cases.
+5. Combine skills in projects.
+6. Design the CLI around actual needs.
+7. Review and maintain the content.
+
+## Completion criteria
+
+A phase is not complete merely because folders exist. It must contain useful material, working links, and a review appropriate to its scope.
+
+## Scope rule
+
+Do not add modules just to make the repository larger. Every folder or tool must solve a concrete need.
