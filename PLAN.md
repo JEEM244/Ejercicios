@@ -5,8 +5,8 @@ CodeVault se construye por etapas. Cada fase debe quedar útil antes de ampliar 
 | Fase | Alcance | Estado |
 |---|---|---|
 | 0. Especificación | Objetivo, alcance y convenciones | Completada |
-| 1. Base del repositorio | Estructura, documentos maestros y plantillas | En progreso |
-| 2. Fundamentos | Lógica, algoritmos, estructuras y resolución de problemas | Pendiente |
+| 1. Base del repositorio | Estructura, documentos maestros y plantillas bilingües | Completada |
+| 2. Fundamentos | Lógica, algoritmos, estructuras y resolución de problemas | En preparación |
 | 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | Pendiente |
 | 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | Pendiente |
 | 5. Proyectos | Proyectos integradores por dificultad | Pendiente |
