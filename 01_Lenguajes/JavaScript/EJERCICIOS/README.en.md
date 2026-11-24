@@ -12,7 +12,7 @@ A practice path from fundamentals to data structures, debugging, and the DOM. Ea
 To run JS-001 to JS-012 from the terminal, enter the exercise folder and use:
 
 ~~~bash
-node exercise.js
+node ejercicio.js
 ~~~
 
 For JS-013 to JS-018, open the `index.html` file in each exercise folder in a browser.
