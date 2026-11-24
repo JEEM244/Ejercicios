@@ -1,6 +1,4 @@
-# HTML — quick reference
-
-Lookup sheet. For detailed explanations and examples, see [GUIA.en.md](GUIA.en.md).
+# HTML quick reference
 
 ## Minimal structure
 
@@ -13,112 +11,172 @@ Lookup sheet. For detailed explanations and examples, see [GUIA.en.md](GUIA.en.m
     <title>Page title</title>
 </head>
 <body>
-    <h1>Main heading</h1>
-    <p>A paragraph.</p>
+    <!-- Content -->
 </body>
 </html>
 ~~~
 
-## Common elements
+## Text and structure elements
 
 | Element | Purpose |
 |---|---|
-| html | Root element of the document. |
-| head | Metadata and resource references. |
-| title | Browser tab title. |
-| body | Document content. |
-| h1–h6 | Headings at different levels. |
-| p | Paragraph. |
-| strong | Strong importance. |
-| em | Emphasis. |
-| ul / ol | Unordered / ordered lists. |
-| li | List item. |
-| a | Link. |
-| img | Image. |
-| div | Generic block container with no semantic meaning of its own. |
-| span | Generic inline container with no semantic meaning of its own. |
+| h1–h6 | Headings |
+| p | Paragraph |
+| strong | Importance |
+| em | Emphasis |
+| ul, ol, li | Lists |
+| a | Link |
+| img | Image |
+| header, nav, main | General structure |
+| section, article, aside, footer | Semantic sections |
+| div, span | Generic containers |
 
-## Semantic structure elements
+## Tables
 
 | Element | Purpose |
 |---|---|
-| header | Introduction for a page or section. |
-| nav | Navigation block. |
-| main | Main content. |
-| section | Thematic section. |
-| article | Independent or reusable content. |
-| aside | Indirectly related content. |
-| footer | Final information for a page or section. |
+| table | Table |
+| caption | Title or description |
+| thead | Table header |
+| tbody | Data rows |
+| tfoot | Summary or footer |
+| tr | Row |
+| th | Header cell |
+| td | Data cell |
 
-## Common attributes
+Related attributes:
+
+- scope="col": column header.
+- scope="row": row header.
+- colspan: number of columns a cell spans.
+- rowspan: number of rows a cell spans.
+
+Example:
+
+~~~html
+<table>
+    <caption>Subjects</caption>
+    <thead>
+        <tr>
+            <th scope="col">Subject</th>
+            <th scope="col">Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Programming</th>
+            <td>95</td>
+        </tr>
+    </tbody>
+</table>
+~~~
+
+## Forms
+
+| Element | Purpose |
+|---|---|
+| form | Groups controls |
+| label | Descriptive label |
+| input | Input control |
+| textarea | Multi-line text |
+| select, option | Options list |
+| button | Button |
+| fieldset, legend | Group and name controls |
+
+Common input types:
+
+- text
+- email
+- password
+- number
+- date
+- checkbox
+- radio
+- file
+- submit
+- search
+- tel
+- url
+
+Common attributes:
 
 | Attribute | Purpose |
 |---|---|
-| id | Unique identifier within the document. |
-| class | Class name or group for selecting elements. |
-| lang | Language of an element's content. |
-| title | Advisory information associated with an element. |
-| href | Link destination. |
-| src | Address or path of an embedded resource. |
-| alt | Alternative text for an image. |
+| id | Control identifier |
+| name | Name of submitted value |
+| value | Control value |
+| type | Input type |
+| required | Required field |
+| placeholder | Hint text |
+| min, max, step | Limits and increment |
+| minlength, maxlength | Text length limits |
+| for | Connects a label to a control id |
+| action | Form submission destination |
+| method | HTTP method used for submission, such as GET or POST |
 
-## Quick examples
-
-### Link
-
-~~~html
-<a href="https://developer.mozilla.org/">MDN documentation</a>
-~~~
-
-### Image
+Example:
 
 ~~~html
-<img src="images/photo.png" alt="Useful description of the image">
+<form action="/register" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Submit</button>
+</form>
 ~~~
 
-### List
+## Audio and video
+
+| Element | Purpose |
+|---|---|
+| audio | Audio player |
+| video | Video player |
+| source | Alternative resource file |
+| track | Subtitles, captions, or text tracks |
+
+Common attributes:
+
+- controls: displays player controls.
+- width and height: video dimensions.
+- autoplay: requests automatic playback; avoid it with sound.
+- muted: starts media without sound.
+- loop: repeats media.
+
+Example:
 
 ~~~html
-<ul>
-    <li>First item</li>
-    <li>Second item</li>
-</ul>
+<video controls width="640">
+    <source src="video/guide.mp4" type="video/mp4">
+    <track kind="captions" src="video/guide-en.vtt" srclang="en" label="English">
+    Your browser cannot play this video.
+</video>
 ~~~
 
-### In-page link
+## Common global attributes
 
-~~~html
-<a href="#contact">Go to contact</a>
+| Attribute | Purpose |
+|---|---|
+| id | Unique identifier in the document |
+| class | Groups elements |
+| lang | Content language |
+| title | Additional information |
+| hidden | Hides the element |
+| tabindex | Keyboard focus participation and order |
 
-<section id="contact">
-    <h2>Contact</h2>
-</section>
-~~~
+## Validation and accessibility
 
-## Common void elements
+- Connect labels and controls using for and id.
+- Use alt for informative images.
+- Use caption and th for data tables.
+- Keep a logical heading order.
+- Check keyboard navigation.
+- Use [Nu HTML Checker](https://validator.w3.org/nu/) to review markup.
 
-They have no content and no closing tag:
+Automated validation does not replace accessibility testing or manual review.
 
-- area
-- br
-- hr
-- img
-- input
-- link
-- meta
-- source
+## References
 
-## Reminders
-
-- Tags do not replace document hierarchy: choose headings based on content level.
-- An id must be unique in the document.
-- An informative image needs alt text that communicates its content or function.
-- Use empty alt text for decorative images that add no information.
-- Do not use br to create visual spacing between paragraphs.
-- HTML structures content; CSS handles presentation.
-
-## Sources
-
-- [MDN — HTML reference](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [MDN — Elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
-- [WHATWG — HTML Living Standard](https://html.spec.whatwg.org/)
+- [MDN — HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
+- [MDN — Forms](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_forms)
+- [MDN — Table accessibility](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Table_accessibility)
+- [MDN — Audio and video](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_video_and_audio)
+- [Nu HTML Checker](https://validator.w3.org/nu/)

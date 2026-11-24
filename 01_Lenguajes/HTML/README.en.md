@@ -1,6 +1,6 @@
 # HTML
 
-**Status:** in progress.  
+**Status:** in development.  
 **Current level:** beginner.  
 **Main sources:** MDN and WHATWG.
 
@@ -8,10 +8,14 @@ HTML (HyperText Markup Language) defines the structure and meaning of web page c
 
 ## Available material
 
-- [Guide: fundamentals and document structure](GUIA.en.md)
-- [Quick reference for elements and attributes](REFERENCIA.en.md)
-- [HTML-001: create a basic document](EJERCICIOS/HTML-001.en.md)
-- [HTML-002: semantic personal profile](EJERCICIOS/HTML-002.en.md)
+- [Guide to fundamentals, structures, forms, and media](GUIA.en.md)
+- [Quick reference](REFERENCIA.en.md)
+- [HTML-001 — Create a basic document](EJERCICIOS/HTML-001.en.md)
+- [HTML-002 — Semantic personal profile](EJERCICIOS/HTML-002.en.md)
+- [HTML-003 — Semantic page with navigation](EJERCICIOS/HTML-003.en.md)
+- [HTML-004 — Accessible data table](EJERCICIOS/HTML-004.en.md)
+- [HTML-005 — Registration form](EJERCICIOS/HTML-005.en.md)
+- [HTML-006 — Accessible media](EJERCICIOS/HTML-006.en.md)
 
 ## Organization
 
@@ -21,17 +25,16 @@ HTML (HyperText Markup Language) defines the structure and meaning of web page c
 - EJERCICIOS/: prompts and starter files.
 - SOLUCIONES/: separate solutions.
 
-## Suggested path
+## Topics still to expand
 
-1. Recognize the document structure.
-2. Understand elements, tags, and attributes.
-3. Organize headings, paragraphs, and lists.
-4. Create links and use images with alternative text.
-5. Use semantic elements to describe page sections.
-6. Continue with tables, forms, multimedia, and accessibility.
+The next stage will cover global attributes in greater depth, metadata, resource loading, interactive elements, accessibility details, and compatibility review.
 
 ## Sources consulted
 
-- [MDN — Basic HTML syntax](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax)
-- [MDN — HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
+- [MDN — HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [MDN — HTML forms](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_forms)
+- [MDN — Table accessibility](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Table_accessibility)
+- [MDN — Audio and video](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_video_and_audio)
 - [WHATWG — HTML Living Standard](https://html.spec.whatwg.org/)
+
+See also the [Spanish README](README.md).
