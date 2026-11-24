@@ -16,9 +16,9 @@ const first = document.querySelector(".card");
 const several = document.querySelectorAll("button");
 ~~~
 
-- \`getElementById("id")\`: element or \`null\`.
-- \`querySelector("selector")\`: first match or \`null\`.
-- \`querySelectorAll("selector")\`: list of matches.
+- `getElementById("id")`: element or `null`.
+- `querySelector("selector")`: first match or `null`.
+- `querySelectorAll("selector")`: list of matches.
 
 ## Read and update
 
@@ -44,7 +44,7 @@ list.append(item);
 item.remove();
 ~~~
 
-To display text entered by a person, use \`textContent\`; do not insert it as HTML with \`innerHTML\`.
+To display text entered by a person, use `textContent`; do not insert it as HTML with `innerHTML`.
 
 ## Events
 
@@ -78,7 +78,7 @@ form.addEventListener("submit", (event) => {
 });
 ~~~
 
-A control must have a \`name\` attribute to appear in \`FormData\`.
+A control must have a `name` attribute to appear in `FormData`.
 
 ## Native validation
 
@@ -90,21 +90,21 @@ if (form.checkValidity()) {
 }
 ~~~
 
-Common HTML attributes: \`required\`, \`minlength\`, \`maxlength\`, \`type="email"\`, \`min\`, and \`max\`.
+Common HTML attributes: `required`, `minlength`, `maxlength`, `type="email"`, `min`, and `max`.
 
 ## Event methods
 
-- \`event.preventDefault()\`: cancels the default action.
-- \`event.stopPropagation()\`: stops propagation to other elements.
+- `event.preventDefault()`: cancels the default action.
+- `event.stopPropagation()`: stops propagation to other elements.
 
 They are not interchangeable.
 
 ## Quick troubleshooting
 
-- \`null\`: the selector did not find the element.
-- \`TypeError\` while reading a property: check that the element exists.
-- The form reloads: check the \`submit\` listener and \`preventDefault()\`.
-- Text is interpreted as markup: use \`textContent\`.
+- `null`: the selector did not find the element.
+- `TypeError` while reading a property: check that the element exists.
+- The form reloads: check the `submit` listener and `preventDefault()`.
+- Text is interpreted as markup: use `textContent`.
 
 ## Sources
 

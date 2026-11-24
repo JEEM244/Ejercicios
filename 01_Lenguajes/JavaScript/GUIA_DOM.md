@@ -17,7 +17,7 @@ Ejemplo de HTML:
 
 El navegador crea objetos para esos elementos. JavaScript puede encontrarlos y trabajar con ellos.
 
-**Importante:** el DOM del navegador no está disponible de forma global en Node.js. Un archivo que utiliza \`document\` debe ejecutarse en una página web o en un entorno que implemente el DOM.
+**Importante:** el DOM del navegador no está disponible de forma global en Node.js. Un archivo que utiliza `document` debe ejecutarse en una página web o en un entorno que implemente el DOM.
 
 ## 2. Conectar JavaScript con HTML
 
@@ -27,9 +27,9 @@ Mantén el código JavaScript en un archivo separado:
 <script src="app.js" defer></script>
 ~~~
 
-El atributo \`defer\` permite que el navegador analice el HTML antes de ejecutar el archivo externo. Así, el script puede encontrar los elementos declarados en el documento.
+El atributo `defer` permite que el navegador analice el HTML antes de ejecutar el archivo externo. Así, el script puede encontrar los elementos declarados en el documento.
 
-No mezcles el código JavaScript con atributos HTML como \`onclick="..."\`. Es más fácil mantener y revisar los eventos cuando se registran desde el archivo JavaScript.
+No mezcles el código JavaScript con atributos HTML como `onclick="..."`. Es más fácil mantener y revisar los eventos cuando se registran desde el archivo JavaScript.
 
 ## 3. Seleccionar elementos
 
@@ -39,7 +39,7 @@ No mezcles el código JavaScript con atributos HTML como \`onclick="..."\`. Es m
 const titulo = document.getElementById("titulo");
 ~~~
 
-Devuelve el elemento que tiene ese ID o \`null\` si no existe.
+Devuelve el elemento que tiene ese ID o `null` si no existe.
 
 ### Con selectores CSS
 
@@ -48,7 +48,7 @@ const primerAviso = document.querySelector(".aviso");
 const boton = document.querySelector("#guardar");
 ~~~
 
-\`querySelector()\` devuelve la primera coincidencia o \`null\`.
+`querySelector()` devuelve la primera coincidencia o `null`.
 
 ### Seleccionar varios elementos
 
@@ -60,7 +60,7 @@ botones.forEach((boton) => {
 });
 ~~~
 
-\`querySelectorAll()\` devuelve una lista de nodos que puedes recorrer con \`forEach()\`. La lista representa las coincidencias en el momento de la consulta; si agregas más elementos después, vuelve a consultarla cuando necesites incluirlos.
+`querySelectorAll()` devuelve una lista de nodos que puedes recorrer con `forEach()`. La lista representa las coincidencias en el momento de la consulta; si agregas más elementos después, vuelve a consultarla cuando necesites incluirlos.
 
 ### Comprobar que existe un elemento
 
@@ -72,7 +72,7 @@ if (mensaje !== null) {
 }
 ~~~
 
-Un selector incorrecto o un ID que no existe puede producir \`null\`. Intentar usar una propiedad de \`null\` provoca un \`TypeError\`.
+Un selector incorrecto o un ID que no existe puede producir `null`. Intentar usar una propiedad de `null` provoca un `TypeError`.
 
 ## 4. Leer y modificar contenido
 
@@ -84,7 +84,7 @@ const titulo = document.querySelector("#titulo");
 titulo.textContent = "Panel de aprendizaje";
 ~~~
 
-\`textContent\` lee o cambia el texto de un elemento. Si asignas una cadena, se muestra como texto.
+`textContent` lee o cambia el texto de un elemento. Si asignas una cadena, se muestra como texto.
 
 ### Campos de formulario
 
@@ -95,7 +95,7 @@ console.log(nombre.value);
 nombre.value = "Mara";
 ~~~
 
-La propiedad \`value\` contiene el valor actual de controles como \`input\`, \`textarea\` y \`select\`.
+La propiedad `value` contiene el valor actual de controles como `input`, `textarea` y `select`.
 
 ### Clases CSS
 
@@ -107,10 +107,10 @@ tarjeta.classList.remove("oculta");
 tarjeta.classList.toggle("seleccionada");
 ~~~
 
-- \`add()\`: agrega una clase.
-- \`remove()\`: elimina una clase.
-- \`toggle()\`: agrega la clase si no existe o la quita si ya existe.
-- \`contains()\`: comprueba si la clase está presente.
+- `add()`: agrega una clase.
+- `remove()`: elimina una clase.
+- `toggle()`: agrega la clase si no existe o la quita si ya existe.
+- `contains()`: comprueba si la clase está presente.
 
 ### Atributos
 
@@ -121,7 +121,7 @@ enlace.setAttribute("href", "https://developer.mozilla.org/");
 console.log(enlace.getAttribute("href"));
 ~~~
 
-Usa la propiedad específica cuando exista, por ejemplo \`input.value\`; usa \`getAttribute()\` y \`setAttribute()\` para consultar o cambiar atributos HTML.
+Usa la propiedad específica cuando exista, por ejemplo `input.value`; usa `getAttribute()` y `setAttribute()` para consultar o cambiar atributos HTML.
 
 ## 5. Crear y quitar elementos
 
@@ -143,7 +143,7 @@ elemento.remove();
 
 Este patrón permite crear listas, mensajes y tarjetas sin escribir HTML dentro de una cadena.
 
-**Evita insertar datos escritos por la persona con \`innerHTML\`.** Si necesitas mostrar texto recibido de un campo, utiliza \`textContent\`. Insertar cadenas no confiables como HTML puede crear vulnerabilidades. Para estas prácticas no necesitas \`innerHTML\`.
+**Evita insertar datos escritos por la persona con `innerHTML`.** Si necesitas mostrar texto recibido de un campo, utiliza `textContent`. Insertar cadenas no confiables como HTML puede crear vulnerabilidades. Para estas prácticas no necesitas `innerHTML`.
 
 ## 6. Eventos
 
@@ -158,19 +158,19 @@ boton.addEventListener("click", (evento) => {
 });
 ~~~
 
-\`addEventListener()\` recibe el nombre del evento y la función que se ejecutará. La función recibe un objeto con información del evento.
+`addEventListener()` recibe el nombre del evento y la función que se ejecutará. La función recibe un objeto con información del evento.
 
 ### Eventos frecuentes
 
 | Evento | Cuándo ocurre |
 |---|---|
-| \`click\` | Al activar un elemento con clic o teclado cuando corresponde |
-| \`input\` | Cuando cambia el valor de un campo mientras se escribe |
-| \`change\` | Cuando un control confirma un cambio de valor |
-| \`submit\` | Cuando se intenta enviar un formulario |
-| \`keydown\` | Cuando se presiona una tecla |
-| \`focus\` | Cuando un control recibe el foco |
-| \`blur\` | Cuando un control pierde el foco |
+| `click` | Al activar un elemento con clic o teclado cuando corresponde |
+| `input` | Cuando cambia el valor de un campo mientras se escribe |
+| `change` | Cuando un control confirma un cambio de valor |
+| `submit` | Cuando se intenta enviar un formulario |
+| `keydown` | Cuando se presiona una tecla |
+| `focus` | Cuando un control recibe el foco |
+| `blur` | Cuando un control pierde el foco |
 
 ### El objeto del evento
 
@@ -181,8 +181,8 @@ boton.addEventListener("click", (evento) => {
 });
 ~~~
 
-- \`target\`: elemento donde se originó el evento.
-- \`currentTarget\`: elemento que tiene registrado el listener que se está ejecutando.
+- `target`: elemento donde se originó el evento.
+- `currentTarget`: elemento que tiene registrado el listener que se está ejecutando.
 
 No son siempre el mismo elemento.
 
@@ -195,13 +195,13 @@ formulario.addEventListener("submit", (evento) => {
 });
 ~~~
 
-\`preventDefault()\` cancela la acción predeterminada asociada al evento. No elimina el evento ni detiene por sí mismo su propagación.
+`preventDefault()` cancela la acción predeterminada asociada al evento. No elimina el evento ni detiene por sí mismo su propagación.
 
-\`stopPropagation()\` tiene otra función: evita que el evento continúe propagándose hacia otros elementos. No lo uses como sustituto de \`preventDefault()\`.
+`stopPropagation()` tiene otra función: evita que el evento continúe propagándose hacia otros elementos. No lo uses como sustituto de `preventDefault()`.
 
 ## 7. Formularios
 
-Escucha el evento \`submit\` del formulario, no solamente el clic del botón. Así también se cubre el envío realizado desde el teclado.
+Escucha el evento `submit` del formulario, no solamente el clic del botón. Así también se cubre el envío realizado desde el teclado.
 
 ~~~html
 <form id="formulario">
@@ -226,44 +226,44 @@ formulario.addEventListener("submit", (evento) => {
 });
 ~~~
 
-\`FormData\` permite leer los controles que tienen un atributo \`name\`. \`preventDefault()\` es útil cuando la práctica procesa el formulario localmente y no debe navegar o enviar datos a un servidor.
+`FormData` permite leer los controles que tienen un atributo `name`. `preventDefault()` es útil cuando la práctica procesa el formulario localmente y no debe navegar o enviar datos a un servidor.
 
 ### Validación HTML
 
 HTML ofrece validación integrada con atributos como:
 
-- \`required\`: exige un valor.
-- \`minlength\` y \`maxlength\`: limitan la longitud del texto.
-- \`type="email"\`: comprueba el formato básico de correo.
-- \`min\` y \`max\`: limitan valores numéricos o fechas según el control.
+- `required`: exige un valor.
+- `minlength` y `maxlength`: limitan la longitud del texto.
+- `type="email"`: comprueba el formato básico de correo.
+- `min` y `max`: limitan valores numéricos o fechas según el control.
 
-Desde JavaScript puedes consultar \`formulario.checkValidity()\` y pedir al navegador que muestre los avisos con \`formulario.reportValidity()\`.
+Desde JavaScript puedes consultar `formulario.checkValidity()` y pedir al navegador que muestre los avisos con `formulario.reportValidity()`.
 
 La validación del navegador ayuda a la experiencia de uso, pero un servidor debe validar otra vez los datos recibidos. El navegador no sustituye la validación del lado del servidor.
 
 ## 8. Accesibilidad al trabajar con el DOM
 
 - Usa botones reales para acciones y enlaces reales para navegar.
-- Relaciona cada etiqueta \`label\` con su control mediante \`for\` e \`id\`.
+- Relaciona cada etiqueta `label` con su control mediante `for` e `id`.
 - No comuniques un estado solamente mediante color.
-- Usa \`aria-live\` para avisos dinámicos que deban anunciarse a tecnologías de asistencia.
+- Usa `aria-live` para avisos dinámicos que deban anunciarse a tecnologías de asistencia.
 - Conserva el foco del teclado en un lugar lógico.
-- No uses un \`div\` como botón improvisado.
+- No uses un `div` como botón improvisado.
 
 ## 9. Errores frecuentes
 
 | Problema | Causa posible | Qué revisar |
 |---|---|---|
-| \`Cannot read properties of null\` | El selector no encontró el elemento | ID, clase y momento de ejecución |
+| `Cannot read properties of null` | El selector no encontró el elemento | ID, clase y momento de ejecución |
 | El botón no responde | Listener no registrado o selector incorrecto | Consola y archivo JavaScript conectado |
-| El texto no cambia | Se modificó otra propiedad o elemento | \`textContent\`, selector y valor |
-| El formulario recarga la página | No se canceló el envío predeterminado | Listener de \`submit\` y \`preventDefault()\` |
+| El texto no cambia | Se modificó otra propiedad o elemento | `textContent`, selector y valor |
+| El formulario recarga la página | No se canceló el envío predeterminado | Listener de `submit` y `preventDefault()` |
 | Solo funciona con clic de ratón | Se usó un elemento no interactivo | Botón o control HTML nativo |
-| El texto introducido se interpreta como etiquetas | Se insertó como HTML | Mostrarlo con \`textContent\` |
+| El texto introducido se interpreta como etiquetas | Se insertó como HTML | Mostrarlo con `textContent` |
 
 ## 10. Práctica
 
-Resuelve [JS-013 a JS-018](EJERCICIOS/README.md). Cada práctica incluye HTML y JavaScript iniciales. Abre el archivo \`index.html\` en un navegador para probarla. Node.js por sí solo no ofrece \`document\` ni los elementos del navegador.
+Resuelve [JS-013 a JS-018](EJERCICIOS/README.md). Cada práctica incluye HTML y JavaScript iniciales. Abre el archivo `index.html` en un navegador para probarla. Node.js por sí solo no ofrece `document` ni los elementos del navegador.
 
 ## Fuentes
 

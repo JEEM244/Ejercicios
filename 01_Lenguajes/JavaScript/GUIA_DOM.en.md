@@ -17,7 +17,7 @@ Example HTML:
 
 The browser creates objects for these elements. JavaScript can find them and work with them.
 
-**Important:** the browser DOM is not available globally in Node.js. A file that uses \`document\` must run in a web page or in an environment that implements the DOM.
+**Important:** the browser DOM is not available globally in Node.js. A file that uses `document` must run in a web page or in an environment that implements the DOM.
 
 ## 2. Connect JavaScript to HTML
 
@@ -27,9 +27,9 @@ Keep JavaScript in a separate file:
 <script src="app.js" defer></script>
 ~~~
 
-The \`defer\` attribute lets the browser parse the HTML before executing the external file. This allows the script to find elements declared in the document.
+The `defer` attribute lets the browser parse the HTML before executing the external file. This allows the script to find elements declared in the document.
 
-Do not mix JavaScript code into HTML attributes such as \`onclick="..."\`. Events are easier to maintain and review when registered from the JavaScript file.
+Do not mix JavaScript code into HTML attributes such as `onclick="..."`. Events are easier to maintain and review when registered from the JavaScript file.
 
 ## 3. Select elements
 
@@ -39,7 +39,7 @@ Do not mix JavaScript code into HTML attributes such as \`onclick="..."\`. Event
 const title = document.getElementById("title");
 ~~~
 
-Returns the element with that ID or \`null\` when it does not exist.
+Returns the element with that ID or `null` when it does not exist.
 
 ### With CSS selectors
 
@@ -48,7 +48,7 @@ const firstNotice = document.querySelector(".notice");
 const button = document.querySelector("#save");
 ~~~
 
-\`querySelector()\` returns the first match or \`null\`.
+`querySelector()` returns the first match or `null`.
 
 ### Select multiple elements
 
@@ -60,7 +60,7 @@ buttons.forEach((button) => {
 });
 ~~~
 
-\`querySelectorAll()\` returns a node list that can be iterated with \`forEach()\`. The list represents matches at the time of the query; query again when you need to include elements added later.
+`querySelectorAll()` returns a node list that can be iterated with `forEach()`. The list represents matches at the time of the query; query again when you need to include elements added later.
 
 ### Check that an element exists
 
@@ -72,7 +72,7 @@ if (message !== null) {
 }
 ~~~
 
-An incorrect selector or a missing ID may produce \`null\`. Trying to use a property of \`null\` causes a \`TypeError\`.
+An incorrect selector or a missing ID may produce `null`. Trying to use a property of `null` causes a `TypeError`.
 
 ## 4. Read and update content
 
@@ -84,7 +84,7 @@ const title = document.querySelector("#title");
 title.textContent = "Learning dashboard";
 ~~~
 
-\`textContent\` reads or changes an element's text. When you assign a string, it is displayed as text.
+`textContent` reads or changes an element's text. When you assign a string, it is displayed as text.
 
 ### Form controls
 
@@ -95,7 +95,7 @@ console.log(name.value);
 name.value = "Mara";
 ~~~
 
-The \`value\` property contains the current value of controls such as \`input\`, \`textarea\`, and \`select\`.
+The `value` property contains the current value of controls such as `input`, `textarea`, and `select`.
 
 ### CSS classes
 
@@ -107,10 +107,10 @@ card.classList.remove("hidden");
 card.classList.toggle("selected");
 ~~~
 
-- \`add()\`: adds a class.
-- \`remove()\`: removes a class.
-- \`toggle()\`: adds the class if absent or removes it if present.
-- \`contains()\`: checks whether the class is present.
+- `add()`: adds a class.
+- `remove()`: removes a class.
+- `toggle()`: adds the class if absent or removes it if present.
+- `contains()`: checks whether the class is present.
 
 ### Attributes
 
@@ -121,7 +121,7 @@ link.setAttribute("href", "https://developer.mozilla.org/");
 console.log(link.getAttribute("href"));
 ~~~
 
-Use a specific property when available, such as \`input.value\`; use \`getAttribute()\` and \`setAttribute()\` to read or change HTML attributes.
+Use a specific property when available, such as `input.value`; use `getAttribute()` and `setAttribute()` to read or change HTML attributes.
 
 ## 5. Create and remove elements
 
@@ -143,7 +143,7 @@ item.remove();
 
 This pattern lets you create lists, messages, and cards without writing HTML inside a string.
 
-**Avoid inserting user-entered data with \`innerHTML\`.** When displaying text from an input, use \`textContent\`. Inserting untrusted strings as HTML can create vulnerabilities. These exercises do not require \`innerHTML\`.
+**Avoid inserting user-entered data with `innerHTML`.** When displaying text from an input, use `textContent`. Inserting untrusted strings as HTML can create vulnerabilities. These exercises do not require `innerHTML`.
 
 ## 6. Events
 
@@ -158,19 +158,19 @@ button.addEventListener("click", (event) => {
 });
 ~~~
 
-\`addEventListener()\` receives the event name and the function to execute. The function receives an object containing event information.
+`addEventListener()` receives the event name and the function to execute. The function receives an object containing event information.
 
 ### Common events
 
 | Event | When it occurs |
 |---|---|
-| \`click\` | When an element is activated by click or keyboard as appropriate |
-| \`input\` | When a field's value changes while typing |
-| \`change\` | When a control commits a value change |
-| \`submit\` | When a form submission is attempted |
-| \`keydown\` | When a key is pressed |
-| \`focus\` | When a control receives focus |
-| \`blur\` | When a control loses focus |
+| `click` | When an element is activated by click or keyboard as appropriate |
+| `input` | When a field's value changes while typing |
+| `change` | When a control commits a value change |
+| `submit` | When a form submission is attempted |
+| `keydown` | When a key is pressed |
+| `focus` | When a control receives focus |
+| `blur` | When a control loses focus |
 
 ### The event object
 
@@ -181,8 +181,8 @@ button.addEventListener("click", (event) => {
 });
 ~~~
 
-- \`target\`: the element where the event originated.
-- \`currentTarget\`: the element whose listener is currently running.
+- `target`: the element where the event originated.
+- `currentTarget`: the element whose listener is currently running.
 
 They are not always the same element.
 
@@ -195,13 +195,13 @@ form.addEventListener("submit", (event) => {
 });
 ~~~
 
-\`preventDefault()\` cancels the event's default action. It does not remove the event or stop its propagation by itself.
+`preventDefault()` cancels the event's default action. It does not remove the event or stop its propagation by itself.
 
-\`stopPropagation()\` has a different purpose: it prevents the event from continuing to other elements. Do not use it as a replacement for \`preventDefault()\`.
+`stopPropagation()` has a different purpose: it prevents the event from continuing to other elements. Do not use it as a replacement for `preventDefault()`.
 
 ## 7. Forms
 
-Listen for the form's \`submit\` event, not only for the button click. This also covers submissions initiated from the keyboard.
+Listen for the form's `submit` event, not only for the button click. This also covers submissions initiated from the keyboard.
 
 ~~~html
 <form id="form">
@@ -226,44 +226,44 @@ form.addEventListener("submit", (event) => {
 });
 ~~~
 
-\`FormData\` reads controls that have a \`name\` attribute. \`preventDefault()\` is useful when an exercise processes the form locally and should not navigate or send data to a server.
+`FormData` reads controls that have a `name` attribute. `preventDefault()` is useful when an exercise processes the form locally and should not navigate or send data to a server.
 
 ### HTML validation
 
 HTML provides built-in validation with attributes such as:
 
-- \`required\`: requires a value.
-- \`minlength\` and \`maxlength\`: limit text length.
-- \`type="email"\`: checks a basic email format.
-- \`min\` and \`max\`: limit numeric values or dates depending on the control.
+- `required`: requires a value.
+- `minlength` and `maxlength`: limit text length.
+- `type="email"`: checks a basic email format.
+- `min` and `max`: limit numeric values or dates depending on the control.
 
-From JavaScript, you can check \`form.checkValidity()\` and ask the browser to display messages with \`form.reportValidity()\`.
+From JavaScript, you can check `form.checkValidity()` and ask the browser to display messages with `form.reportValidity()`.
 
 Browser validation improves the user experience, but a server must validate received data again. Browser checks do not replace server-side validation.
 
 ## 8. Accessibility when working with the DOM
 
 - Use real buttons for actions and real links for navigation.
-- Associate each \`label\` with its control using \`for\` and \`id\`.
+- Associate each `label` with its control using `for` and `id`.
 - Do not communicate status through color alone.
-- Use \`aria-live\` for dynamic notices that should be announced by assistive technologies.
+- Use `aria-live` for dynamic notices that should be announced by assistive technologies.
 - Keep keyboard focus in a logical place.
-- Do not use a \`div\` as an improvised button.
+- Do not use a `div` as an improvised button.
 
 ## 9. Common errors
 
 | Problem | Possible cause | What to check |
 |---|---|---|
-| \`Cannot read properties of null\` | The selector did not find the element | ID, class, and execution timing |
+| `Cannot read properties of null` | The selector did not find the element | ID, class, and execution timing |
 | Button does nothing | Listener not registered or wrong selector | Console and connected JavaScript file |
-| Text does not change | Wrong property or element was updated | \`textContent\`, selector, and value |
-| Form reloads the page | Default submission was not canceled | \`submit\` listener and \`preventDefault()\` |
+| Text does not change | Wrong property or element was updated | `textContent`, selector, and value |
+| Form reloads the page | Default submission was not canceled | `submit` listener and `preventDefault()` |
 | Works only with mouse click | A non-interactive element was used | Native button or HTML control |
-| Entered text is interpreted as markup | It was inserted as HTML | Display it with \`textContent\` |
+| Entered text is interpreted as markup | It was inserted as HTML | Display it with `textContent` |
 
 ## 10. Practice
 
-Complete [JS-013 to JS-018](EJERCICIOS/README.en.md). Each exercise includes starter HTML and JavaScript. Open \`index.html\` in a browser to test it. Node.js alone does not provide \`document\` or browser elements.
+Complete [JS-013 to JS-018](EJERCICIOS/README.en.md). Each exercise includes starter HTML and JavaScript. Open `index.html` in a browser to test it. Node.js alone does not provide `document` or browser elements.
 
 ## Sources
 

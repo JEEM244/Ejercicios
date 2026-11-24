@@ -16,9 +16,9 @@ const primero = document.querySelector(".tarjeta");
 const varios = document.querySelectorAll("button");
 ~~~
 
-- \`getElementById("id")\`: elemento o \`null\`.
-- \`querySelector("selector")\`: primera coincidencia o \`null\`.
-- \`querySelectorAll("selector")\`: lista de coincidencias.
+- `getElementById("id")`: elemento o `null`.
+- `querySelector("selector")`: primera coincidencia o `null`.
+- `querySelectorAll("selector")`: lista de coincidencias.
 
 ## Leer y modificar
 
@@ -44,7 +44,7 @@ lista.append(item);
 item.remove();
 ~~~
 
-Para mostrar texto escrito por una persona, usa \`textContent\`, no lo insertes como HTML mediante \`innerHTML\`.
+Para mostrar texto escrito por una persona, usa `textContent`, no lo insertes como HTML mediante `innerHTML`.
 
 ## Eventos
 
@@ -78,7 +78,7 @@ formulario.addEventListener("submit", (evento) => {
 });
 ~~~
 
-El control debe tener atributo \`name\` para aparecer en \`FormData\`.
+El control debe tener atributo `name` para aparecer en `FormData`.
 
 ## Validación nativa
 
@@ -90,21 +90,21 @@ if (formulario.checkValidity()) {
 }
 ~~~
 
-Atributos HTML frecuentes: \`required\`, \`minlength\`, \`maxlength\`, \`type="email"\`, \`min\` y \`max\`.
+Atributos HTML frecuentes: `required`, `minlength`, `maxlength`, `type="email"`, `min` y `max`.
 
 ## Métodos del evento
 
-- \`evento.preventDefault()\`: cancela la acción predeterminada.
-- \`evento.stopPropagation()\`: detiene la propagación a otros elementos.
+- `evento.preventDefault()`: cancela la acción predeterminada.
+- `evento.stopPropagation()`: detiene la propagación a otros elementos.
 
 No son intercambiables.
 
 ## Errores rápidos
 
-- \`null\`: el selector no encontró el elemento.
-- \`TypeError\` al leer una propiedad: comprueba que el elemento existe.
-- El formulario se recarga: revisa el listener de \`submit\` y \`preventDefault()\`.
-- El texto se interpreta como etiquetas: usa \`textContent\`.
+- `null`: el selector no encontró el elemento.
+- `TypeError` al leer una propiedad: comprueba que el elemento existe.
+- El formulario se recarga: revisa el listener de `submit` y `preventDefault()`.
+- El texto se interpreta como etiquetas: usa `textContent`.
 
 ## Fuentes
 
