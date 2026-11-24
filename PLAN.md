@@ -7,8 +7,8 @@ CodeVault se construye por etapas. Cada fase debe quedar útil antes de ampliar 
 | 0. Especificación | Objetivo, alcance y convenciones | Completada |
 | 1. Base del repositorio | Estructura, documentos maestros y plantillas bilingües | Completada |
 | 2. Fundamentos | Lógica, algoritmos, estructuras y resolución de problemas | En preparación |
-| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML inicial completado; CSS básico-intermedio desarrollado |
-| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010 y CSS-001 a CSS-011 |
+| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML y CSS iniciales desarrollados |
+| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010 y CSS-001 a CSS-012 |
 | 5. Proyectos | Proyectos integradores por dificultad | Pendiente |
 | 6. CLI | Utilidad opcional en Python | Pendiente |
 | 7. Validación | Revisar enlaces, ejemplos, versiones e idiomas | Pendiente |
@@ -19,9 +19,9 @@ La primera ruta de HTML cubre fundamentos y nivel intermedio. Incluye guía, ref
 
 ## Estado de CSS
 
-La ruta inicial de CSS cubre fundamentos y nivel intermedio: selectores, cascada, especificidad, herencia, modelo de caja, unidades, tipografía, posicionamiento, Flexbox, Grid, diseño adaptable, variables, transiciones y animaciones.
+La ruta inicial de CSS cubre fundamentos e intermedio: selectores, cascada, especificidad, herencia, modelo de caja, unidades, tipografía, posicionamiento, Flexbox, Grid, diseño adaptable, variables, transiciones y animaciones.
 
-Incluye dos guías, dos referencias rápidas y once ejercicios bilingües con archivos iniciales y soluciones. Falta la revisión práctica en navegador y validador automático antes de considerar cerrada esta unidad.
+Incluye guías, referencias rápidas, once ejercicios y el proyecto integrador CSS-012. El proyecto contiene tres páginas y una hoja de estilos compartida. Falta la revisión práctica en navegador y validador automático antes de considerar cerrada esta unidad.
 
 ## Orden de trabajo
 

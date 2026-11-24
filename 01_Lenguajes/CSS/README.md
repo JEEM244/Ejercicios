@@ -1,6 +1,6 @@
 # CSS
 
-**Estado:** ruta de fundamentos e intermedio disponible.  
+**Estado:** ruta inicial de fundamentos e intermedio con proyecto integrador.  
 **Nivel actual:** básico-intermedio.  
 **Enfoque:** estilos externos, selectores, cascada, modelo de caja, layout, diseño adaptable y movimiento.
 
@@ -12,30 +12,27 @@ CSS (Cascading Style Sheets) describe la presentación de documentos HTML. Esta 
 - [Referencia de fundamentos](REFERENCIA.md)
 - [Guía de layout y diseño adaptable](GUIA_LAYOUT.md)
 - [Referencia de layout](REFERENCIA_LAYOUT.md)
-- [Ejercicios CSS-001 a CSS-011](EJERCICIOS/README.md)
+- [Ejercicios CSS-001 a CSS-012](EJERCICIOS/README.md)
+- [Proyecto integrador CSS-012](EJERCICIOS/CSS-012.md)
 - [Soluciones](SOLUCIONES/)
 
 ## Temas cubiertos
 
-- Sintaxis de reglas y conexión de hojas externas.
-- Selectores, combinadores, pseudoclases y pseudoelementos.
-- Cascada, especificidad y herencia.
-- Modelo de caja, unidades, colores y tipografía.
-- Flujo normal, desbordamiento y posicionamiento.
-- Flexbox para distribución en un eje.
-- Grid para distribución en dos dimensiones.
+- Sintaxis, selectores, combinadores, pseudoclases y pseudoelementos.
+- Cascada, especificidad, herencia y modelo de caja.
+- Unidades, colores, tipografía y desbordamiento.
+- Flujo normal, posicionamiento y capas.
+- Flexbox y CSS Grid.
 - Media queries, diseño adaptable y container queries.
 - Variables personalizadas.
 - Transiciones, transformaciones, animaciones y movimiento reducido.
-- Depuración y buenas prácticas de accesibilidad visual.
+- Accesibilidad visual, foco de teclado y depuración.
 
-## Ruta de práctica
+## Estado
 
-Los ejercicios CSS-001 a CSS-005 trabajan fundamentos. CSS-006 a CSS-011 integran posicionamiento, Flexbox, Grid, diseño adaptable, variables y movimiento.
+CSS-001 a CSS-011 trabajan fundamentos y distribución. CSS-012 integra esos conocimientos en tres páginas HTML con una hoja CSS compartida, navegación, tarjetas adaptables y formulario demostrativo.
 
-## Próxima ampliación
-
-Quedan como temas especializados: subgrid, container queries a profundidad, funciones modernas de color, capas de cascada, nesting, arquitectura de CSS a escala y compatibilidad detallada entre navegadores.
+La revisión de rutas está realizada. Las pruebas locales en navegador y validación automática siguen pendientes.
 
 ## Fuentes principales
 

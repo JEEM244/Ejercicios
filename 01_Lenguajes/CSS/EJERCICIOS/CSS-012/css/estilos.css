@@ -1,0 +1,35 @@
+/* CSS-012: crea una hoja compartida para las tres páginas. */
+:root {
+    /* TODO: define colores, espacios, ancho máximo y radios. */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    /* TODO: define tipografía, color y fondo. */
+}
+
+/* TODO: estilos de enlaces, salto al contenido y foco visible. */
+
+/* TODO: cabecera, marca y navegación flexible. */
+
+/* TODO: hero y panel lateral; en pantallas estrechas deben apilarse. */
+
+/* TODO: rejilla de tarjetas adaptable. */
+
+/* TODO: títulos de página, bloques de tema y etiquetas. */
+
+/* TODO: llamada a la acción y pie de página. */
+
+/* TODO: formulario con etiquetas, campos y estados de foco. */
+
+/* TODO: agrega al menos un breakpoint basado en el espacio del contenido. */
+
+/* TODO: respeta prefers-reduced-motion. */

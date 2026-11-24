@@ -13,7 +13,8 @@
 | [CSS-009](CSS-009.md) | Diseño adaptable y media queries | Intermedio |
 | [CSS-010](CSS-010.md) | Variables personalizadas y temas | Intermedio |
 | [CSS-011](CSS-011.md) | Transiciones, transformaciones y animaciones | Intermedio |
+| [CSS-012](CSS-012.md) | Proyecto integrador: sitio de aprendizaje | Proyecto |
 
-Resuelve primero cada ejercicio y después compara tu resultado con SOLUCIONES. Cada práctica contiene HTML y CSS iniciales en carpetas separadas.
+Resuelve primero los ejercicios y después compara tu resultado con SOLUCIONES. CSS-012 integra los temas en un sitio de tres páginas con una hoja de estilos compartida.
 
 Las versiones en inglés usan el sufijo .en.

@@ -2,6 +2,18 @@
 
 Los cambios importantes de CodeVault se registran aquí.
 
+## 0.8.0 - 2026-11-24
+
+### Agregado
+- Proyecto integrador CSS-012: sitio de aprendizaje con páginas de inicio, temas y contacto.
+- Estructura HTML inicial y solución completa con una hoja CSS compartida.
+- Práctica de Grid, Flexbox, variables, breakpoints, foco de teclado y movimiento reducido.
+- Documentación bilingüe, criterios de aceptación y pruebas manuales.
+
+### Actualizado
+- Índice de ejercicios CSS: ahora incluye doce prácticas y un proyecto integrador.
+- README de CSS y estado de la ruta.
+
 ## 0.7.0 - 2026-11-24
 
 ### Agregado

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de demostración de CodeVault.">
+    <title>CodeVault | Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="cabecera">
+        <a class="marca" href="index.html">CodeVault<span>.</span></a>
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="temas.html">Temas</a>
+            <a aria-current="page" href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main id="contenido" class="pagina">
+        <header class="titulo-pagina">
+            <p class="sobrelinea">PONTE EN CONTACTO</p>
+            <h1>Cuéntanos qué estás aprendiendo.</h1>
+            <p>Este formulario forma parte del ejercicio de maquetación. No envía información a un servidor.</p>
+        </header>
+        <section class="contacto">
+            <div class="contacto-info">
+                <h2>Una práctica más.</h2>
+                <p>Diseña un formulario claro, con etiquetas visibles y campos fáciles de recorrer con teclado.</p>
+                <p class="nota">Para recibir mensajes reales se necesitaría conectar el formulario con un backend o servicio autorizado.</p>
+            </div>
+            <form class="formulario">
+                <div class="campo"><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="name" required></div>
+                <div class="campo"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="email" required></div>
+                <div class="campo"><label for="tema">Tema de interés</label><select id="tema" name="tema" required><option value="">Selecciona un tema</option><option>Desarrollo web</option><option>Programación</option><option>Datos y redes</option></select></div>
+                <div class="campo"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5" required></textarea></div>
+                <button class="boton" type="submit">Enviar demostración</button>
+                <p class="ayuda">El envío es de demostración; no se almacenan ni transmiten los datos.</p>
+            </form>
+        </section>
+    </main>
+    <footer class="pie"><a class="marca" href="index.html">CodeVault<span>.</span></a><p>Material de estudio y práctica.</p></footer>
+</body>
+</html>
