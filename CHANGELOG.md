@@ -2,6 +2,20 @@
 
 Los cambios importantes de CodeVault se registran aquí.
 
+## 0.11.0 - 2026-11-24
+
+### Agregado
+- Tercera ruta de JavaScript dedicada al DOM y eventos.
+- Guía y referencia rápida de DOM y eventos en español e inglés.
+- Ejercicios JS-013 a JS-018: selectores, contador, evento input, creación de elementos, FormData y validación de formularios.
+- Proyectos HTML y JavaScript iniciales y soluciones separadas con explicaciones bilingües.
+- Recomendaciones de accesibilidad y uso seguro de textContent para mostrar texto proporcionado por el usuario.
+
+### Actualizado
+- README de JavaScript e índices de ejercicios: ahora incluyen tres rutas y dieciocho ejercicios.
+- README principal y plan de desarrollo en español e inglés.
+- Instrucciones de ejecución: JS-001 a JS-012 con Node.js; JS-013 a JS-018 en un navegador.
+
 ## 0.10.0 - 2026-11-24
 
 ### Agregado

@@ -7,8 +7,8 @@ CodeVault se construye por etapas. Cada fase debe quedar útil antes de ampliar 
 | 0. Especificación | Objetivo, alcance y convenciones | Completada |
 | 1. Base del repositorio | Estructura, documentos maestros y plantillas bilingües | Completada |
 | 2. Fundamentos | Lógica, algoritmos, estructuras y resolución de problemas | En preparación |
-| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML, CSS y JavaScript inicial |
-| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010, CSS-001 a CSS-012 y JS-001 a JS-012 |
+| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML, CSS y JavaScript básico-intermedio |
+| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010, CSS-001 a CSS-012 y JS-001 a JS-018 |
 | 5. Proyectos | Proyectos integradores por dificultad | En desarrollo: CSS-012 como proyecto integrador |
 | 6. CLI | Utilidad opcional en Python | Pendiente |
 | 7. Validación | Revisar enlaces, ejemplos, versiones e idiomas | Pendiente |
@@ -25,12 +25,13 @@ Incluye guías, referencias rápidas, once ejercicios y el proyecto integrador C
 
 ## Estado de JavaScript
 
-JavaScript cuenta con dos rutas de estudio:
+JavaScript cuenta con tres rutas de estudio:
 
 1. **Fundamentos:** ejecución en navegador y Node.js, instrucciones, variables, tipos, conversiones, operadores, condicionales, ciclos y funciones. Incluye guía, referencia rápida y ejercicios JS-001 a JS-006.
-2. **Estructuras y depuración:** arreglos, índices, recorridos, métodos de arreglos y cadenas, objetos, arreglos de objetos, desestructuración, alcance global/de función/de bloque y depuración. Incluye guía, referencia rápida y ejercicios JS-007 a JS-012.
+2. **Estructuras y depuración:** arreglos, métodos, cadenas, objetos, desestructuración, alcance y depuración. Incluye guía, referencia rápida y ejercicios JS-007 a JS-012.
+3. **DOM y eventos:** selectores, lectura y modificación de contenido, clases, atributos, creación de nodos, eventos, formularios, FormData y validación del navegador. Incluye guía, referencia rápida y ejercicios JS-013 a JS-018 con proyectos HTML y JavaScript.
 
-Los doce ejercicios tienen enunciados en español e inglés, archivos iniciales y soluciones separadas con explicación. No requieren frameworks ni paquetes externos. La siguiente etapa será DOM y eventos, seguida de módulos y programación asíncrona. Falta ejecutar las prácticas en un entorno local de navegador o Node.js y revisar los resultados con distintos datos.
+Los dieciocho ejercicios tienen enunciados bilingües, archivos iniciales y soluciones separadas. Las primeras doce prácticas pueden ejecutarse con Node.js; JS-013 a JS-018 requieren un navegador. El material no necesita frameworks ni paquetes externos. La siguiente etapa será módulos y programación asíncrona. Falta realizar una revisión práctica en navegador y probar los ejercicios con datos y acciones diferentes.
 
 ## Orden de trabajo
 
