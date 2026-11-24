@@ -4,6 +4,7 @@
 - [Descripción general](README.md)
 - [Especificación](SPEC.md)
 - [Plan de desarrollo](PLAN.md)
+- [Fuentes de referencia](FUENTES.md)
 - [Registro de cambios](CHANGELOG.md)
 - [Mantenimiento](CONTRIBUTING.md)
 
