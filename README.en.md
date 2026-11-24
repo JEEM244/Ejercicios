@@ -37,7 +37,7 @@ Guides and exercises are prepared using official documentation, standards, manua
 
 ## Project status
 
-The repository structure, project rules, and templates are in place. The initial HTML path covers beginner-to-intermediate topics with ten exercises and a capstone project. CSS now has a fundamentals guide, quick reference, and five practice exercises. Development continues in small learning units.
+The repository structure, project rules, and templates are in place. The initial HTML path covers beginner-to-intermediate topics with ten exercises and a capstone project. CSS now has fundamentals and layout guides, quick references, and eleven exercises with starter files and separate solutions.
 
 See [the roadmap](PLAN.en.md) and [the specification](SPEC.en.md).
 
