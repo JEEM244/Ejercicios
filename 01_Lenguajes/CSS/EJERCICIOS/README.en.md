@@ -13,6 +13,7 @@
 | [CSS-009](CSS-009.en.md) | Responsive design and media queries | Intermediate |
 | [CSS-010](CSS-010.en.md) | Custom properties and themes | Intermediate |
 | [CSS-011](CSS-011.en.md) | Transitions, transforms, and animations | Intermediate |
+| [CSS-012](CSS-012.en.md) | Capstone project: resource portal | Intermediate |
 | [CSS-012](CSS-012.en.md) | Capstone project: learning website | Project |
 
 Try each exercise before comparing your work with SOLUCIONES. CSS-012 combines the topics in a three-page website with a shared stylesheet.

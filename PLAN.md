@@ -9,7 +9,7 @@ CodeVault se construye por etapas. Cada fase debe quedar útil antes de ampliar 
 | 2. Fundamentos | Lógica, algoritmos, estructuras y resolución de problemas | En preparación |
 | 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML y CSS iniciales desarrollados |
 | 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010 y CSS-001 a CSS-012 |
-| 5. Proyectos | Proyectos integradores por dificultad | Pendiente |
+| 5. Proyectos | Proyectos integradores por dificultad | En desarrollo: CSS-012 como proyecto integrador |
 | 6. CLI | Utilidad opcional en Python | Pendiente |
 | 7. Validación | Revisar enlaces, ejemplos, versiones e idiomas | Pendiente |
 

@@ -1,3 +1,15 @@
+## 0.8.0 - 2026-11-24
+
+### Agregado
+- Proyecto integrador CSS-012: portal de recursos CodeVault.
+- Página inicial con navegación, catálogo, ruta de estudio, progreso y preguntas frecuentes.
+- Archivos de inicio, solución de referencia y recursos SVG locales.
+- Criterios de aceptación y autoevaluación bilingües.
+
+### Actualizado
+- Índice CSS: ahora incluye doce ejercicios.
+- README de CSS y estado del plan.
+
 # Registro de cambios
 
 Los cambios importantes de CodeVault se registran aquí.
