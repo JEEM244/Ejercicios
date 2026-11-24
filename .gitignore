@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Editors
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Operating systems
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Generated and temporary files
+*.tmp
+*.log
+.cache/
+dist/
+build/
+
+# Local progress backups
+09_Progreso/backups/
