@@ -3,13 +3,14 @@
 ## Salida esperada
 
 ~~~text
-Original:   JavaScript Web
 Limpio: JavaScript Web
 Normalizado: javascript web
 Mayúsculas: JAVASCRIPT WEB
 ¿Incluye javascript? true
 Primera palabra: JavaScript
 ~~~
+
+El texto original conserva los espacios iniciales y finales. La salida anterior muestra las versiones generadas a partir de él.
 
 ## Explicación
 

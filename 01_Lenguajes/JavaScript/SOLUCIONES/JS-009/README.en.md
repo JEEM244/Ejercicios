@@ -3,7 +3,6 @@
 ## Expected output
 
 ~~~text
-Original:   JavaScript Web
 Limpio: JavaScript Web
 Normalizado: javascript web
 Mayúsculas: JAVASCRIPT WEB
@@ -11,7 +10,7 @@ Mayúsculas: JAVASCRIPT WEB
 Primera palabra: JavaScript
 ~~~
 
-The sample console labels remain in Spanish to match the source code.
+The original text keeps its leading and trailing spaces. The output above shows the versions generated from it.
 
 ## Explanation
 
