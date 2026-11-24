@@ -32,6 +32,11 @@
 - [CLI tool](10_Herramienta_CLI/README.en.md)
 
 ## Templates
-Templates are initially documented in Spanish. English versions will be added alongside them after their formats are validated.
+- [How to use templates](Plantillas/README.en.md)
+- [Topic](Plantillas/TEMA.en.md)
+- [Exercise](Plantillas/EJERCICIO.en.md)
+- [Solution](Plantillas/SOLUCION.en.md)
+- [Challenge](Plantillas/RETO.en.md)
+- [Project](Plantillas/PROYECTO.en.md)
 
 See [the Spanish index](INDICE.md).
