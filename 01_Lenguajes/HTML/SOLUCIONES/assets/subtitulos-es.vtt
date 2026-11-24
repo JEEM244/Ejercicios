@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.500
+Hola. En esta práctica estamos aprendiendo a organizar contenido multimedia con HTML.
+
+00:00:04.500 --> 00:00:09.500
+El elemento audio permite reproducir sonido dentro de una página.
+
+00:00:09.500 --> 00:00:14.500
+El elemento video permite mostrar una grabación.
+
+00:00:14.500 --> 00:00:20.000
+Para que el video sea más accesible, podemos agregar una pista de subtítulos.

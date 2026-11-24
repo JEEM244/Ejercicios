@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de asesoría</title>
+</head>
+<body>
+    <main>
+        <h1>Solicitud de asesoría</h1>
+
+        <form action="" method="get">
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required minlength="2">
+            </p>
+
+            <p>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            </p>
+
+            <p>
+                <label for="area">Área de estudio:</label>
+                <select id="area" name="area" required>
+                    <option value="">Selecciona un área</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="programacion">Programación</option>
+                </select>
+            </p>
+
+            <fieldset>
+                <legend>Nivel de experiencia</legend>
+
+                <input type="radio" id="principiante" name="nivel" value="principiante" required>
+                <label for="principiante">Principiante</label>
+
+                <input type="radio" id="intermedio" name="nivel" value="intermedio">
+                <label for="intermedio">Intermedio</label>
+            </fieldset>
+
+            <p>
+                <label for="duda">Describe tu duda:</label>
+                <textarea id="duda" name="duda" rows="4" minlength="10" required></textarea>
+            </p>
+
+            <button type="submit">Enviar solicitud de ejemplo</button>
+        </form>
+    </main>
+</body>
+</html>
