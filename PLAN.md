@@ -7,11 +7,17 @@ CodeVault se construye por etapas. Cada fase debe quedar útil antes de ampliar 
 | 0. Especificación | Objetivo, alcance y convenciones | Completada |
 | 1. Base del repositorio | Estructura, documentos maestros y plantillas bilingües | Completada |
 | 2. Fundamentos | Lógica, algoritmos, estructuras y resolución de problemas | En preparación |
-| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML |
-| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML |
+| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: ruta inicial HTML básico-intermedio completada; CSS siguiente |
+| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010 creados; revisión práctica pendiente |
 | 5. Proyectos | Proyectos integradores por dificultad | Pendiente |
 | 6. CLI | Utilidad opcional en Python | Pendiente |
 | 7. Validación | Revisar enlaces, ejemplos, versiones e idiomas | Pendiente |
+
+## Estado de la unidad HTML
+
+La primera ruta de HTML cubre fundamentos y nivel intermedio: estructura, semántica, tablas, formularios, multimedia, accesibilidad, metadatos, recursos externos, imágenes adaptables, contenido incrustado y elementos interactivos.
+
+La unidad incluye diez ejercicios, con un proyecto integrador de varias páginas (HTML-010). La revisión de estructura y rutas se realiza al publicar cambios; las pruebas de navegador y el validador automático siguen pendientes.
 
 ## Orden de trabajo
 

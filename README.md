@@ -48,7 +48,7 @@ La documentación está disponible en español y, progresivamente, en inglés. L
 
 ## Estado del proyecto
 
-La estructura, las reglas editoriales y las plantillas están preparadas. La primera unidad en desarrollo es HTML, que ya cuenta con guía, referencia rápida y ejercicios básicos de tablas, formularios y multimedia.
+La estructura y las reglas editoriales están preparadas. La primera ruta de HTML ya cubre el nivel básico-intermedio e incluye diez ejercicios y un proyecto integrador. La siguiente unidad de lenguaje será CSS.
 
 Consulta [PLAN.md](PLAN.md) para ver las fases y [SPEC.md](SPEC.md) para las decisiones del proyecto.
 

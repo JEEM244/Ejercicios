@@ -37,7 +37,7 @@ Guides and exercises are prepared using official documentation, standards, manua
 
 ## Project status
 
-The repository structure, project rules, and templates are in place. Topic content is being developed in stages. HTML is the first language unit with a guide, quick reference, and beginner exercises.
+The repository structure, project rules, and templates are in place. The first HTML learning path now covers beginner-to-intermediate topics and includes ten exercises and a capstone project. CSS is the next language unit.
 
 See [the roadmap](PLAN.en.md) and [the specification](SPEC.en.md).
 
