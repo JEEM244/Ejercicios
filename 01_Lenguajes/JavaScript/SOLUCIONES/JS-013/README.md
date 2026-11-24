@@ -9,11 +9,11 @@ Al pulsar el botón:
 
 ## Explicación
 
-1. \`querySelector()\` encuentra cada elemento mediante su selector CSS.
-2. \`addEventListener("click", ...)\` registra una función para el clic.
-3. \`textContent\` cambia el texto sin interpretar etiquetas HTML.
+1. `querySelector()` encuentra cada elemento mediante su selector CSS.
+2. `addEventListener("click", ...)` registra una función para el clic.
+3. `textContent` cambia el texto sin interpretar etiquetas HTML.
 
-El atributo \`defer\` permite que el HTML se analice antes de ejecutar el archivo JavaScript.
+El atributo `defer` permite que el HTML se analice antes de ejecutar el archivo JavaScript.
 
 ## Archivos
 

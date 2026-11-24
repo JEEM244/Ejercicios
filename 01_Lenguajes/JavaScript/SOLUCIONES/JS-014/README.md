@@ -6,10 +6,10 @@ El contador inicia en 0. Los botones aumentan, disminuyen o restablecen su valor
 
 ## Explicación
 
-- \`contador\` guarda el estado actual.
-- Cada botón registra su propio listener de tipo \`click\`.
-- \`actualizarContador()\` concentra el cambio visual en un solo lugar.
-- \`textContent\` actualiza el elemento \`output\`.
+- `contador` guarda el estado actual.
+- Cada botón registra su propio listener de tipo `click`.
+- `actualizarContador()` concentra el cambio visual en un solo lugar.
+- `textContent` actualiza el elemento `output`.
 
 La función de actualización evita repetir la misma instrucción en los tres listeners.
 

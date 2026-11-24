@@ -6,13 +6,13 @@ The preview changes while typing. The counter displays the current input length 
 
 ## Explanation
 
-1. The field, paragraph, and \`output\` element are selected.
-2. The listener handles the \`input\` event, which runs when the value changes.
-3. The \`value\` property reads the field content.
-4. \`length\` counts the string's code units.
-5. \`textContent\` updates the preview without parsing the text as HTML.
+1. The field, paragraph, and `output` element are selected.
+2. The listener handles the `input` event, which runs when the value changes.
+3. The `value` property reads the field content.
+4. `length` counts the string's code units.
+5. `textContent` updates the preview without parsing the text as HTML.
 
-The HTML \`maxlength\` attribute limits the input to 60 characters.
+The HTML `maxlength` attribute limits the input to 60 characters.
 
 ## Files
 

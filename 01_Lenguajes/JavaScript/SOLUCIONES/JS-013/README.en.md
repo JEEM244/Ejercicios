@@ -9,11 +9,11 @@ When the button is pressed:
 
 ## Explanation
 
-1. \`querySelector()\` finds each element using its CSS selector.
-2. \`addEventListener("click", ...)\` registers a function for the click.
-3. \`textContent\` changes text without parsing HTML tags.
+1. `querySelector()` finds each element using its CSS selector.
+2. `addEventListener("click", ...)` registers a function for the click.
+3. `textContent` changes text without parsing HTML tags.
 
-The \`defer\` attribute lets the browser parse the HTML before running the JavaScript file.
+The `defer` attribute lets the browser parse the HTML before running the JavaScript file.
 
 ## Files
 
