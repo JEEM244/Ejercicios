@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-23",
+  "note": "Registro inicial. Actualiza este archivo cuando comiences a llevar tu progreso.",
+  "languages": [
+    {"id":"HTML","status":"not_started","topics_completed":[],"exercises_completed":[],"review_notes":[]},
+    {"id":"CSS","status":"not_started","topics_completed":[],"exercises_completed":[],"review_notes":[]},
+    {"id":"JavaScript","status":"not_started","topics_completed":[],"exercises_completed":[],"review_notes":[]},
+    {"id":"TypeScript","status":"not_started","topics_completed":[],"exercises_completed":[],"review_notes":[]},
+    {"id":"PHP","status":"not_started","topics_completed":[],"exercises_completed":[],"review_notes":[]},
+    {"id":"Python","status":"not_started","topics_completed":[],"exercises_completed":[],"review_notes":[]},
+    {"id":"Shell","status":"not_started","topics_completed":[],"exercises_completed":[],"review_notes":[]},
+    {"id":"CSharp","status":"not_started","topics_completed":[],"exercises_completed":[],"review_notes":[]},
+    {"id":"Kotlin","status":"not_started","topics_completed":[],"exercises_completed":[],"review_notes":[]},
+    {"id":"Lua","status":"not_started","topics_completed":[],"exercises_completed":[],"review_notes":[]},
+    {"id":"SQL","status":"not_started","topics_completed":[],"exercises_completed":[],"review_notes":[]}
+  ],
+  "areas": [
+    {"id":"02_Fundamentos","status":"not_started"},
+    {"id":"03_Herramientas","status":"not_started"},
+    {"id":"04_Tecnologias","status":"not_started"},
+    {"id":"05_Redes","status":"not_started"},
+    {"id":"06_Entrenamiento","status":"not_started"},
+    {"id":"07_Proyectos","status":"not_started"},
+    {"id":"08_Referencia","status":"not_started"}
+  ]
+}
