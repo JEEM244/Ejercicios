@@ -326,7 +326,7 @@ A function may have no explicit return value. In that case, its result is undefi
 
 ## 14. Recommended practice
 
-Solve the exercises in order: [JS-001 to JS-006](EJERCICIOS/README.md). Run each file with Node.js or in the browser console. Change input values and check how the output changes.
+Solve the exercises in order: [JS-001 to JS-006](EJERCICIOS/README.en.md). Run each file with Node.js or in the browser console. Change input values and check how the output changes.
 
 ## Sources
 

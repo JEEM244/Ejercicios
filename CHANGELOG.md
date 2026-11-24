@@ -2,6 +2,11 @@
 
 Los cambios importantes de CodeVault se registran aquí.
 
+## 0.9.1 - 2026-11-24
+
+### Corregido
+- Referencias de la guía y el README en inglés para dirigir al índice de ejercicios en inglés.
+
 ## 0.9.0 - 2026-11-24
 
 ### Agregado

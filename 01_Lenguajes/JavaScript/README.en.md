@@ -10,7 +10,7 @@ JavaScript lets you write application logic and add interaction to websites. It 
 
 - [Fundamentals guide](GUIA.md)
 - [Quick reference](REFERENCIA.md)
-- [Exercises JS-001 to JS-006](EJERCICIOS/README.md)
+- [Exercises JS-001 to JS-006](EJERCICIOS/README.en.md)
 - [Solutions](SOLUCIONES/)
 
 ## Included topics
