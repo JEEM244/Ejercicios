@@ -1,32 +1,32 @@
 # HTML
 
-**Estado:** estructura inicial; guía y ejercicios pendientes.
+<badge>En desarrollo</badge>
 
 HTML (HyperText Markup Language) define la estructura y el significado del contenido de una página web. Es un lenguaje de marcado, no un lenguaje de programación.
 
-## Temas previstos
+## Material disponible
+
+- [Guía de HTML](GUIA.md)
+- [Referencia rápida](REFERENCIA.md)
+- [Ejercicios](EJERCICIOS/README.md)
+- [Soluciones](SOLUCIONES/)
+
+## Temas que se desarrollarán
 
 - Estructura de un documento HTML.
 - Elementos, etiquetas y atributos.
-- Encabezados, párrafos, listas y enlaces.
+- Texto, listas y enlaces.
 - Imágenes, audio y video.
 - Tablas y formularios.
 - HTML semántico y accesibilidad.
 - Metadatos y carga de recursos.
 - Validación del documento.
 
-## Organización prevista
+## Enfoque
 
-- `GUIA.md`: explicaciones por tema.
-- `REFERENCIA.md`: elementos y atributos frecuentes.
-- `EJEMPLOS/`: documentos pequeños y comentados.
-- `EJERCICIOS/`: enunciados y archivos iniciales.
-- `SOLUCIONES/`: soluciones separadas.
+HTML define estructura y semántica; CSS controla la presentación y JavaScript añade comportamiento. Los ejemplos de esta sección utilizan HTML moderno.
 
-## Notas
+## Fuentes
 
-HTML define estructura y semántica; CSS controla presentación y JavaScript añade comportamiento.
-
-## Siguiente paso
-
-Crear la guía de estructura mínima de un documento y los primeros ejercicios de elementos y atributos.
+- [MDN — HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+- [WHATWG — HTML Living Standard](https://html.spec.whatwg.org/)
