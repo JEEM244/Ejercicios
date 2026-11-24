@@ -1,18 +1,18 @@
-## 0.8.0 - 2026-11-24
-
-### Agregado
-- Proyecto integrador CSS-012: portal de recursos CodeVault.
-- Página inicial con navegación, catálogo, ruta de estudio, progreso y preguntas frecuentes.
-- Archivos de inicio, solución de referencia y recursos SVG locales.
-- Criterios de aceptación y autoevaluación bilingües.
-
-### Actualizado
-- Índice CSS: ahora incluye doce ejercicios.
-- README de CSS y estado del plan.
-
 # Registro de cambios
 
 Los cambios importantes de CodeVault se registran aquí.
+
+## 0.9.0 - 2026-11-24
+
+### Agregado
+- Primera ruta de fundamentos de JavaScript con guía y referencia rápida bilingües.
+- Ejemplos de ejecución en navegador y Node.js, variables, tipos, conversiones, operadores, condicionales, ciclos y funciones.
+- Seis ejercicios JS-001 a JS-006 con enunciados bilingües y archivos iniciales.
+- Soluciones separadas con archivos de código y explicaciones en español e inglés.
+
+### Actualizado
+- Índice de JavaScript y plan de desarrollo.
+- Revisión estática de CSS-012: seis páginas revisadas entre inicio y solución; sin rutas locales faltantes, enlaces internos rotos ni IDs duplicados. Las pruebas de navegador siguen pendientes.
 
 ## 0.8.0 - 2026-11-24
 

@@ -1,28 +1,45 @@
 # JavaScript
 
-**Status:** initial structure; guide and exercises are pending.
+**Status:** initial fundamentals path created.  
+**Current level:** beginner.  
+**Focus:** syntax, values, operators, decisions, loops, and functions.
 
-JavaScript is a programming language used to build logic and interaction in websites and applications. It also runs outside browsers through environments such as Node.js.
+JavaScript lets you write application logic and add interaction to websites. It can also run outside the browser with environments such as Node.js.
 
-## Planned topics
+## Material
 
-- Variables and constants.
+- [Fundamentals guide](GUIA.md)
+- [Quick reference](REFERENCIA.md)
+- [Exercises JS-001 to JS-006](EJERCICIOS/README.md)
+- [Solutions](SOLUCIONES/)
+
+## Included topics
+
+- Running JavaScript in a browser and with Node.js.
+- Comments, statements, and output with console.log().
+- Variables with const and let.
 - Primitive types and conversions.
-- Operators and expressions.
-- Conditionals and loops.
-- Functions and scope.
-- Arrays and objects.
-- Array and string methods.
-- DOM and events.
-- Modules.
-- Promises and async/await.
-- Error handling.
-- Browser and runtime APIs.
+- Arithmetic, comparison, and logical operators.
+- if, else, and switch conditionals.
+- for and while loops.
+- Functions, parameters, and return.
 
-## Notes
+## Unit conventions
 
-Browser JavaScript will be distinguished from JavaScript running in Node.js. Framework topics will be documented separately.
+- Initial examples do not require frameworks or external packages.
+- Each exercise can run with Node.js or be adapted to the browser console.
+- Starter files contain TODO instructions.
+- Solutions are stored separately. Try each task before opening its solution.
+- const is used by default and let is used when a value must change. var is introduced as older syntax, not as the recommended option.
 
-## Next step
+## Next stage
 
-Create an introductory syntax path with examples that can run in a console.
+Continue with arrays, objects, string and array methods, scope, and debugging. DOM, events, modules, and asynchronous programming will follow.
+
+## Sources
+
+- [MDN — JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [MDN — JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- [Node.js — Run JavaScript scripts](https://nodejs.org/en/learn/command-line/run-nodejs-scripts)
+
+See also the [Spanish README](README.md).

@@ -7,8 +7,8 @@ CodeVault se construye por etapas. Cada fase debe quedar útil antes de ampliar 
 | 0. Especificación | Objetivo, alcance y convenciones | Completada |
 | 1. Base del repositorio | Estructura, documentos maestros y plantillas bilingües | Completada |
 | 2. Fundamentos | Lógica, algoritmos, estructuras y resolución de problemas | En preparación |
-| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML y CSS iniciales desarrollados |
-| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010 y CSS-001 a CSS-012 |
+| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML, CSS y ruta inicial de JavaScript |
+| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010, CSS-001 a CSS-012 y JS-001 a JS-006 |
 | 5. Proyectos | Proyectos integradores por dificultad | En desarrollo: CSS-012 como proyecto integrador |
 | 6. CLI | Utilidad opcional en Python | Pendiente |
 | 7. Validación | Revisar enlaces, ejemplos, versiones e idiomas | Pendiente |
@@ -21,7 +21,13 @@ La primera ruta de HTML cubre fundamentos y nivel intermedio. Incluye guía, ref
 
 La ruta inicial de CSS cubre fundamentos e intermedio: selectores, cascada, especificidad, herencia, modelo de caja, unidades, tipografía, posicionamiento, Flexbox, Grid, diseño adaptable, variables, transiciones y animaciones.
 
-Incluye guías, referencias rápidas, once ejercicios y el proyecto integrador CSS-012. El proyecto contiene tres páginas y una hoja de estilos compartida. Falta la revisión práctica en navegador y validador automático antes de considerar cerrada esta unidad.
+Incluye guías, referencias rápidas, once ejercicios y el proyecto integrador CSS-012. El proyecto contiene tres páginas y una hoja de estilos compartida. Se revisaron estáticamente las seis páginas entre inicio y solución: rutas locales existentes, enlaces internos válidos, IDs sin duplicados y llaves CSS balanceadas. Las pruebas prácticas en navegador y la validación automática especializada siguen pendientes.
+
+## Estado de JavaScript
+
+La ruta inicial de fundamentos incluye guía, referencia rápida y seis ejercicios con documentos en español e inglés. Cubre ejecución en navegador y Node.js, console.log(), const y let, tipos básicos, conversiones, operadores, condicionales, ciclos y funciones.
+
+Cada práctica tiene un archivo inicial con tareas TODO y una solución en una carpeta separada. El material no requiere frameworks ni paquetes externos. La siguiente ampliación será arreglos, objetos, métodos y alcance. Los archivos todavía requieren ejecución local y revisión práctica.
 
 ## Orden de trabajo
 
