@@ -3,65 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Biblioteca de recursos para aprender desarrollo web.">
-    <title>CodeVault | Inicio</title>
+    <meta name="description" content="Portal de recursos para aprender programación.">
+    <title>CodeVault | Portal de aprendizaje</title>
+    <link rel="icon" href="assets/marca.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <a class="saltar-contenido" href="#contenido">Saltar al contenido principal</a>
+
     <header class="cabecera">
-        <a class="marca" href="index.html">CodeVault<span>.</span></a>
-        <nav class="navegacion" aria-label="Navegación principal">
-            <a aria-current="page" href="index.html">Inicio</a>
-            <a href="temas.html">Temas</a>
-            <a href="contacto.html">Contacto</a>
+        <a class="marca" href="#inicio" aria-label="CodeVault, inicio">
+            <img src="assets/marca.svg" alt="">
+            <span>CodeVault</span>
+        </a>
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#ruta">Ruta de estudio</a></li>
+                <li><a href="#preguntas">Preguntas</a></li>
+            </ul>
         </nav>
+        <a class="enlace-cuenta" href="#contacto">Sobre el proyecto</a>
     </header>
+
     <main id="contenido">
-        <section class="hero">
+        <section class="hero" id="inicio">
             <div class="hero-texto">
-                <p class="sobrelinea">BIBLIOTECA DE APRENDIZAJE</p>
-                <h1>Aprende. Practica. <span>Construye.</span></h1>
-                <p class="intro">Un espacio para consultar conceptos, practicar programación y construir proyectos paso a paso.</p>
-                <a class="boton" href="temas.html">Explorar temas</a>
+                <p class="sobrelinea">APRENDE · PRACTICA · CONSTRUYE</p>
+                <h1>Un lugar para fortalecer tus habilidades de programación.</h1>
+                <p class="hero-descripcion">Consulta guías, repasa conceptos y practica con ejercicios organizados por tema.</p>
+                <div class="hero-acciones">
+                    <a class="boton boton-principal" href="#recursos">Explorar recursos</a>
+                    <a class="boton boton-secundario" href="#ruta">Ver ruta de estudio</a>
+                </div>
+                <ul class="estadisticas" aria-label="Contenido del portal">
+                    <li><strong>11</strong><span>áreas de estudio</span></li>
+                    <li><strong>01</strong><span>paso a la vez</span></li>
+                </ul>
             </div>
-            <div class="hero-panel" aria-label="Resumen de la biblioteca">
-                <p class="panel-etiqueta">RUTA DE APRENDIZAJE</p>
+            <div class="hero-visual">
+                <img src="assets/panel-aprendizaje.svg" alt="Ilustración de una pantalla con bloques que representan código y recursos de aprendizaje">
+                <span class="insignia insignia-superior">Modo práctica</span>
+                <span class="insignia insignia-inferior">Aprendizaje continuo</span>
+            </div>
+        </section>
+
+        <section class="seccion" id="recursos">
+            <div class="seccion-cabecera">
+                <div>
+                    <p class="sobrelinea">BIBLIOTECA</p>
+                    <h2>Explora tus áreas de estudio</h2>
+                </div>
+                <p>Elige un tema y avanza a tu ritmo. Puedes consultar la documentación sin seguir un orden fijo.</p>
+            </div>
+            <div class="catalogo">
+                <article class="tarjeta tarjeta-destacada">
+                    <span class="nivel">En curso</span>
+                    <p class="numero-tarjeta">01</p>
+                    <h3>Desarrollo web</h3>
+                    <p>HTML, CSS y JavaScript para construir interfaces y páginas web.</p>
+                    <a href="#ruta">Ver ruta <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="tarjeta">
+                    <p class="numero-tarjeta">02</p>
+                    <h3>Programación</h3>
+                    <p>Práctica de lógica, algoritmos, estructuras y distintos lenguajes.</p>
+                    <a href="#ruta">Ver ruta <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="tarjeta">
+                    <p class="numero-tarjeta">03</p>
+                    <h3>Bases de datos</h3>
+                    <p>Diseño de tablas, relaciones, consultas y manejo de información.</p>
+                    <a href="#ruta">Ver ruta <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="tarjeta">
+                    <p class="numero-tarjeta">04</p>
+                    <h3>Herramientas</h3>
+                    <p>Git, terminal, documentación y utilidades para trabajar mejor.</p>
+                    <a href="#ruta">Ver ruta <span aria-hidden="true">→</span></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion ruta-seccion" id="ruta">
+            <div class="seccion-cabecera">
+                <div>
+                    <p class="sobrelinea">ORGANIZA TU PRÁCTICA</p>
+                    <h2>Una ruta sencilla para comenzar</h2>
+                </div>
+                <p>Divide el aprendizaje en pasos pequeños y practica cada concepto antes de continuar.</p>
+            </div>
+            <div class="ruta-grid">
                 <ol class="pasos">
-                    <li><span>01</span> Comprende el concepto</li>
-                    <li><span>02</span> Practica con ejemplos</li>
-                    <li><span>03</span> Construye algo propio</li>
+                    <li><span class="paso-numero">01</span><div><h3>Consulta la guía</h3><p>Comprende el concepto y revisa ejemplos breves.</p></div></li>
+                    <li><span class="paso-numero">02</span><div><h3>Resuelve un ejercicio</h3><p>Escribe el código y comprueba qué sucede al cambiarlo.</p></div></li>
+                    <li><span class="paso-numero">03</span><div><h3>Revisa tu resultado</h3><p>Compara, corrige y anota qué conviene practicar otra vez.</p></div></li>
                 </ol>
+                <aside class="avance">
+                    <span class="avance-etiqueta">EJEMPLO DE PROGRESO</span>
+                    <h3>Tu práctica cuenta</h3>
+                    <p>Este indicador es ilustrativo. Puedes adaptar el contenido a tu propio seguimiento.</p>
+                    <label for="progreso">Ruta de fundamentos</label>
+                    <progress id="progreso" value="6" max="10">60%</progress>
+                    <div class="avance-datos"><strong>6 de 10</strong><span>pasos de ejemplo</span></div>
+                </aside>
             </div>
         </section>
-        <section class="seccion">
-            <div class="encabezado-seccion">
-                <div><p class="sobrelinea">EMPIEZA POR AQUÍ</p><h2>Áreas principales</h2></div>
-                <a class="enlace" href="temas.html">Ver todos los temas →</a>
+
+        <section class="seccion preguntas" id="preguntas">
+            <div class="seccion-cabecera">
+                <div><p class="sobrelinea">PREGUNTAS FRECUENTES</p><h2>Antes de empezar</h2></div>
             </div>
-            <div class="rejilla tarjetas">
-                <article class="tarjeta">
-                    <span class="numero">01</span><h3>Desarrollo web</h3>
-                    <p>Estructura, estilos e interacción para crear sitios web.</p>
-                    <a href="temas.html#web">Consultar área</a>
-                </article>
-                <article class="tarjeta">
-                    <span class="numero">02</span><h3>Programación</h3>
-                    <p>Lógica, algoritmos y lenguajes para resolver problemas.</p>
-                    <a href="temas.html#programacion">Consultar área</a>
-                </article>
-                <article class="tarjeta">
-                    <span class="numero">03</span><h3>Datos y redes</h3>
-                    <p>Almacenamiento, comunicación y servicios conectados.</p>
-                    <a href="temas.html#datos">Consultar área</a>
-                </article>
+            <div class="preguntas-lista">
+                <details><summary>¿Tengo que seguir el orden de las áreas?</summary><p>No. Puedes entrar al tema que necesites y revisar los prerrequisitos indicados en su documentación.</p></details>
+                <details><summary>¿Necesito instalar algo para leer los materiales?</summary><p>No. Los documentos se pueden consultar directamente. Para ejecutar ejemplos necesitarás el entorno correspondiente al lenguaje.</p></details>
+                <details><summary>¿Dónde puedo practicar?</summary><p>Cada área tiene ejercicios con archivos iniciales y soluciones separadas para comparar después de intentarlo.</p></details>
             </div>
         </section>
-        <section class="llamada">
-            <div><p class="sobrelinea">APRENDIZAJE CONTINUO</p><h2>El siguiente paso empieza con una práctica.</h2></div>
-            <a class="boton boton-claro" href="temas.html">Ir a los temas</a>
+
+        <section class="cierre" id="contacto">
+            <div><p class="sobrelinea">UN RECURSO PARA APRENDER</p><h2>La práctica convierte la teoría en habilidad.</h2></div>
+            <a class="boton boton-claro" href="https://github.com/JEEM244/Ejercicios">Consultar CodeVault</a>
         </section>
     </main>
-    <footer class="pie"><a class="marca" href="index.html">CodeVault<span>.</span></a><p>Material de estudio y práctica.</p></footer>
+
+    <footer class="pie">
+        <a class="marca" href="#inicio"><img src="assets/marca.svg" alt=""><span>CodeVault</span></a>
+        <p>Proyecto de práctica CSS-012.</p>
+        <a href="#inicio">Volver al inicio ↑</a>
+    </footer>
 </body>
 </html>

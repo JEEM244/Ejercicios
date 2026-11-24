@@ -1,35 +1,118 @@
-/* CSS-012: crea una hoja compartida para las tres páginas. */
+/* CSS-012: completa los bloques para construir el diseño adaptable. */
+
 :root {
-    /* TODO: define colores, espacios, ancho máximo y radios. */
+    /* TODO: declara colores, espacios, ancho máximo y radios */
 }
 
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
+*,
+*::before,
+*::after {
+    /* TODO: aplica box-sizing de forma global */
 }
 
 body {
-    margin: 0;
-    /* TODO: define tipografía, color y fondo. */
+    /* TODO: define margen, tipografía, color, fondo y line-height */
 }
 
-/* TODO: estilos de enlaces, salto al contenido y foco visible. */
+.saltar-contenido {
+    /* TODO: prepara un enlace de salto que aparezca al recibir foco */
+}
 
-/* TODO: cabecera, marca y navegación flexible. */
+.cabecera {
+    /* TODO: usa Flexbox para marca, navegación y enlace */
+}
 
-/* TODO: hero y panel lateral; en pantallas estrechas deben apilarse. */
+.marca,
+.marca img,
+.menu {
+    /* TODO */
+}
 
-/* TODO: rejilla de tarjetas adaptable. */
+.hero {
+    /* TODO: Grid para texto e ilustración */
+}
 
-/* TODO: títulos de página, bloques de tema y etiquetas. */
+.hero h1 {
+    /* TODO: usa clamp() */
+}
 
-/* TODO: llamada a la acción y pie de página. */
+.hero-visual {
+    /* TODO: establece contexto para insignias absolutas */
+}
 
-/* TODO: formulario con etiquetas, campos y estados de foco. */
+.hero-visual img {
+    /* TODO: imagen adaptable */
+}
 
-/* TODO: agrega al menos un breakpoint basado en el espacio del contenido. */
+.insignia {
+    /* TODO: posicionamiento, fondo y borde */
+}
 
-/* TODO: respeta prefers-reduced-motion. */
+.estadisticas {
+    /* TODO: Flexbox */
+}
+
+.seccion,
+.seccion-cabecera {
+    /* TODO */
+}
+
+.catalogo {
+    /* TODO: Grid con repeat() y minmax() */
+}
+
+.tarjeta {
+    /* TODO */
+}
+
+.tarjeta-destacada {
+    /* TODO */
+}
+
+.nivel {
+    /* TODO: posición absoluta dentro de la tarjeta */
+}
+
+.ruta-grid {
+    /* TODO: Grid */
+}
+
+.pasos {
+    /* TODO */
+}
+
+.avance {
+    /* TODO */
+}
+
+.preguntas-lista,
+.preguntas details {
+    /* TODO */
+}
+
+.cierre,
+.pie {
+    /* TODO: usa Flexbox */
+}
+
+a:hover,
+.boton:hover {
+    /* TODO: estado de interacción */
+}
+
+a:focus-visible,
+summary:focus-visible {
+    /* TODO: indicador visible de foco */
+}
+
+@media (max-width: 52rem) {
+    /* TODO: reorganiza hero, ruta y cabecera */
+}
+
+@media (max-width: 36rem) {
+    /* TODO: adapta catálogo, navegación y espacios */
+}
+
+@media (prefers-reduced-motion: reduce) {
+    /* TODO: reduce movimiento no esencial */
+}
