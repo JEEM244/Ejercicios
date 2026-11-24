@@ -22,6 +22,8 @@
     {"id":"05_Redes","status":"not_started"},
     {"id":"06_Entrenamiento","status":"not_started"},
     {"id":"07_Proyectos","status":"not_started"},
-    {"id":"08_Referencia","status":"not_started"}
+    {"id":"08_Referencia","status":"not_started"},
+    {"id":"09_Progreso","status":"not_started"},
+    {"id":"10_Herramienta_CLI","status":"not_started"}
   ]
 }
