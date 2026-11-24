@@ -38,13 +38,17 @@ Biblioteca personal de aprendizaje y práctica de programación. Reúne guías, 
 
 No es obligatorio seguir un orden. Los prerrequisitos se indican en cada tema.
 
+## Fuentes y elaboración
+
+Las guías y los ejercicios se preparan a partir de documentación oficial, estándares, manuales y recursos didácticos. El material se redacta de forma propia; no se copian cursos ni soluciones completas. Consulta el [catálogo de fuentes](FUENTES.md) y las referencias incluidas al final de cada guía.
+
 ## Idiomas
 
-La documentación está disponible en español y, progresivamente, en inglés. El archivo en inglés usa el sufijo `.en`; por ejemplo, `GUIA.en.md`.
+La documentación está disponible en español y, progresivamente, en inglés. Los archivos en inglés usan el sufijo .en; por ejemplo, GUIA.en.md.
 
 ## Estado del proyecto
 
-CodeVault comienza con su estructura, reglas editoriales y plantillas. El contenido de cada lenguaje y área se desarrollará por etapas y se marcará como pendiente, en progreso o revisado.
+La estructura, las reglas editoriales y las plantillas están preparadas. La primera unidad en desarrollo es HTML, que ya cuenta con guía, referencia rápida y ejercicios básicos de tablas, formularios y multimedia.
 
 Consulta [PLAN.md](PLAN.md) para ver las fases y [SPEC.md](SPEC.md) para las decisiones del proyecto.
 
@@ -54,7 +58,7 @@ Consulta [PLAN.md](PLAN.md) para ver las fases y [SPEC.md](SPEC.md) para las dec
 - Git, recomendado para mantener cambios e historial.
 - El entorno de ejecución o compilador correspondiente al lenguaje que quieras practicar.
 
-La biblioteca se puede consultar sin instalar la CLI. Los enlaces externos son complementarios: el contenido esencial debe poder estudiarse sin conexión.
+La biblioteca se puede consultar sin instalar la CLI. El material esencial debe poder estudiarse sin conexión.
 
 ## Uso responsable
 

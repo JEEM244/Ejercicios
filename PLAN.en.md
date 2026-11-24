@@ -6,9 +6,9 @@ CodeVault is developed in stages. Each phase should become useful before the sco
 |---|---|---|
 | 0. Specification | Goal, scope, and conventions | Complete |
 | 1. Repository foundation | Structure, master documents, and bilingual templates | Complete |
-| 2. Fundamentals | Logic, algorithms, data structures, and problem solving | Next |
-| 3. Technical libraries | Guides and references for the 11 languages | Planned |
-| 4. Practice | Exercises, challenges, debugging, and assessments | Planned |
+| 2. Fundamentals | Logic, algorithms, data structures, and problem solving | Preparing |
+| 3. Technical libraries | Guides and references for the 11 languages | In progress: HTML |
+| 4. Practice | Exercises, challenges, debugging, and assessments | In progress: HTML |
 | 5. Projects | Integrated projects by difficulty | Planned |
 | 6. CLI | Optional Python utility | Planned |
 | 7. Validation | Review links, examples, versions, and language consistency | Planned |

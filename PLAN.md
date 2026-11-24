@@ -7,8 +7,8 @@ CodeVault se construye por etapas. Cada fase debe quedar útil antes de ampliar 
 | 0. Especificación | Objetivo, alcance y convenciones | Completada |
 | 1. Base del repositorio | Estructura, documentos maestros y plantillas bilingües | Completada |
 | 2. Fundamentos | Lógica, algoritmos, estructuras y resolución de problemas | En preparación |
-| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | Pendiente |
-| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | Pendiente |
+| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML |
+| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML |
 | 5. Proyectos | Proyectos integradores por dificultad | Pendiente |
 | 6. CLI | Utilidad opcional en Python | Pendiente |
 | 7. Validación | Revisar enlaces, ejemplos, versiones e idiomas | Pendiente |
