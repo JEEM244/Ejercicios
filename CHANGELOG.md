@@ -2,6 +2,20 @@
 
 Los cambios importantes de CodeVault se registran aquí.
 
+## 0.7.0 - 2026-11-24
+
+### Agregado
+- Ampliación de CSS con flujo normal, desbordamiento y posicionamiento.
+- Guía de Flexbox y CSS Grid, con criterios para elegir entre ambos modelos.
+- Diseño adaptable con media queries y una introducción a container queries.
+- Variables personalizadas, transiciones, transformaciones, animaciones y movimiento reducido.
+- Ejercicios CSS-006 a CSS-011 con versiones bilingües, archivos iniciales y soluciones separadas.
+
+### Actualizado
+- Guías y referencias de CSS.
+- Índice de ejercicios CSS: ahora incluye once prácticas.
+- README de CSS y estado del plan de desarrollo.
+
 ## 0.6.0 - 2026-11-24
 
 ### Agregado
@@ -9,10 +23,6 @@ Los cambios importantes de CodeVault se registran aquí.
 - Explicaciones de sintaxis, selectores, combinadores, pseudoclases y pseudoelementos.
 - Temas de cascada, especificidad, herencia, modelo de caja, unidades, colores y tipografía.
 - Cinco ejercicios CSS-001 a CSS-005 con archivos iniciales, soluciones y explicaciones bilingües.
-
-### Actualizado
-- README de CSS e índices de ejercicios.
-- Plan de desarrollo: HTML inicial completado y CSS en desarrollo.
 
 ## 0.5.0 - 2026-11-24
 

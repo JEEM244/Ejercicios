@@ -7,8 +7,8 @@ CodeVault is developed in stages. Each phase should become useful before the sco
 | 0. Specification | Goal, scope, and conventions | Complete |
 | 1. Repository foundation | Structure, master documents, and bilingual templates | Complete |
 | 2. Fundamentals | Logic, algorithms, data structures, and problem solving | Preparing |
-| 3. Technical libraries | Guides and references for the 11 languages | In progress: beginner-to-intermediate HTML complete; CSS in progress |
-| 4. Practice | Exercises, challenges, debugging, and assessments | In progress: HTML-001 through HTML-010 and CSS-001 through CSS-005 |
+| 3. Technical libraries | Guides and references for the 11 languages | In progress: initial HTML complete; CSS beginner-intermediate developed |
+| 4. Practice | Exercises, challenges, debugging, and assessments | In progress: HTML-001 through HTML-010 and CSS-001 through CSS-011 |
 | 5. Projects | Integrated projects by difficulty | Planned |
 | 6. CLI | Optional Python utility | Planned |
 | 7. Validation | Review links, examples, versions, and language consistency | Planned |
@@ -19,9 +19,9 @@ The first HTML path covers fundamentals and intermediate topics. It includes a g
 
 ## CSS status
 
-The first fundamentals unit includes a guide, quick reference, and five exercises: linking external stylesheets, selectors, cascade, specificity, inheritance, box model, units, color, and typography.
+The initial CSS path covers beginner and intermediate topics: selectors, cascade, specificity, inheritance, box model, units, typography, positioning, Flexbox, Grid, responsive design, variables, transitions, and animations.
 
-The next expansion will cover normal flow and positioning, Flexbox, Grid, responsive design, custom properties, transitions, and animations.
+It contains two guides, two quick references, and eleven bilingual exercises with starter files and separate solutions. Practical browser and validator review remains before this unit can be considered closed.
 
 ## Work order
 

@@ -7,8 +7,8 @@ CodeVault se construye por etapas. Cada fase debe quedar útil antes de ampliar 
 | 0. Especificación | Objetivo, alcance y convenciones | Completada |
 | 1. Base del repositorio | Estructura, documentos maestros y plantillas bilingües | Completada |
 | 2. Fundamentos | Lógica, algoritmos, estructuras y resolución de problemas | En preparación |
-| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML básico-intermedio completado; CSS en desarrollo |
-| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010 y CSS-001 a CSS-005 |
+| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML inicial completado; CSS básico-intermedio desarrollado |
+| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010 y CSS-001 a CSS-011 |
 | 5. Proyectos | Proyectos integradores por dificultad | Pendiente |
 | 6. CLI | Utilidad opcional en Python | Pendiente |
 | 7. Validación | Revisar enlaces, ejemplos, versiones e idiomas | Pendiente |
@@ -19,9 +19,9 @@ La primera ruta de HTML cubre fundamentos y nivel intermedio. Incluye guía, ref
 
 ## Estado de CSS
 
-La primera unidad de fundamentos incluye guía, referencia rápida y cinco ejercicios: conexión de hojas externas, selectores, cascada, especificidad, herencia, modelo de caja, unidades, color y tipografía.
+La ruta inicial de CSS cubre fundamentos y nivel intermedio: selectores, cascada, especificidad, herencia, modelo de caja, unidades, tipografía, posicionamiento, Flexbox, Grid, diseño adaptable, variables, transiciones y animaciones.
 
-La siguiente ampliación cubrirá flujo y posicionamiento, Flexbox, Grid, diseño adaptable, variables, transiciones y animaciones.
+Incluye dos guías, dos referencias rápidas y once ejercicios bilingües con archivos iniciales y soluciones. Falta la revisión práctica en navegador y validador automático antes de considerar cerrada esta unidad.
 
 ## Orden de trabajo
 

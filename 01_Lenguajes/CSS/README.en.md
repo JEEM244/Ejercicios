@@ -1,45 +1,46 @@
 # CSS
 
-**Status:** first fundamentals unit available.  
-**Current level:** beginner.  
-**Focus:** external stylesheets, selectors, cascade, box model, color, and typography.
+**Status:** beginner and intermediate learning path available.  
+**Current level:** beginner-intermediate.  
+**Focus:** external stylesheets, selectors, cascade, box model, layout, responsive design, and motion.
 
-CSS (Cascading Style Sheets) describes the presentation of HTML documents. This directory separates explanations, quick lookup, exercises, and solutions.
+CSS (Cascading Style Sheets) describes the presentation of HTML documents. This directory separates explanations, references, exercises, and solutions.
 
 ## Material
 
-- [CSS guide](GUIA.en.md)
-- [Quick reference](REFERENCIA.en.md)
-- [Exercises](EJERCICIOS/README.en.md)
+- [Fundamentals guide](GUIA.en.md)
+- [Fundamentals quick reference](REFERENCIA.en.md)
+- [Layout and responsive design guide](GUIA_LAYOUT.en.md)
+- [Layout quick reference](REFERENCIA_LAYOUT.en.md)
+- [Exercises CSS-001 through CSS-011](EJERCICIOS/README.en.md)
 - [Solutions](SOLUCIONES/)
 
-## Available topics
+## Covered topics
 
 - Rule syntax and linking external stylesheets.
-- Type, class, ID, attribute selectors, and combinators.
-- Pseudo-classes and pseudo-elements.
+- Selectors, combinators, pseudo-classes, and pseudo-elements.
 - Cascade, specificity, and inheritance.
-- Box model, box-sizing, and units.
-- Colors, typography, and introductory display values.
-- Debugging and good practices.
+- Box model, units, colors, and typography.
+- Normal flow, overflow, and positioning.
+- Flexbox for one-axis layout.
+- Grid for two-dimensional layout.
+- Media queries, responsive design, and container queries.
+- Custom properties.
+- Transitions, transforms, animations, and reduced motion.
+- Debugging and visual accessibility practices.
 
-## Exercises
+## Practice path
 
-The first set contains five exercises, from linking an external stylesheet to building a card with readable typography and colors.
+Exercises CSS-001 through CSS-005 cover fundamentals. CSS-006 through CSS-011 combine positioning, Flexbox, Grid, responsive design, variables, and motion.
 
 ## Next expansion
 
-- Normal flow, positioning, and overflow.
-- Flexbox and alignment.
-- CSS Grid.
-- Responsive design and media queries.
-- Custom properties.
-- Transitions, transforms, and animations.
-- Forms, states, and visual accessibility.
+Specialized topics remain: subgrid, deeper container queries, modern color functions, cascade layers, nesting, large-scale CSS architecture, and detailed browser compatibility.
 
 ## Main sources
 
 - [MDN — CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [MDN — Layout](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout)
 - [W3C — CSS](https://www.w3.org/Style/CSS/)
 
 See also the [Spanish README](README.md).

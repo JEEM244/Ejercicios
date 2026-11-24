@@ -1,13 +1,19 @@
 # CSS exercises
 
-| ID | Topic | Level | Type |
-|---|---|---|---|
-| [CSS-001](CSS-001.en.md) | Link an external stylesheet | Beginner | Guided practice |
-| [CSS-002](CSS-002.en.md) | Selectors and states | Beginner | Guided practice |
-| [CSS-003](CSS-003.en.md) | Cascade, specificity, and inheritance | Beginner-intermediate | Guided practice |
-| [CSS-004](CSS-004.en.md) | Box model and dimensions | Beginner-intermediate | Guided practice |
-| [CSS-005](CSS-005.en.md) | Readable colors and typography | Beginner | Guided practice |
+| ID | Topic | Level |
+|---|---|---|
+| [CSS-001](CSS-001.en.md) | Link an external stylesheet | Beginner |
+| [CSS-002](CSS-002.en.md) | Selectors and states | Beginner |
+| [CSS-003](CSS-003.en.md) | Cascade, specificity, and inheritance | Beginner-intermediate |
+| [CSS-004](CSS-004.en.md) | Box model and dimensions | Beginner-intermediate |
+| [CSS-005](CSS-005.en.md) | Readable colors and typography | Beginner |
+| [CSS-006](CSS-006.en.md) | Normal flow and positioning | Intermediate |
+| [CSS-007](CSS-007.en.md) | Layout with Flexbox | Intermediate |
+| [CSS-008](CSS-008.en.md) | Two-dimensional layout with Grid | Intermediate |
+| [CSS-009](CSS-009.en.md) | Responsive design and media queries | Intermediate |
+| [CSS-010](CSS-010.en.md) | Custom properties and themes | Intermediate |
+| [CSS-011](CSS-011.en.md) | Transitions, transforms, and animations | Intermediate |
 
-Open each exercise starter, work on it before viewing the solution, and then compare your result. HTML and CSS files are stored inside each exercise folder.
+Try each exercise before comparing your work with SOLUCIONES. Each practice contains starter HTML and CSS in separate folders.
 
-IDs are unique. English documents use the .en suffix.
+English documents use the .en suffix.
