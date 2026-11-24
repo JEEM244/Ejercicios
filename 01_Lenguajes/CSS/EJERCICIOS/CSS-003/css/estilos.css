@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #263238;
+}
+
+/* Observa cómo compiten estas reglas. */
+p {
+    color: #334155;
+}
+
+.mensaje {
+    color: #15803d;
+}
+
+/* TODO: agrega una regla para .especial */
+
+/* TODO: agrega una regla dirigida al segundo mensaje con el ID de su contenedor */
+
+/* TODO: define un tamaño para h1 */

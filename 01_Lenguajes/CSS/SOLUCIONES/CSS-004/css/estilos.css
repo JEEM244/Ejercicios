@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 40rem;
+    margin: 1rem auto;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.75rem;
+    background-color: white;
+}
+
+.ilustracion {
+    min-height: 10rem;
+    background: linear-gradient(120deg, #dbeafe, #bfdbfe);
+    border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.contenido {
+    padding: 1.25rem;
+}

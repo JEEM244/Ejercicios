@@ -1,0 +1,12 @@
+/* CSS-002: usa combinadores y pseudoclases. */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* TODO: selecciona los li que son hijos directos de .menu */
+
+/* TODO: selecciona los enlaces dentro de .menu */
+
+/* TODO: define :hover y :focus-visible para enlaces */
+
+/* TODO: modifica los enlaces dentro de .recursos */

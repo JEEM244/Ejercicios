@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    background-color: #f1f5f9;
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 34rem;
+    padding: 1.5rem;
+    margin-inline: auto;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+}
+
+.etiqueta {
+    color: #475569;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+h1 {
+    margin-block: 0.5rem;
+    color: #1d4ed8;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.descripcion {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+a {
+    color: #1d4ed8;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 3px solid #d97706;
+    outline-offset: 3px;
+}

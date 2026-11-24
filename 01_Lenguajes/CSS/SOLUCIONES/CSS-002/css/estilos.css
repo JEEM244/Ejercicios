@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #263238;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu > li {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
+
+.menu a,
+.recursos a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.menu a:hover,
+.recursos a:hover {
+    text-decoration: underline;
+}
+
+.menu a:focus-visible,
+.recursos a:focus-visible {
+    outline: 3px solid #d97706;
+    outline-offset: 3px;
+}
+
+.recursos li > a {
+    font-weight: 700;
+}

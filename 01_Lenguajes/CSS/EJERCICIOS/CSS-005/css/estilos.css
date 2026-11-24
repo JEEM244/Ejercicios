@@ -1,0 +1,24 @@
+/* CSS-005: sustituye los comentarios por propiedades. */
+/* TODO: define color de texto, fondo y tipografía base */
+
+.tarjeta {
+    /* TODO: fondo, color, ancho, padding y borde */
+}
+
+.etiqueta {
+    /* TODO: tamaño y peso tipográfico */
+}
+
+h1 {
+    /* TODO: jerarquía del título */
+}
+
+.descripcion {
+    /* TODO: tamaño y line-height */
+}
+
+a {
+    /* TODO: color y decoración */
+}
+
+/* TODO: agrega un estado :focus-visible sin ocultar el foco */

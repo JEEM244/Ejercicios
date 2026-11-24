@@ -1,0 +1,16 @@
+/* CSS-004: completa las propiedades de tamaño y espacio. */
+/* TODO: aplica box-sizing border-box a todos los elementos y pseudoelementos */
+
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+/* TODO: crea la tarjeta con width, max-width, margin, border y border-radius */
+
+.ilustracion {
+    /* TODO: define una altura y un color de fondo */
+}
+
+/* TODO: agrega padding a .contenido */
