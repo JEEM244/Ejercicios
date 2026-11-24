@@ -2,6 +2,18 @@
 
 Los cambios importantes de CodeVault se registran aquí.
 
+## 0.6.0 - 2026-11-24
+
+### Agregado
+- Primera unidad de CSS con guía y referencia rápida en español e inglés.
+- Explicaciones de sintaxis, selectores, combinadores, pseudoclases y pseudoelementos.
+- Temas de cascada, especificidad, herencia, modelo de caja, unidades, colores y tipografía.
+- Cinco ejercicios CSS-001 a CSS-005 con archivos iniciales, soluciones y explicaciones bilingües.
+
+### Actualizado
+- README de CSS e índices de ejercicios.
+- Plan de desarrollo: HTML inicial completado y CSS en desarrollo.
+
 ## 0.5.0 - 2026-11-24
 
 ### Agregado

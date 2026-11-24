@@ -7,17 +7,21 @@ CodeVault se construye por etapas. Cada fase debe quedar útil antes de ampliar 
 | 0. Especificación | Objetivo, alcance y convenciones | Completada |
 | 1. Base del repositorio | Estructura, documentos maestros y plantillas bilingües | Completada |
 | 2. Fundamentos | Lógica, algoritmos, estructuras y resolución de problemas | En preparación |
-| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: ruta inicial HTML básico-intermedio completada; CSS siguiente |
-| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010 creados; revisión práctica pendiente |
+| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML básico-intermedio completado; CSS en desarrollo |
+| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010 y CSS-001 a CSS-005 |
 | 5. Proyectos | Proyectos integradores por dificultad | Pendiente |
 | 6. CLI | Utilidad opcional en Python | Pendiente |
 | 7. Validación | Revisar enlaces, ejemplos, versiones e idiomas | Pendiente |
 
-## Estado de la unidad HTML
+## Estado de HTML
 
-La primera ruta de HTML cubre fundamentos y nivel intermedio: estructura, semántica, tablas, formularios, multimedia, accesibilidad, metadatos, recursos externos, imágenes adaptables, contenido incrustado y elementos interactivos.
+La primera ruta de HTML cubre fundamentos y nivel intermedio. Incluye guía, referencia rápida, diez ejercicios y un proyecto integrador. La revisión de estructura y rutas está realizada; las pruebas de navegador y el validador automático siguen pendientes.
 
-La unidad incluye diez ejercicios, con un proyecto integrador de varias páginas (HTML-010). La revisión de estructura y rutas se realiza al publicar cambios; las pruebas de navegador y el validador automático siguen pendientes.
+## Estado de CSS
+
+La primera unidad de fundamentos incluye guía, referencia rápida y cinco ejercicios: conexión de hojas externas, selectores, cascada, especificidad, herencia, modelo de caja, unidades, color y tipografía.
+
+La siguiente ampliación cubrirá flujo y posicionamiento, Flexbox, Grid, diseño adaptable, variables, transiciones y animaciones.
 
 ## Orden de trabajo
 
