@@ -32,6 +32,7 @@
 - [Herramienta CLI](10_Herramienta_CLI/README.md)
 
 ## Plantillas
+- [Guía de uso](Plantillas/README.md)
 - [Tema](Plantillas/TEMA.md)
 - [Ejercicio](Plantillas/EJERCICIO.md)
 - [Solución](Plantillas/SOLUCION.md)
