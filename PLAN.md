@@ -7,8 +7,8 @@ CodeVault se construye por etapas. Cada fase debe quedar útil antes de ampliar 
 | 0. Especificación | Objetivo, alcance y convenciones | Completada |
 | 1. Base del repositorio | Estructura, documentos maestros y plantillas bilingües | Completada |
 | 2. Fundamentos | Lógica, algoritmos, estructuras y resolución de problemas | En preparación |
-| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML, CSS y ruta inicial de JavaScript |
-| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010, CSS-001 a CSS-012 y JS-001 a JS-006 |
+| 3. Bibliotecas técnicas | Guías y referencias de los 11 lenguajes | En desarrollo: HTML, CSS y JavaScript inicial |
+| 4. Entrenamiento | Ejercicios, retos, depuración y evaluaciones | En desarrollo: HTML-001 a HTML-010, CSS-001 a CSS-012 y JS-001 a JS-012 |
 | 5. Proyectos | Proyectos integradores por dificultad | En desarrollo: CSS-012 como proyecto integrador |
 | 6. CLI | Utilidad opcional en Python | Pendiente |
 | 7. Validación | Revisar enlaces, ejemplos, versiones e idiomas | Pendiente |
@@ -25,9 +25,12 @@ Incluye guías, referencias rápidas, once ejercicios y el proyecto integrador C
 
 ## Estado de JavaScript
 
-La ruta inicial de fundamentos incluye guía, referencia rápida y seis ejercicios con documentos en español e inglés. Cubre ejecución en navegador y Node.js, console.log(), const y let, tipos básicos, conversiones, operadores, condicionales, ciclos y funciones.
+JavaScript cuenta con dos rutas de estudio:
 
-Cada práctica tiene un archivo inicial con tareas TODO y una solución en una carpeta separada. El material no requiere frameworks ni paquetes externos. La siguiente ampliación será arreglos, objetos, métodos y alcance. Los archivos todavía requieren ejecución local y revisión práctica.
+1. **Fundamentos:** ejecución en navegador y Node.js, instrucciones, variables, tipos, conversiones, operadores, condicionales, ciclos y funciones. Incluye guía, referencia rápida y ejercicios JS-001 a JS-006.
+2. **Estructuras y depuración:** arreglos, índices, recorridos, métodos de arreglos y cadenas, objetos, arreglos de objetos, desestructuración, alcance global/de función/de bloque y depuración. Incluye guía, referencia rápida y ejercicios JS-007 a JS-012.
+
+Los doce ejercicios tienen enunciados en español e inglés, archivos iniciales y soluciones separadas con explicación. No requieren frameworks ni paquetes externos. La siguiente etapa será DOM y eventos, seguida de módulos y programación asíncrona. Falta ejecutar las prácticas en un entorno local de navegador o Node.js y revisar los resultados con distintos datos.
 
 ## Orden de trabajo
 

@@ -2,6 +2,19 @@
 
 Los cambios importantes de CodeVault se registran aquí.
 
+## 0.10.0 - 2026-11-24
+
+### Agregado
+- Segunda ruta de JavaScript sobre arreglos, métodos, cadenas, objetos, colecciones, desestructuración, alcance y depuración.
+- Guía y referencia rápida de estructuras y depuración en español e inglés.
+- Ejercicios JS-007 a JS-012 con enunciados bilingües y archivos iniciales.
+- Soluciones separadas con explicaciones bilingües.
+- Ejercicio de depuración con tres errores intencionales: acumulación, nombre de variable y alcance de bloque.
+
+### Actualizado
+- README de JavaScript, índices de ejercicios y plan de desarrollo.
+- Ruta de JavaScript: ahora contiene doce ejercicios entre fundamentos y estructuras.
+
 ## 0.9.1 - 2026-11-24
 
 ### Corregido
@@ -51,7 +64,7 @@ Los cambios importantes de CodeVault se registran aquí.
 - Primera unidad de CSS con guía y referencia rápida en español e inglés.
 - Explicaciones de sintaxis, selectores, combinadores, pseudoclases y pseudoelementos.
 - Temas de cascada, especificidad, herencia, modelo de caja, unidades, colores y tipografía.
-- Cinco ejercicios CSS-001 a CSS-005 con archivos iniciales, soluciones y explicaciones bilingües.
+- Cinco ejercicios CSS-001 a CSS-005 con versiones bilingües, archivos iniciales, soluciones y explicaciones.
 
 ## 0.5.0 - 2026-11-24
 

@@ -1,40 +1,56 @@
 # JavaScript
 
-**Status:** initial fundamentals path created.  
-**Current level:** beginner.  
-**Focus:** syntax, values, operators, decisions, loops, and functions.
+**Status:** initial fundamentals and data-structures paths created.  
+**Current level:** beginner-intermediate.  
+**Focus:** syntax, data structures, methods, scope, and debugging.
 
 JavaScript lets you write application logic and add interaction to websites. It can also run outside the browser with environments such as Node.js.
 
 ## Material
 
-- [Fundamentals guide](GUIA.md)
-- [Quick reference](REFERENCIA.md)
-- [Exercises JS-001 to JS-006](EJERCICIOS/README.en.md)
+- [Fundamentals guide](GUIA.en.md)
+- [Fundamentals quick reference](REFERENCIA.en.md)
+- [Data structures and debugging guide](GUIA_ESTRUCTURAS.en.md)
+- [Data structures quick reference](REFERENCIA_ESTRUCTURAS.en.md)
+- [Exercises JS-001 to JS-012](EJERCICIOS/README.en.md)
 - [Solutions](SOLUCIONES/)
 
-## Included topics
+## Topics covered
 
-- Running JavaScript in a browser and with Node.js.
-- Comments, statements, and output with console.log().
-- Variables with const and let.
-- Primitive types and conversions.
-- Arithmetic, comparison, and logical operators.
-- if, else, and switch conditionals.
-- for and while loops.
-- Functions, parameters, and return.
+- Running code in a browser and with Node.js.
+- Variables, types, conversions, and operators.
+- Conditionals, loops, and functions.
+- Arrays, indexes, and iteration.
+- forEach(), map(), filter(), find(), and reduce() methods.
+- String methods: trim(), includes(), slice(), and letter-case conversion.
+- Objects, properties, methods, and nested structures.
+- Arrays of objects and destructuring.
+- Global, function, and block scope.
+- Debugging, reading errors, and breakpoints.
 
-## Unit conventions
+## Organization
 
-- Initial examples do not require frameworks or external packages.
-- Each exercise can run with Node.js or be adapted to the browser console.
-- Starter files contain TODO instructions.
-- Solutions are stored separately. Try each task before opening its solution.
-- const is used by default and let is used when a value must change. var is introduced as older syntax, not as the recommended option.
+The path contains two study blocks:
+
+1. **Fundamentals:** JS-001 to JS-006.
+2. **Data structures and debugging:** JS-007 to JS-012.
+
+Each exercise includes a bilingual prompt, a starter file with instructions, and a solution in a separate folder. The material does not require frameworks or external packages.
+
+## Workflow
+
+1. Read the topic guide.
+2. Open the prompt and starter file.
+3. Complete the TODO instructions or fix the reported errors.
+4. Run the file with Node.js or in the browser console.
+5. Try different data.
+6. Compare with the solution only after attempting the task.
+
+const is used by default and let is used when a value must change. var is introduced as older syntax, not as the recommended option.
 
 ## Next stage
 
-Continue with arrays, objects, string and array methods, scope, and debugging. DOM, events, modules, and asynchronous programming will follow.
+Continue with the DOM and events to connect JavaScript with HTML pages. Modules and asynchronous programming will follow.
 
 ## Sources
 
