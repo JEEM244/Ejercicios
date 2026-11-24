@@ -48,7 +48,7 @@ La documentación está disponible en español y, progresivamente, en inglés. L
 
 ## Estado del proyecto
 
-La estructura y las reglas editoriales están preparadas. La ruta inicial de HTML cubre nivel básico-intermedio con diez ejercicios y un proyecto integrador. CSS ya cuenta con guías de fundamentos y layout, referencias rápidas, once ejercicios y un proyecto integrador de tres páginas con soluciones separadas.
+La estructura y las reglas editoriales están preparadas. HTML cubre nivel básico-intermedio con diez ejercicios y un proyecto integrador. CSS incluye guías de fundamentos y layout, referencias rápidas, once prácticas guiadas y un proyecto integrador con soluciones separadas. JavaScript ya cubre fundamentos, estructuras y depuración, además de una unidad de DOM y eventos: dieciocho ejercicios con archivos iniciales y soluciones independientes.
 
 Consulta [PLAN.md](PLAN.md) para ver las fases y [SPEC.md](SPEC.md) para las decisiones del proyecto.
 
@@ -57,6 +57,7 @@ Consulta [PLAN.md](PLAN.md) para ver las fases y [SPEC.md](SPEC.md) para las dec
 - Un editor de texto.
 - Git, recomendado para mantener cambios e historial.
 - El entorno de ejecución o compilador correspondiente al lenguaje que quieras practicar.
+- Un navegador moderno para las prácticas de HTML, CSS y JavaScript del lado del cliente.
 
 La biblioteca se puede consultar sin instalar la CLI. El material esencial debe poder estudiarse sin conexión.
 

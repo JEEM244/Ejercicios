@@ -37,13 +37,13 @@ Guides and exercises are prepared using official documentation, standards, manua
 
 ## Project status
 
-The repository structure, project rules, and templates are in place. The initial HTML path covers beginner-to-intermediate topics with ten exercises and a capstone project. CSS now has fundamentals and layout guides, quick references, and eleven exercises with starter files and separate solutions.
+The repository structure, project rules, and templates are in place. The initial HTML path covers beginner-to-intermediate topics with ten exercises and a capstone project. CSS has fundamentals and layout guides, quick references, eleven guided exercises, and an integrated capstone with separate solutions. JavaScript now covers fundamentals, data structures, debugging, and a DOM and events unit: eighteen exercises with starter files and separate solutions.
 
 See [the roadmap](PLAN.en.md) and [the specification](SPEC.en.md).
 
 ## Requirements
 
-A text editor and the runtime or compiler needed by the language you want to practice. Git is recommended. The CLI is optional.
+A text editor, Git (recommended), and the runtime or compiler needed by the language you want to practice. A modern browser is required for client-side HTML, CSS, and JavaScript exercises. The CLI is optional.
 
 Essential learning material should remain available offline.
 
