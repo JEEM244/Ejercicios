@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-017 | Registro de actividad</title>
+    <style>
+        body { max-width: 680px; margin: 3rem auto; padding: 0 1rem; font-family: Arial, sans-serif; line-height: 1.6; }
+        form { display: grid; gap: .8rem; }
+        label { display: grid; gap: .25rem; }
+        input, select, button { padding: .7rem; font: inherit; }
+        .resumen { margin-top: 1.5rem; padding: 1rem; border: 1px solid #aaa; border-radius: .5rem; }
+        #resultado { white-space: pre-line; }
+    </style>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Registro de actividad</h1>
+        <form id="formulario">
+            <label for="nombre">Nombre
+                <input id="nombre" name="nombre" type="text" required>
+            </label>
+            <label for="grupo">Grupo
+                <input id="grupo" name="grupo" type="text" required>
+            </label>
+            <label for="turno">Turno
+                <select id="turno" name="turno" required>
+                    <option value="">Selecciona un turno</option>
+                    <option value="Matutino">Matutino</option>
+                    <option value="Vespertino">Vespertino</option>
+                </select>
+            </label>
+            <button type="submit">Mostrar resumen</button>
+        </form>
+        <section class="resumen" aria-labelledby="titulo-resumen">
+            <h2 id="titulo-resumen">Resumen</h2>
+            <p id="resultado" aria-live="polite">Completa el formulario para ver el resumen.</p>
+        </section>
+    </main>
+</body>
+</html>
