@@ -1,0 +1,55 @@
+/* Estilos mínimos de apoyo; el objetivo principal es practicar HTML. */
+:root {
+    color-scheme: light;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    color: #202938;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 1.2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #aab2bd;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+label, input, select, textarea {
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+input, select, textarea {
+    max-width: 100%;
+    padding: 0.4rem;
+}
+
+.skip-link {
+    position: absolute;
+    left: -10000px;
+}
+
+.skip-link:focus {
+    position: static;
+}

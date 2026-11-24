@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: agrega una descripción -->
+    <title>Biblioteca de aprendizaje</title>
+    <!-- TODO: enlaza el icono, la hoja CSS y el JavaScript con defer -->
+</head>
+<body>
+    <!-- TODO: agrega un enlace para saltar al contenido principal -->
+
+    <header>
+        <h1>Biblioteca de aprendizaje</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#ruta">Ruta</a></li>
+                <li><a href="#preguntas">Preguntas frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section>
+            <h2>Aprende a tu ritmo</h2>
+            <p>Organiza tus temas y consulta recursos de programación.</p>
+
+            <figure>
+                <picture>
+                    <!-- TODO: agrega una versión vertical para pantallas pequeñas -->
+                    <source media="(max-width: 600px)" srcset="assets/portada-vertical.svg">
+                    <!-- TODO: completa srcset, sizes y alt -->
+                    <img src="assets/portada-horizontal-960.svg" width="960" height="540">
+                </picture>
+                <figcaption>Una ruta para aprender programación.</figcaption>
+            </figure>
+        </section>
+
+        <section id="ruta">
+            <h2>Mi ruta de estudio</h2>
+            <!-- TODO: crea una tabla accesible con al menos tres temas -->
+        </section>
+
+        <section>
+            <h2>Material adicional</h2>
+            <!-- TODO: agrega una imagen secundaria con loading="lazy" -->
+            <iframe
+                src="recursos.html"
+                title="Recursos complementarios"
+                width="600"
+                height="240"
+                loading="lazy"
+                sandbox
+            ></iframe>
+        </section>
+
+        <section id="preguntas">
+            <h2>Preguntas frecuentes</h2>
+            <!-- TODO: agrega tres elementos details y summary -->
+        </section>
+
+        <section>
+            <h2>Mi avance</h2>
+            <!-- TODO: agrega progress y meter con etiquetas -->
+            <p id="estado-js">JavaScript todavía no ha actualizado este mensaje.</p>
+            <noscript><p>La página funciona sin JavaScript, pero no mostrará mejoras interactivas.</p></noscript>
+        </section>
+
+        <p><a href="contacto.html">Solicitar asesoría de ejemplo</a></p>
+    </main>
+
+    <footer>
+        <p>Proyecto de práctica de CodeVault.</p>
+    </footer>
+</body>
+</html>

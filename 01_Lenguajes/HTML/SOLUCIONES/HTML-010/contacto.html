@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario ficticio de práctica de HTML.">
+    <title>Contacto | Biblioteca de aprendizaje</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Solicitud de asesoría</h1>
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="get">
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" minlength="2" maxlength="60" required>
+            </p>
+
+            <p>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" autocomplete="email" required>
+            </p>
+
+            <p>
+                <label for="area">Área de interés:</label>
+                <select id="area" name="area" required>
+                    <option value="">Selecciona un tema</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </p>
+
+            <fieldset>
+                <legend>Modalidad preferida</legend>
+                <p>
+                    <input type="radio" id="presencial" name="modalidad" value="presencial" required>
+                    <label for="presencial">Presencial</label>
+                </p>
+                <p>
+                    <input type="radio" id="remota" name="modalidad" value="remota">
+                    <label for="remota">Remota</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="consulta">Describe tu consulta:</label>
+                <textarea id="consulta" name="consulta" rows="5" minlength="10" maxlength="500" required></textarea>
+            </p>
+
+            <button type="submit">Probar validación del formulario</button>
+        </form>
+
+        <p><strong>Importante:</strong> este es un ejemplo estático. No envía ni guarda solicitudes. Utiliza datos ficticios para probarlo.</p>
+        <p><a href="index.html">Volver a la página principal</a></p>
+    </main>
+
+    <footer><p>Proyecto de práctica de CodeVault.</p></footer>
+</body>
+</html>

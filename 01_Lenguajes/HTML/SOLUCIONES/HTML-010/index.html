@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca de aprendizaje con recursos para estudiar programación.">
+    <title>Biblioteca de aprendizaje</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <header>
+        <h1>Biblioteca de aprendizaje</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#ruta">Ruta de estudio</a></li>
+                <li><a href="#preguntas">Preguntas frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section>
+            <h2>Aprende a tu ritmo</h2>
+            <p>Organiza tus temas y consulta recursos de programación desde una sola página.</p>
+
+            <figure>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="assets/portada-vertical.svg">
+                    <img
+                        src="assets/portada-horizontal-960.svg"
+                        srcset="assets/portada-horizontal-480.svg 480w,
+                                assets/portada-horizontal-960.svg 960w"
+                        sizes="(max-width: 700px) 100vw, 800px"
+                        width="960"
+                        height="540"
+                        alt="Ilustración de una ruta de aprendizaje que conecta varios temas de programación"
+                    >
+                </picture>
+                <figcaption>Una ruta para aprender programación paso a paso.</figcaption>
+            </figure>
+        </section>
+
+        <section id="ruta">
+            <h2>Mi ruta de estudio</h2>
+            <table>
+                <caption>Ejemplo de temas organizados por prioridad</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Tema</th>
+                        <th scope="col">Objetivo</th>
+                        <th scope="col">Nivel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">HTML</th>
+                        <td>Organizar la estructura de una página</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">CSS</th>
+                        <td>Definir la presentación visual</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">JavaScript</th>
+                        <td>Agregar lógica e interacción</td>
+                        <td>Intermedio</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Material adicional</h2>
+            <figure>
+                <img
+                    src="assets/tarjeta.svg"
+                    width="480"
+                    height="270"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Tarjeta gráfica con las palabras aprender, practicar y revisar"
+                >
+                <figcaption>Estudiar también significa practicar y revisar.</figcaption>
+            </figure>
+
+            <iframe
+                src="recursos.html"
+                title="Recursos complementarios de HTML"
+                width="600"
+                height="240"
+                loading="lazy"
+                sandbox
+            ></iframe>
+        </section>
+
+        <section id="preguntas">
+            <h2>Preguntas frecuentes</h2>
+
+            <details open>
+                <summary>¿Necesito aprender HTML antes de CSS?</summary>
+                <p>Conviene conocer la estructura HTML antes de trabajar en profundidad con los estilos CSS.</p>
+            </details>
+
+            <details>
+                <summary>¿HTML es un lenguaje de programación?</summary>
+                <p>No. HTML es un lenguaje de marcado que describe la estructura y el significado del contenido.</p>
+            </details>
+
+            <details>
+                <summary>¿Puedo usar esta página sin JavaScript?</summary>
+                <p>Sí. El contenido principal y los enlaces funcionan sin JavaScript; el script solo actualiza un mensaje de estado.</p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Mi avance</h2>
+            <p>
+                <label for="avance">Progreso de ejemplo:</label>
+                <progress id="avance" max="100" value="60">60%</progress>
+            </p>
+            <p>
+                <label for="dominio">Dominio estimado:</label>
+                <meter id="dominio" min="0" max="10" low="4" high="8" optimum="9" value="7">7 de 10</meter>
+            </p>
+            <p id="estado-js">Los recursos JavaScript todavía no han actualizado este mensaje.</p>
+            <noscript><p>La página funciona sin JavaScript, pero no mostrará mejoras interactivas.</p></noscript>
+        </section>
+
+        <p><a href="contacto.html">Solicitar asesoría de ejemplo</a></p>
+    </main>
+
+    <footer>
+        <p>Proyecto de práctica de CodeVault.</p>
+    </footer>
+</body>
+</html>

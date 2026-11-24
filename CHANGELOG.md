@@ -2,22 +2,29 @@
 
 Los cambios importantes de CodeVault se registran aquí.
 
+## 0.5.0 - 2026-11-24
+
+### Agregado
+- Proyecto integrador HTML-010 con páginas principal, contacto y recursos.
+- Archivos iniciales y solución de referencia para el proyecto.
+- Recursos SVG originales, estilos mínimos y script externo.
+- Criterios de aceptación y autoevaluación para revisar la práctica.
+
+### Actualizado
+- Índice de ejercicios HTML: ahora incluye diez prácticas.
+- README de HTML: ruta inicial básico-intermedio completada.
+- Se corrigieron los recursos CSS y JavaScript de inicio para HTML-007.
+
 ## 0.4.0 - 2026-11-24
 
 ### Agregado
 - Ampliación de HTML con metadatos, atributos globales y carga de recursos externos.
 - Explicación de defer, async y módulos JavaScript.
-- Secciones de imágenes adaptables, picture, srcset y sizes.
+- Imágenes adaptables, picture, srcset y sizes.
 - Contenido incrustado con iframe y uso restrictivo de sandbox.
 - Elementos interactivos nativos: details, summary y dialog.
 - Elementos de estado progress y meter.
 - Ejercicios HTML-007, HTML-008 y HTML-009 con versiones bilingües.
-- Archivos iniciales, ejemplos auxiliares y soluciones separadas.
-
-### Actualizado
-- Referencia rápida, README y catálogo de ejercicios HTML.
-- Nivel de HTML: básico-intermedio.
-- Guía y referencia rápida en inglés sincronizadas con la versión española.
 
 ## 0.3.0 - 2026-11-24
 
