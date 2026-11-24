@@ -15,7 +15,7 @@ To run JS-001 to JS-012 from the terminal, enter the exercise folder and use:
 node exercise.js
 ~~~
 
-For JS-013 to JS-018, open the \`index.html\` file in each exercise folder in a browser.
+For JS-013 to JS-018, open the `index.html` file in each exercise folder in a browser.
 
 ## Exercises
 

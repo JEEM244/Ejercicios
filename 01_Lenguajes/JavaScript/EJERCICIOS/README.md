@@ -15,7 +15,7 @@ Para ejecutar JS-001 a JS-012 desde la terminal, entra a la carpeta del ejercici
 node ejercicio.js
 ~~~
 
-Para JS-013 a JS-018, abre el archivo \`index.html\` de la carpeta del ejercicio en el navegador.
+Para JS-013 a JS-018, abre el archivo `index.html` de la carpeta del ejercicio en el navegador.
 
 ## Ejercicios
 
