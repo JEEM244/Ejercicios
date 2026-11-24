@@ -48,7 +48,7 @@ La documentación está disponible en español y, progresivamente, en inglés. L
 
 ## Estado del proyecto
 
-La estructura y las reglas editoriales están preparadas. La primera ruta de HTML ya cubre el nivel básico-intermedio e incluye diez ejercicios y un proyecto integrador. La siguiente unidad de lenguaje será CSS.
+La estructura y las reglas editoriales están preparadas. La ruta inicial de HTML cubre nivel básico-intermedio con diez ejercicios y un proyecto integrador. CSS ya cuenta con una guía de fundamentos, referencia rápida y cinco ejercicios de práctica. El desarrollo continúa por unidades.
 
 Consulta [PLAN.md](PLAN.md) para ver las fases y [SPEC.md](SPEC.md) para las decisiones del proyecto.
 
