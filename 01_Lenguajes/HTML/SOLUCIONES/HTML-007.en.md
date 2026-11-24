@@ -5,9 +5,9 @@
 ## Files
 
 - [HTML-007.html](HTML-007.html)
-- [estilos.css](HTML-007.css)
-- [app.js](HTML-007.js)
-- [favicon.svg](../../EJERCICIOS/assets/favicon.svg)
+- [Stylesheet](css/estilos.css)
+- [External JavaScript](js/app.js)
+- [SVG icon](assets/favicon.svg)
 
 ## Important decisions
 
