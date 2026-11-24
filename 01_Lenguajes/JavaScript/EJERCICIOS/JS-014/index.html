@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-014 | Contador</title>
+    <style>
+        body { max-width: 680px; margin: 3rem auto; padding: 0 1rem; font-family: Arial, sans-serif; line-height: 1.6; }
+        .acciones { display: flex; flex-wrap: wrap; gap: .5rem; }
+        button { padding: .7rem 1rem; cursor: pointer; }
+        output { font-size: 2rem; font-weight: bold; }
+    </style>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Contador</h1>
+        <p>Valor actual: <output id="valor" aria-live="polite">0</output></p>
+        <div class="acciones">
+            <button id="aumentar" type="button">Aumentar</button>
+            <button id="disminuir" type="button">Disminuir</button>
+            <button id="reiniciar" type="button">Reiniciar</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-015 | Vista previa</title>
+    <style>
+        body { max-width: 680px; margin: 3rem auto; padding: 0 1rem; font-family: Arial, sans-serif; line-height: 1.6; }
+        input { box-sizing: border-box; width: 100%; padding: .7rem; }
+        .panel { margin-top: 1rem; padding: 1rem; border: 1px solid #aaa; border-radius: .5rem; }
+    </style>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Vista previa de texto</h1>
+        <label for="entrada">Escribe algo (máximo 60 caracteres)</label>
+        <input id="entrada" type="text" maxlength="60">
+        <section class="panel" aria-labelledby="etiqueta-previa">
+            <h2 id="etiqueta-previa">Vista previa</h2>
+            <p id="previa" aria-live="polite">Tu texto aparecerá aquí</p>
+            <p>Caracteres: <output id="contador">0</output>/60</p>
+        </section>
+    </main>
+</body>
+</html>
