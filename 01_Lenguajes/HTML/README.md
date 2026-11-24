@@ -1,32 +1,35 @@
 # HTML
 
-<badge>En desarrollo</badge>
+**Estado:** en construcción.  
+**Nivel actual:** básico.  
+**Fuentes principales:** MDN y WHATWG.
 
-HTML (HyperText Markup Language) define la estructura y el significado del contenido de una página web. Es un lenguaje de marcado, no un lenguaje de programación.
+HTML (HyperText Markup Language) es un lenguaje de marcado que define la estructura y el significado del contenido de una página web. No es un lenguaje de programación.
 
 ## Material disponible
 
-- [Guía de HTML](GUIA.md)
+- [Guía de fundamentos y estructura](GUIA.md)
 - [Referencia rápida](REFERENCIA.md)
-- [Ejercicios](EJERCICIOS/README.md)
-- [Soluciones](SOLUCIONES/)
+- [HTML-001 — Crear un documento básico](EJERCICIOS/HTML-001.md)
+- [HTML-002 — Perfil personal semántico](EJERCICIOS/HTML-002.md)
+- [HTML-003 — Página semántica con navegación](EJERCICIOS/HTML-003.md)
 
-## Temas que se desarrollarán
+## Organización
 
-- Estructura de un documento HTML.
-- Elementos, etiquetas y atributos.
-- Texto, listas y enlaces.
-- Imágenes, audio y video.
-- Tablas y formularios.
-- HTML semántico y accesibilidad.
-- Metadatos y carga de recursos.
-- Validación del documento.
+- GUIA.md: explicaciones por tema.
+- REFERENCIA.md: consulta rápida.
+- EJEMPLOS/: demostraciones pequeñas y comentadas.
+- EJERCICIOS/: enunciados y archivos iniciales.
+- SOLUCIONES/: soluciones separadas.
 
-## Enfoque
+## Siguiente contenido
 
-HTML define estructura y semántica; CSS controla la presentación y JavaScript añade comportamiento. Los ejemplos de esta sección utilizan HTML moderno.
+La siguiente ampliación cubrirá tablas, formularios, multimedia, accesibilidad y validación de documentos.
 
-## Fuentes
+## Fuentes consultadas
 
 - [MDN — HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+- [MDN — Elementos HTML](https://developer.mozilla.org/es/docs/Web/HTML/Element)
 - [WHATWG — HTML Living Standard](https://html.spec.whatwg.org/)
+
+Consulta también el [README en inglés](README.en.md).
