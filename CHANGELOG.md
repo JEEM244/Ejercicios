@@ -2,19 +2,29 @@
 
 Los cambios importantes de CodeVault se registran aquí.
 
+## 0.4.0 - 2026-11-24
+
+### Agregado
+- Ampliación de HTML con metadatos, atributos globales y carga de recursos externos.
+- Explicación de defer, async y módulos JavaScript.
+- Secciones de imágenes adaptables, picture, srcset y sizes.
+- Contenido incrustado con iframe y uso restrictivo de sandbox.
+- Elementos interactivos nativos: details, summary y dialog.
+- Elementos de estado progress y meter.
+- Ejercicios HTML-007, HTML-008 y HTML-009 con versiones bilingües.
+- Archivos iniciales, ejemplos auxiliares y soluciones separadas.
+
+### Actualizado
+- Referencia rápida, README y catálogo de ejercicios HTML.
+- Nivel de HTML: básico-intermedio.
+- Guía y referencia rápida en inglés sincronizadas con la versión española.
+
 ## 0.3.0 - 2026-11-24
 
 ### Agregado
-- Ampliación de la guía HTML con tablas, formularios, audio, video, accesibilidad y validación.
-- Referencia rápida de elementos, atributos, formularios y multimedia.
-- Ejercicios HTML-004, HTML-005 y HTML-006 con archivos iniciales.
-- Soluciones separadas para las tres prácticas.
+- Ampliación de HTML con tablas, formularios, audio, video, accesibilidad y validación.
+- Ejercicios HTML-004, HTML-005 y HTML-006 con archivos iniciales y soluciones separadas.
 - Ejemplo de subtítulos WebVTT y transcripción de muestra.
-- Versiones en inglés de la guía, referencia, ejercicios y explicaciones de soluciones.
-
-### Actualizado
-- Índices de ejercicios y páginas README de HTML.
-- Estado de las fases de biblioteca técnica y entrenamiento: HTML en desarrollo.
 
 ## 0.2.0 - 2026-11-23
 

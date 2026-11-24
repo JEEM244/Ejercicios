@@ -180,3 +180,85 @@ Automated validation does not replace accessibility testing or manual review.
 - [MDN — Table accessibility](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Table_accessibility)
 - [MDN — Audio and video](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_video_and_audio)
 - [Nu HTML Checker](https://validator.w3.org/nu/)
+
+
+## Metadata and resources
+
+| Element | Purpose |
+|---|---|
+| meta name="description" | Page description |
+| link rel="icon" | Page icon |
+| link rel="stylesheet" | External stylesheet |
+| script src | External JavaScript file |
+| noscript | Fallback content when scripts are unavailable |
+| base | Base URL for resolving relative paths; use carefully |
+
+### Script loading
+
+| Form | Behavior |
+|---|---|
+| script without attributes | May block HTML parsing while loading and executing |
+| script defer | Executes after HTML parsing and preserves order |
+| script async | Executes when downloaded; order is not guaranteed |
+| script type="module" | Uses modules and is deferred by default |
+
+## Global attributes
+
+| Attribute | Purpose |
+|---|---|
+| id | Unique identifier |
+| class | Reusable group |
+| lang | Language |
+| dir | Text direction: ltr or rtl |
+| title | Advisory information |
+| hidden | Hides the element |
+| tabindex | Focus order; usually 0 or -1 |
+| contenteditable | Allows editing page content |
+| spellcheck | Spelling check |
+| data-* | Custom non-sensitive data |
+
+Boolean attributes are enabled by their presence. Writing hidden="false" does not disable it; remove the attribute instead.
+
+## Responsive images
+
+- src: fallback image.
+- srcset: image candidates.
+- sizes: expected image width in context.
+- picture: supports an alternative composition.
+- source: defines a source inside picture, audio, or video.
+- width and height: intrinsic dimensions.
+- loading="lazy": deferred loading.
+- decoding="async": asynchronous decoding hint.
+
+## Embedded content
+
+| Element or attribute | Purpose |
+|---|---|
+| figure | Groups self-contained content |
+| figcaption | Figure caption |
+| iframe | Embeds another document |
+| title on iframe | Describes embedded content |
+| sandbox | Restricts embedded document capabilities |
+| loading="lazy" | Defers loading when appropriate |
+
+## Interactive and status elements
+
+| Element | Purpose |
+|---|---|
+| details | Expandable region |
+| summary | Interactive heading for details |
+| dialog | Dialog box |
+| progress | Task progress |
+| meter | Measurement within a range |
+
+dialog can be opened non-modally using the open attribute. Opening it as a modal dialog from a button normally uses JavaScript and showModal().
+
+## Additional references
+
+- [MDN — Document metadata](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata)
+- [MDN — Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes)
+- [MDN — script element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script)
+- [MDN — Responsive images](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
+- [MDN — iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe)
+- [MDN — details](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details)
+- [MDN — dialog](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog)

@@ -354,3 +354,262 @@ A document with no validator errors is not automatically accessible, secure, or 
 - [MDN — HTML and accessibility](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML)
 - [Nu HTML Checker](https://validator.w3.org/nu/)
 - [WHATWG — HTML Living Standard](https://html.spec.whatwg.org/)
+
+
+## 16. Document metadata
+
+Metadata describes information about a page. It is normally placed inside head and does not appear as the main page content.
+
+~~~html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A practical guide to learning HTML.">
+    <title>HTML Guide</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+~~~
+
+- charset declares the text encoding.
+- viewport helps the page adapt to the device's visible area.
+- description provides a summary of the page. Some search engines may use it, but this is not guaranteed.
+- title sets the document title.
+- link rel="icon" associates an icon with the page.
+
+The base element can set a base URL for resolving relative paths. Use it carefully because it changes how all relative URLs in the document are resolved. For ordinary pages, clear paths without base are usually easier to maintain.
+
+## 17. Global attributes
+
+Global attributes can be used on many HTML elements. Their effect depends on the element and context.
+
+| Attribute | Purpose |
+|---|---|
+| id | Unique identifier within the document |
+| class | Groups elements for styles or scripts |
+| lang | Declares the language of the content |
+| dir | Sets text direction, such as ltr or rtl |
+| title | Adds advisory information |
+| hidden | Indicates that the element should not be displayed |
+| tabindex | Adjusts how an element participates in keyboard focus |
+| contenteditable | Allows content to be edited in the browser |
+| spellcheck | Indicates whether spelling may be checked |
+| data-* | Stores custom data associated with an element |
+
+~~~html
+<article id="html-topic" class="card topic" lang="en" data-level="beginner">
+    <h2>Introduction to HTML</h2>
+    <p>This article contains the fundamentals.</p>
+</article>
+~~~
+
+Important rules:
+
+- An id must identify only one element in the document.
+- A class can be reused on many elements.
+- lang can be set on html and overridden on a part written in another language.
+- hidden should not be used to hide important information from specific users.
+- For tabindex, 0 and -1 usually cover common cases. Avoid positive values.
+- data-* is for custom technical data, not passwords, tokens, or private information.
+- contenteditable allows editing in the page but does not automatically save changes to a server.
+- title should not replace a visible label or a necessary instruction.
+
+## 18. Loading external CSS and JavaScript
+
+HTML can link external files. CSS defines presentation and JavaScript adds behavior.
+
+~~~html
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+</head>
+~~~
+
+The rel attribute indicates the relationship between the resource and the document; href specifies its path.
+
+With defer, a classic external script downloads while the document is parsed and executes after HTML parsing finishes, before the DOMContentLoaded event. Deferred scripts preserve their document order.
+
+| Form | General behavior |
+|---|---|
+| script without attributes | May pause HTML parsing while loading and executing |
+| script defer | Executes after HTML parsing and preserves order |
+| script async | Executes when downloaded; order is not guaranteed |
+| script type="module" | Uses JavaScript modules and is deferred by default |
+
+Do not add async or defer to inline scripts without src: those attributes do not control their execution in the same way. Use async only when a script is independent and does not rely on the order of other scripts.
+
+~~~html
+<noscript>
+    <p>This page provides a basic version without interactive features.</p>
+</noscript>
+~~~
+
+noscript allows a message or alternative content when scripts are unavailable or disabled.
+
+## 19. Responsive images
+
+An image can have several versions so the browser can choose the most suitable one for the available space and screen.
+
+~~~html
+<img
+    src="images/photo-960.jpg"
+    srcset="images/photo-480.jpg 480w,
+            images/photo-960.jpg 960w,
+            images/photo-1440.jpg 1440w"
+    sizes="(max-width: 600px) 100vw, 700px"
+    width="960"
+    height="640"
+    alt="View of a workspace"
+>
+~~~
+
+- src specifies a fallback image.
+- srcset offers candidate images and their widths.
+- sizes tells the browser how much space the image is expected to use.
+- width and height communicate its dimensions and help reserve space before it loads.
+- alt describes the information or function of the image.
+
+picture can offer different compositions, for example a landscape image for large screens and a portrait image for small screens.
+
+~~~html
+<picture>
+    <source media="(max-width: 600px)" srcset="images/cover-portrait.jpg">
+    <img
+        src="images/cover-landscape.jpg"
+        width="1200"
+        height="675"
+        alt="Overview of the project"
+    >
+</picture>
+~~~
+
+The img element is required inside picture and acts as the default option. Keep alternative text on img.
+
+~~~html
+<img
+    src="images/gallery.jpg"
+    width="800"
+    height="600"
+    loading="lazy"
+    decoding="async"
+    alt="Gallery detail"
+>
+~~~
+
+loading="lazy" allows image loading to be delayed until it is near the visible area. It is useful for images farther down the page, but should not automatically be applied to the main image visible when the page opens. decoding="async" is a hint that the browser may decode the image asynchronously.
+
+## 20. Figures and embedded content
+
+figure groups self-contained content, such as an image, diagram, or example, with an optional description through figcaption.
+
+~~~html
+<figure>
+    <img src="images/diagram.jpg" alt="Diagram showing the parts of a web page">
+    <figcaption>Main parts of a web document.</figcaption>
+</figure>
+~~~
+
+iframe embeds another document inside the page. Use it only when the external content is needed and trustworthy.
+
+~~~html
+<iframe
+    src="content/guide.html"
+    title="HTML supplementary guide"
+    width="600"
+    height="300"
+    loading="lazy"
+    sandbox
+></iframe>
+~~~
+
+- src specifies the document to embed.
+- title explains the frame content to people using assistive technologies.
+- width and height set its initial dimensions.
+- loading="lazy" can delay loading when it is far from the visible area.
+- sandbox applies restrictions to the embedded document.
+
+Do not add sandbox permissions without understanding why the content needs them. Each additional permission reduces restrictions. Also check the external site's policies: some sites do not allow embedding.
+
+## 21. Native interactive elements
+
+details creates a section that can be expanded and collapsed. summary contains the interactive heading text and must be the first child of details.
+
+~~~html
+<details>
+    <summary>What is HTML?</summary>
+    <p>It is a markup language that organizes the content of a page.</p>
+</details>
+~~~
+
+When the open attribute is added, the content starts expanded.
+
+dialog represents a dialog box. It can be displayed as a non-modal dialog with the open attribute or opened as a modal dialog from JavaScript using showModal().
+
+~~~html
+<dialog open>
+    <h2>Notice</h2>
+    <p>This dialog is open as a non-modal example.</p>
+    <form method="dialog">
+        <button type="submit">Close</button>
+    </form>
+</dialog>
+~~~
+
+method="dialog" allows the dialog to close when its internal form is submitted. Opening a modal dialog from a button normally requires JavaScript. Do not add tabindex to dialog.
+
+progress represents task progress:
+
+~~~html
+<label for="progress">Course progress:</label>
+<progress id="progress" max="100" value="65">65%</progress>
+~~~
+
+meter represents a measurement within a known range:
+
+~~~html
+<label for="level">Skill level:</label>
+<meter id="level" min="0" max="10" low="4" high="8" optimum="9" value="7">7 out of 10</meter>
+~~~
+
+Do not use progress and meter as if they were the same: one represents task progress and the other a measurement within a range.
+
+## 22. Boolean attributes
+
+Some attributes work through presence or absence. If they appear on an element, they are considered enabled; if they are absent, they are disabled.
+
+Examples include required, disabled, checked, selected, multiple, controls, open, and hidden.
+
+~~~html
+<input type="text" required>
+<button type="button" disabled>Disabled</button>
+<details open>
+    <summary>Information</summary>
+    <p>Content visible at first.</p>
+</details>
+~~~
+
+For a boolean attribute, writing open="false" does not disable it: its presence still enables it. Remove the attribute to disable it.
+
+## 23. Final review checklist
+
+- [ ] The document language is declared.
+- [ ] Essential metadata is inside head.
+- [ ] Titles accurately describe the page and its hierarchy.
+- [ ] Links have destinations and descriptive text.
+- [ ] Images have alternatives and suitable dimensions.
+- [ ] Images that are not near the top are lazy-loaded when appropriate.
+- [ ] External resources use correct paths.
+- [ ] Forms have labels and server-side validation when they receive data.
+- [ ] Embedded frames have a title and limited permissions.
+- [ ] Controls can be used with a keyboard.
+- [ ] The document has been checked with a validator and a manual review.
+
+## Additional sources
+
+- [MDN — Document metadata](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata)
+- [MDN — Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes)
+- [MDN — script element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script)
+- [MDN — Responsive images](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
+- [MDN — picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture)
+- [MDN — iframe element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe)
+- [MDN — details element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details)
+- [MDN — dialog element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog)

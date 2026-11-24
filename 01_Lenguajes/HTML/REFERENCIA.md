@@ -180,3 +180,85 @@ La validación automática no reemplaza las pruebas de accesibilidad ni la revis
 - [MDN — Tablas accesibles](https://developer.mozilla.org/es/docs/Learn_web_development/Core/Structuring_content/Table_accessibility)
 - [MDN — Audio y video](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_video_and_audio)
 - [Nu HTML Checker](https://validator.w3.org/nu/)
+
+
+## Metadatos y recursos
+
+| Elemento | Función |
+|---|---|
+| meta name="description" | Descripción de la página |
+| link rel="icon" | Icono de la página |
+| link rel="stylesheet" | Hoja de estilos externa |
+| script src | Archivo JavaScript externo |
+| noscript | Contenido alternativo cuando no hay scripts disponibles |
+| base | URL base para resolver rutas relativas; usar con cuidado |
+
+### Carga de scripts
+
+| Forma | Comportamiento |
+|---|---|
+| script sin atributos | Puede bloquear el análisis HTML mientras carga y ejecuta |
+| script defer | Ejecuta después del análisis HTML y conserva el orden |
+| script async | Ejecuta al terminar la descarga; no garantiza orden |
+| script type="module" | Usa módulos y se difiere por defecto |
+
+## Atributos globales
+
+| Atributo | Uso |
+|---|---|
+| id | Identificador único |
+| class | Grupo reutilizable |
+| lang | Idioma |
+| dir | Dirección del texto: ltr o rtl |
+| title | Información consultiva |
+| hidden | Oculta el elemento |
+| tabindex | Orden de foco; normalmente 0 o -1 |
+| contenteditable | Permite editar contenido en la página |
+| spellcheck | Revisión ortográfica |
+| data-* | Datos personalizados no sensibles |
+
+Los atributos booleanos se activan por presencia. Escribir hidden="false" no lo desactiva: hay que quitar el atributo.
+
+## Imágenes adaptables
+
+- src: imagen de respaldo.
+- srcset: candidatos de imagen.
+- sizes: ancho previsto de la imagen según el contexto.
+- picture: permite elegir una composición alternativa.
+- source: define una fuente dentro de picture, audio o video.
+- width y height: dimensiones intrínsecas.
+- loading="lazy": carga diferida.
+- decoding="async": sugerencia de decodificación asíncrona.
+
+## Contenido incrustado
+
+| Elemento o atributo | Uso |
+|---|---|
+| figure | Agrupa contenido autónomo |
+| figcaption | Descripción de figure |
+| iframe | Incrusta otro documento |
+| title en iframe | Describe el contenido incrustado |
+| sandbox | Limita las capacidades del documento incrustado |
+| loading="lazy" | Retrasa la carga cuando corresponde |
+
+## Elementos interactivos y de estado
+
+| Elemento | Uso |
+|---|---|
+| details | Región expandible |
+| summary | Título interactivo de details |
+| dialog | Cuadro de diálogo |
+| progress | Avance de una tarea |
+| meter | Medida dentro de un rango |
+
+dialog puede abrirse de manera no modal mediante el atributo open. Para abrirlo como modal desde un botón normalmente se utiliza JavaScript con showModal().
+
+## Referencias adicionales
+
+- [MDN — Metadatos del documento](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata)
+- [MDN — Atributos globales](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes)
+- [MDN — Elemento script](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script)
+- [MDN — Imágenes adaptables](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
+- [MDN — iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe)
+- [MDN — details](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details)
+- [MDN — dialog](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog)

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas frecuentes</title>
+</head>
+<body>
+    <main>
+        <h1>Preguntas frecuentes</h1>
+
+        <section>
+            <h2>Sobre el aprendizaje</h2>
+
+            <details open>
+                <summary>¿Qué es HTML?</summary>
+                <p>Es un lenguaje de marcado que organiza la estructura y el significado del contenido de una página web.</p>
+            </details>
+
+            <details>
+                <summary>¿Para qué sirve CSS?</summary>
+                <p>CSS define la presentación visual de los documentos HTML.</p>
+            </details>
+
+            <details>
+                <summary>¿Para qué se utiliza JavaScript?</summary>
+                <p>JavaScript permite añadir lógica y comportamiento interactivo a una página.</p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Aviso</h2>
+            <dialog open>
+                <h3>Información de la práctica</h3>
+                <p>Este es un diálogo abierto en modo no modal.</p>
+                <form method="dialog">
+                    <button type="submit">Cerrar aviso</button>
+                </form>
+            </dialog>
+        </section>
+
+        <section>
+            <h2>Mi avance</h2>
+            <p>
+                <label for="avance">Progreso de la unidad:</label>
+                <progress id="avance" max="100" value="65">65%</progress>
+            </p>
+            <p>
+                <label for="dominio">Dominio estimado:</label>
+                <meter id="dominio" min="0" max="10" low="4" high="8" optimum="9" value="7">7 de 10</meter>
+            </p>
+        </section>
+    </main>
+</body>
+</html>

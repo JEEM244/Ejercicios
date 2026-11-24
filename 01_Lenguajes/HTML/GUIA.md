@@ -356,3 +356,262 @@ Que el validador no marque errores no significa que la página sea automáticame
 - [MDN — HTML y accesibilidad](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML)
 - [Nu HTML Checker](https://validator.w3.org/nu/)
 - [WHATWG — HTML Living Standard](https://html.spec.whatwg.org/)
+
+
+## 16. Metadatos del documento
+
+Los metadatos describen información sobre la página. Normalmente se colocan dentro de head y no aparecen como contenido principal.
+
+~~~html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía práctica para aprender HTML.">
+    <title>Guía de HTML</title>
+    <link rel="icon" href="imagenes/favicon.svg" type="image/svg+xml">
+</head>
+~~~
+
+- charset declara cómo se codifica el texto.
+- viewport ayuda a que el ancho de la página se adapte al dispositivo.
+- description contiene un resumen de la página. Algunos buscadores pueden utilizarlo, pero no está garantizado.
+- title define el título del documento.
+- link rel="icon" relaciona un icono con la página.
+
+El elemento base puede establecer una URL base para resolver rutas relativas. Debe utilizarse con cuidado porque modifica cómo se resuelven todas las rutas relativas del documento. En páginas comunes suele ser mejor escribir rutas claras sin base.
+
+## 17. Atributos globales
+
+Los atributos globales pueden utilizarse en muchos elementos HTML. Su efecto depende del elemento y del contexto.
+
+| Atributo | Uso |
+|---|---|
+| id | Identificador único dentro del documento |
+| class | Agrupa elementos para estilos o scripts |
+| lang | Declara el idioma del contenido |
+| dir | Define la dirección del texto, como ltr o rtl |
+| title | Añade información consultiva |
+| hidden | Indica que el elemento no debe mostrarse |
+| tabindex | Ajusta cómo participa un elemento en el foco del teclado |
+| contenteditable | Permite editar el contenido en el navegador |
+| spellcheck | Indica si se revisa la ortografía |
+| data-* | Guarda datos personalizados asociados al elemento |
+
+~~~html
+<article id="tema-html" class="tarjeta tema" lang="es" data-nivel="basico">
+    <h2>Introducción a HTML</h2>
+    <p>Este artículo contiene los fundamentos.</p>
+</article>
+~~~
+
+Reglas importantes:
+
+- Un id debe identificar un solo elemento en el documento.
+- Una class puede repetirse en muchos elementos.
+- lang puede establecerse en html y sobrescribirse en una parte escrita en otro idioma.
+- hidden no debe utilizarse para ocultar información importante a ciertos usuarios.
+- Para tabindex, 0 y -1 suelen cubrir los casos habituales. Evita valores positivos.
+- data-* sirve para datos técnicos no sensibles; no guardes contraseñas, tokens ni información privada.
+- contenteditable permite editar contenido en la página, pero no guarda esos cambios en un servidor.
+- title no debe reemplazar una etiqueta visible o una instrucción necesaria.
+
+## 18. Cargar CSS y JavaScript externos
+
+HTML puede enlazar archivos externos. CSS define la presentación y JavaScript añade comportamiento.
+
+~~~html
+<head>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js" defer></script>
+</head>
+~~~
+
+El atributo rel indica la relación del recurso con el documento y href indica su ruta.
+
+Con defer, un script clásico externo se descarga mientras se analiza el documento y se ejecuta después de terminar el análisis HTML, antes del evento DOMContentLoaded. Los scripts defer mantienen el orden en el que aparecen.
+
+| Forma | Comportamiento general |
+|---|---|
+| script sin atributos | Puede detener el análisis HTML mientras se descarga y ejecuta |
+| script defer | Se ejecuta después del análisis HTML y conserva el orden |
+| script async | Se ejecuta cuando termina de descargarse; no garantiza el orden |
+| script type="module" | Utiliza módulos JavaScript y se difiere de forma predeterminada |
+
+No agregues async o defer a scripts en línea que no tienen src: esos atributos no controlan su ejecución de la misma forma. Usa async solo cuando el script sea independiente y no dependa del orden de otros scripts.
+
+~~~html
+<noscript>
+    <p>Esta página ofrece una versión básica sin funciones interactivas.</p>
+</noscript>
+~~~
+
+noscript permite mostrar un mensaje o contenido alternativo cuando los scripts no están disponibles o desactivados.
+
+## 19. Imágenes adaptables
+
+Una imagen puede tener varias versiones para que el navegador elija la más adecuada según el espacio disponible y la pantalla.
+
+~~~html
+<img
+    src="imagenes/foto-960.jpg"
+    srcset="imagenes/foto-480.jpg 480w,
+            imagenes/foto-960.jpg 960w,
+            imagenes/foto-1440.jpg 1440w"
+    sizes="(max-width: 600px) 100vw, 700px"
+    width="960"
+    height="640"
+    alt="Vista de un espacio de trabajo"
+>
+~~~
+
+- src indica una imagen de respaldo.
+- srcset ofrece imágenes candidatas y sus anchos.
+- sizes indica al navegador cuánto espacio se espera que ocupe la imagen.
+- width y height comunican sus dimensiones y ayudan a reservar espacio antes de cargarla.
+- alt describe la información o función de la imagen.
+
+picture permite ofrecer diferentes composiciones, por ejemplo una imagen horizontal para pantallas grandes y una vertical para pantallas pequeñas.
+
+~~~html
+<picture>
+    <source media="(max-width: 600px)" srcset="imagenes/portada-vertical.jpg">
+    <img
+        src="imagenes/portada-horizontal.jpg"
+        width="1200"
+        height="675"
+        alt="Vista general del proyecto"
+    >
+</picture>
+~~~
+
+El elemento img es obligatorio dentro de picture y funciona como opción predeterminada. Mantén el texto alternativo en img.
+
+~~~html
+<img
+    src="imagenes/galeria.jpg"
+    width="800"
+    height="600"
+    loading="lazy"
+    decoding="async"
+    alt="Detalle de la galería"
+>
+~~~
+
+loading="lazy" permite retrasar la carga hasta que una imagen se acerque a la zona visible. Es útil para imágenes más abajo en la página, pero no conviene aplicarlo automáticamente a la imagen principal que aparece al abrirla. decoding="async" es una sugerencia para que el navegador decodifique la imagen de forma asíncrona.
+
+## 20. Figuras y contenido incrustado
+
+figure agrupa contenido autónomo, como una imagen, un diagrama o un ejemplo, junto con una descripción opcional mediante figcaption.
+
+~~~html
+<figure>
+    <img src="imagenes/diagrama.jpg" alt="Diagrama de las partes de una página web">
+    <figcaption>Partes principales de un documento web.</figcaption>
+</figure>
+~~~
+
+iframe incrusta otro documento dentro de la página. Úsalo solo cuando el contenido externo sea necesario y confiable.
+
+~~~html
+<iframe
+    src="contenido/guia.html"
+    title="Guía complementaria de HTML"
+    width="600"
+    height="300"
+    loading="lazy"
+    sandbox
+></iframe>
+~~~
+
+- src indica el documento que se va a incrustar.
+- title explica qué contiene el marco para quienes utilizan tecnologías de asistencia.
+- width y height definen sus dimensiones iniciales.
+- loading="lazy" puede retrasar la carga si está lejos de la zona visible.
+- sandbox aplica restricciones al documento incrustado.
+
+No agregues permisos a sandbox sin entender para qué los necesita el contenido. Cada permiso adicional reduce las restricciones. Comprueba también las políticas del sitio externo: algunos sitios no permiten ser incrustados.
+
+## 21. Elementos interactivos nativos
+
+details crea una sección que se puede expandir y contraer. summary contiene el texto que funciona como encabezado interactivo y debe ser el primer hijo de details.
+
+~~~html
+<details>
+    <summary>¿Qué es HTML?</summary>
+    <p>Es un lenguaje de marcado que organiza el contenido de una página.</p>
+</details>
+~~~
+
+Si se agrega el atributo open, el contenido comienza desplegado.
+
+dialog representa un cuadro de diálogo. Puede mostrarse como un diálogo no modal con el atributo open o abrirse de forma modal desde JavaScript mediante showModal().
+
+~~~html
+<dialog open>
+    <h2>Aviso</h2>
+    <p>Este diálogo está abierto como ejemplo no modal.</p>
+    <form method="dialog">
+        <button type="submit">Cerrar</button>
+    </form>
+</dialog>
+~~~
+
+method="dialog" permite cerrar el diálogo al enviar el formulario que está dentro. Para abrir un diálogo modal desde un botón normalmente se necesita JavaScript. No agregues tabindex al elemento dialog.
+
+progress representa el avance de una tarea:
+
+~~~html
+<label for="avance">Avance del curso:</label>
+<progress id="avance" max="100" value="65">65%</progress>
+~~~
+
+meter representa una medida dentro de un rango conocido:
+
+~~~html
+<label for="nivel">Nivel de dominio:</label>
+<meter id="nivel" min="0" max="10" low="4" high="8" optimum="9" value="7">7 de 10</meter>
+~~~
+
+No utilices progress y meter como si fueran lo mismo: uno representa progreso de una tarea y el otro una medida dentro de un rango.
+
+## 22. Atributos booleanos
+
+Algunos atributos funcionan por presencia o ausencia. Si aparecen en el elemento, se consideran activados; si no aparecen, están desactivados.
+
+Ejemplos: required, disabled, checked, selected, multiple, controls, open y hidden.
+
+~~~html
+<input type="text" required>
+<button type="button" disabled>Desactivado</button>
+<details open>
+    <summary>Información</summary>
+    <p>Contenido visible al inicio.</p>
+</details>
+~~~
+
+En un atributo booleano, escribir open="false" no lo desactiva: su presencia sigue activándolo. Para desactivarlo, hay que quitar el atributo.
+
+## 23. Lista final de revisión
+
+- [ ] El idioma del documento está declarado.
+- [ ] Los metadatos esenciales están dentro de head.
+- [ ] Los títulos describen correctamente la página y su jerarquía.
+- [ ] Los enlaces tienen destinos y textos descriptivos.
+- [ ] Las imágenes tienen alternativas y dimensiones adecuadas.
+- [ ] Las imágenes que no están al inicio se cargan de forma diferida cuando corresponde.
+- [ ] Los recursos externos tienen rutas correctas.
+- [ ] Los formularios tienen etiquetas y validación en el servidor cuando reciben datos.
+- [ ] Los marcos incrustados tienen título y permisos limitados.
+- [ ] Los controles se pueden utilizar con teclado.
+- [ ] El documento se revisó con un validador y una comprobación manual.
+
+## Fuentes adicionales
+
+- [MDN — Metadatos del documento](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata)
+- [MDN — Atributos globales](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes)
+- [MDN — Elemento script](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script)
+- [MDN — Imágenes adaptables](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
+- [MDN — Elemento picture](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture)
+- [MDN — Elemento iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe)
+- [MDN — Elemento details](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details)
+- [MDN — Elemento dialog](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog)

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación del proyecto</title>
+</head>
+<body>
+    <header>
+        <h1>Mi proyecto</h1>
+        <p>Una breve presentación de lo que estoy construyendo.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Imagen principal</h2>
+            <figure>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="imagenes/portada-vertical.jpg">
+                    <img
+                        src="imagenes/portada-horizontal.jpg"
+                        srcset="imagenes/portada-horizontal-480.jpg 480w,
+                                imagenes/portada-horizontal-960.jpg 960w"
+                        sizes="(max-width: 700px) 100vw, 700px"
+                        width="960"
+                        height="540"
+                        alt="Vista general de la página principal del proyecto"
+                    >
+                </picture>
+                <figcaption>Vista principal del proyecto.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Galería</h2>
+            <img
+                src="imagenes/galeria-480.jpg"
+                srcset="imagenes/galeria-480.jpg 480w, imagenes/galeria-960.jpg 960w"
+                sizes="(max-width: 700px) 100vw, 700px"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+                alt="Detalle de una sección del proyecto"
+            >
+        </section>
+
+        <section>
+            <h2>Información complementaria</h2>
+            <iframe
+                src="contenido/recursos.html"
+                title="Recursos complementarios del proyecto"
+                width="600"
+                height="250"
+                loading="lazy"
+                sandbox
+            ></iframe>
+        </section>
+    </main>
+</body>
+</html>
