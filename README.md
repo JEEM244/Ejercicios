@@ -48,7 +48,7 @@ La documentación está disponible en español y, progresivamente, en inglés. L
 
 ## Estado del proyecto
 
-La estructura y las reglas editoriales están preparadas. La ruta inicial de HTML cubre nivel básico-intermedio con diez ejercicios y un proyecto integrador. CSS ya cuenta con guías de fundamentos y layout, referencias rápidas y once ejercicios con starters y soluciones separadas.
+La estructura y las reglas editoriales están preparadas. La ruta inicial de HTML cubre nivel básico-intermedio con diez ejercicios y un proyecto integrador. CSS ya cuenta con guías de fundamentos y layout, referencias rápidas, once ejercicios y un proyecto integrador de tres páginas con soluciones separadas.
 
 Consulta [PLAN.md](PLAN.md) para ver las fases y [SPEC.md](SPEC.md) para las decisiones del proyecto.
 
