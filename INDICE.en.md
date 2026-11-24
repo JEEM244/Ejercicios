@@ -4,6 +4,7 @@
 - [Overview](README.en.md)
 - [Specification](SPEC.en.md)
 - [Roadmap](PLAN.en.md)
+- [Reference sources](FUENTES.en.md)
 - [Change log](CHANGELOG.md)
 - [Maintenance guide](CONTRIBUTING.en.md)
 

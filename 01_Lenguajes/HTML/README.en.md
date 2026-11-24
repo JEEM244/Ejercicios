@@ -1,32 +1,37 @@
 # HTML
 
-**Status:** initial structure; guide and exercises are pending.
+**Status:** in progress.  
+**Current level:** beginner.  
+**Main sources:** MDN and WHATWG.
 
 HTML (HyperText Markup Language) defines the structure and meaning of web page content. It is a markup language, not a programming language.
 
-## Planned topics
+## Available material
 
-- HTML document structure.
-- Elements, tags, and attributes.
-- Headings, paragraphs, lists, and links.
-- Images, audio, and video.
-- Tables and forms.
-- Semantic HTML and accessibility.
-- Metadata and resource loading.
-- Document validation.
+- [Guide: fundamentals and document structure](GUIA.en.md)
+- [Quick reference for elements and attributes](REFERENCIA.en.md)
+- [HTML-001: create a basic document](EJERCICIOS/HTML-001.en.md)
+- [HTML-002: semantic personal profile](EJERCICIOS/HTML-002.en.md)
 
-## Planned organization
+## Organization
 
-- `GUIDE.en.md`: topic explanations.
-- `REFERENCE.en.md`: common elements and attributes.
-- `EXAMPLES/`: small, commented documents.
-- `EXERCISES/`: statements and starter files.
-- `SOLUTIONS/`: separate solutions.
+- GUIA.en.md: topic explanations.
+- REFERENCIA.en.md: quick lookup.
+- EJEMPLOS/: small, commented demonstrations.
+- EJERCICIOS/: prompts and starter files.
+- SOLUCIONES/: separate solutions.
 
-## Notes
+## Suggested path
 
-HTML defines structure and semantics; CSS controls presentation and JavaScript adds behavior.
+1. Recognize the document structure.
+2. Understand elements, tags, and attributes.
+3. Organize headings, paragraphs, and lists.
+4. Create links and use images with alternative text.
+5. Use semantic elements to describe page sections.
+6. Continue with tables, forms, multimedia, and accessibility.
 
-## Next step
+## Sources consulted
 
-Create the guide to a minimal document and the first exercises on elements and attributes.
+- [MDN — Basic HTML syntax](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax)
+- [MDN — HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
+- [WHATWG — HTML Living Standard](https://html.spec.whatwg.org/)

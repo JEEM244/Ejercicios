@@ -29,11 +29,15 @@ There is no required order. Prerequisites are listed in each topic.
 
 ## Language convention
 
-Spanish files use their normal names. English files use the `.en` suffix, for example `SPEC.en.md`.
+Spanish files use their normal names. English files use the .en suffix, for example SPEC.en.md.
+
+## Sources and authorship
+
+Guides and exercises are prepared using official documentation, standards, manuals, and learning resources. The material is written independently; complete courses and solutions are not copied. See the [reference catalog](FUENTES.en.md) and the sources listed at the end of each guide.
 
 ## Project status
 
-The repository starts with its structure, project rules, and templates. Topic content will be developed in stages and marked as planned, in progress, or reviewed.
+The repository structure, project rules, and templates are in place. Topic content is being developed in stages. HTML is the first language unit with a guide, quick reference, and beginner exercises.
 
 See [the roadmap](PLAN.en.md) and [the specification](SPEC.en.md).
 
