@@ -6,11 +6,11 @@ The page trims surrounding whitespace from the name and creates a welcome messag
 
 ## Explanation
 
-- \`limpiarNombre()\` is a named export and is imported with braces.
-- \`crearBienvenida()\` is the default export and is imported without braces.
+- `limpiarNombre()` is a named export and is imported with braces.
+- `crearBienvenida()` is the default export and is imported without braces.
 - The main file handles the form and interface.
 - The module contains the functions that process the text and create the message.
-- \`textContent\` displays the result without parsing it as HTML.
+- `textContent` displays the result without parsing it as HTML.
 
 ## Files
 
