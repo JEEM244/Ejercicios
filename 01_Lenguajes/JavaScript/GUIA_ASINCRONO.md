@@ -16,11 +16,11 @@ Los módulos permiten reutilizar funciones y mantener cada archivo enfocado en u
 
 ## 2. Exportar e importar
 
-Un módulo puede compartir funciones, variables o clases mediante \`export\`. Otro archivo puede reutilizarlas con \`import\`.
+Un módulo puede compartir funciones, variables o clases mediante `export`. Otro archivo puede reutilizarlas con `import`.
 
 ### Exportaciones con nombre
 
-Archivo \`operaciones.js\`:
+Archivo `operaciones.js`:
 
 ~~~js
 export function sumar(a, b) {
@@ -30,7 +30,7 @@ export function sumar(a, b) {
 export const IVA = 0.16;
 ~~~
 
-Archivo \`app.js\`:
+Archivo `app.js`:
 
 ~~~js
 import { sumar, IVA } from "./operaciones.js";
@@ -70,19 +70,19 @@ Para cargar un archivo como módulo en el navegador:
 <script type="module" src="app.js"></script>
 ~~~
 
-Los módulos se ejecutan en su propio ámbito y usan modo estricto automáticamente. Las declaraciones \`import\` y \`export\` se escriben en el nivel superior de un módulo. El navegador carga módulos como scripts diferidos, por lo que normalmente no hace falta agregar \`defer\`.
+Los módulos se ejecutan en su propio ámbito y usan modo estricto automáticamente. Las declaraciones `import` y `export` se escriben en el nivel superior de un módulo. El navegador carga módulos como scripts diferidos, por lo que normalmente no hace falta agregar `defer`.
 
 ### Rutas de módulos
 
-Usa rutas relativas que empiecen por \`./\` o \`../\`:
+Usa rutas relativas que empiecen por `./` o `../`:
 
 ~~~js
 import { sumar } from "./modulos/operaciones.js";
 ~~~
 
-La ruta se resuelve a partir del archivo que contiene el \`import\`, no a partir del archivo HTML que abrió la página.
+La ruta se resuelve a partir del archivo que contiene el `import`, no a partir del archivo HTML que abrió la página.
 
-**Importante:** prueba los módulos mediante un servidor HTTP local. Abrir directamente el HTML con \`file://\` puede impedir que el navegador cargue módulos por sus reglas de origen.
+**Importante:** prueba los módulos mediante un servidor HTTP local. Abrir directamente el HTML con `file://` puede impedir que el navegador cargue módulos por sus reglas de origen.
 
 ## 3. JSON: intercambiar datos
 
@@ -111,7 +111,7 @@ const texto = JSON.stringify(alumno);
 console.log(texto);
 ~~~
 
-\`JSON.stringify()\` convierte un valor compatible con JSON en texto. Puede recibir opciones para aplicar sangría:
+`JSON.stringify()` convierte un valor compatible con JSON en texto. Puede recibir opciones para aplicar sangría:
 
 ~~~js
 const textoBonito = JSON.stringify(alumno, null, 2);
@@ -126,7 +126,7 @@ const alumno = JSON.parse(texto);
 console.log(alumno.nombre);
 ~~~
 
-\`JSON.parse()\` convierte texto JSON válido a un valor de JavaScript. Si el texto está mal formado, lanza un error; por eso conviene usar \`try...catch\` cuando el contenido no está bajo nuestro control:
+`JSON.parse()` convierte texto JSON válido a un valor de JavaScript. Si el texto está mal formado, lanza un error; por eso conviene usar `try...catch` cuando el contenido no está bajo nuestro control:
 
 ~~~js
 try {
@@ -137,7 +137,7 @@ try {
 }
 ~~~
 
-JSON admite objetos, arreglos, cadenas, números, booleanos y \`null\`. No admite funciones ni comentarios. No confundas un objeto JavaScript con una cadena JSON: son tipos diferentes.
+JSON admite objetos, arreglos, cadenas, números, booleanos y `null`. No admite funciones ni comentarios. No confundas un objeto JavaScript con una cadena JSON: son tipos diferentes.
 
 ## 4. Código síncrono y asíncrono
 
@@ -174,7 +174,7 @@ const tarea = new Promise((resolve, reject) => {
 });
 ~~~
 
-\`resolve()\` cumple la promesa y \`reject()\` la rechaza. Una promesa solo puede establecer su resultado una vez.
+`resolve()` cumple la promesa y `reject()` la rechaza. Una promesa solo puede establecer su resultado una vez.
 
 ### Consumir una promesa
 
@@ -191,17 +191,17 @@ tarea
     });
 ~~~
 
-- \`then()\`: procesa el resultado correcto.
-- \`catch()\`: maneja un rechazo o error de la cadena.
-- \`finally()\`: se ejecuta al terminar, tanto si se cumple como si se rechaza.
+- `then()`: procesa el resultado correcto.
+- `catch()`: maneja un rechazo o error de la cadena.
+- `finally()`: se ejecuta al terminar, tanto si se cumple como si se rechaza.
 
-Cada \`then()\` devuelve una nueva promesa. Si una función dentro de \`then()\` devuelve otra promesa, la cadena espera su resultado.
+Cada `then()` devuelve una nueva promesa. Si una función dentro de `then()` devuelve otra promesa, la cadena espera su resultado.
 
-No dejes errores sin manejar. Un \`catch()\` demasiado temprano puede ocultar el error y permitir que el programa continúe con un valor que no existe.
+No dejes errores sin manejar. Un `catch()` demasiado temprano puede ocultar el error y permitir que el programa continúe con un valor que no existe.
 
 ## 6. async y await
 
-Las funciones declaradas con \`async\` siempre devuelven una promesa. \`await\` permite esperar el resultado de una promesa dentro de una función asíncrona.
+Las funciones declaradas con `async` siempre devuelven una promesa. `await` permite esperar el resultado de una promesa dentro de una función asíncrona.
 
 ~~~js
 function esperar(ms) {
@@ -236,11 +236,11 @@ async function cargarDatos() {
 }
 ~~~
 
-Usa \`try...catch\` cuando necesitas manejar errores de una operación esperada. El bloque \`finally\` es útil para quitar un indicador de carga o restablecer un botón.
+Usa `try...catch` cuando necesitas manejar errores de una operación esperada. El bloque `finally` es útil para quitar un indicador de carga o restablecer un botón.
 
 ### Ejecutar varias tareas
 
-Si varias operaciones no dependen unas de otras, puedes iniciarlas juntas con \`Promise.all()\`:
+Si varias operaciones no dependen unas de otras, puedes iniciarlas juntas con `Promise.all()`:
 
 ~~~js
 const [alumnos, materias] = await Promise.all([
@@ -249,11 +249,11 @@ const [alumnos, materias] = await Promise.all([
 ]);
 ~~~
 
-\`Promise.all()\` cumple cuando todas las promesas se cumplen y se rechaza si alguna falla. No esperes una operación para iniciar la siguiente cuando no exista dependencia entre ellas.
+`Promise.all()` cumple cuando todas las promesas se cumplen y se rechaza si alguna falla. No esperes una operación para iniciar la siguiente cuando no exista dependencia entre ellas.
 
 ## 7. Fetch API
 
-\`fetch()\` permite realizar solicitudes HTTP desde el navegador y devuelve una promesa con un objeto \`Response\`.
+`fetch()` permite realizar solicitudes HTTP desde el navegador y devuelve una promesa con un objeto `Response`.
 
 ~~~js
 async function cargarArchivo() {
@@ -270,13 +270,13 @@ async function cargarArchivo() {
 
 El proceso tiene varios pasos:
 
-1. \`fetch()\` solicita el recurso.
+1. `fetch()` solicita el recurso.
 2. La respuesta incluye un estado HTTP.
-3. Se comprueba \`respuesta.ok\`.
-4. \`respuesta.json()\` lee y convierte el cuerpo de la respuesta.
+3. Se comprueba `respuesta.ok`.
+4. `respuesta.json()` lee y convierte el cuerpo de la respuesta.
 5. Se usa la información recibida.
 
-**No omitas la comprobación de \`ok\`.** Una respuesta HTTP como 404 no rechaza automáticamente la promesa de \`fetch()\`; debes revisar el estado.
+**No omitas la comprobación de `ok`.** Una respuesta HTTP como 404 no rechaza automáticamente la promesa de `fetch()`; debes revisar el estado.
 
 ### Manejar errores de fetch
 
@@ -298,11 +298,11 @@ async function cargarArchivo() {
 }
 ~~~
 
-El método \`json()\` también es asíncrono y puede fallar si el cuerpo no contiene JSON válido.
+El método `json()` también es asíncrono y puede fallar si el cuerpo no contiene JSON válido.
 
 ### Fetch y los servidores locales
 
-Para probar \`fetch()\` con un archivo JSON del proyecto, abre la página desde un servidor HTTP local, no desde el explorador de archivos. Puedes utilizar Apache/XAMPP, un servidor de desarrollo o el servidor de Python:
+Para probar `fetch()` con un archivo JSON del proyecto, abre la página desde un servidor HTTP local, no desde el explorador de archivos. Puedes utilizar Apache/XAMPP, un servidor de desarrollo o el servidor de Python:
 
 ~~~bash
 python -m http.server 8000
@@ -310,20 +310,20 @@ python -m http.server 8000
 
 Después abre la dirección local que indique el servidor y navega hasta la carpeta del ejercicio. Si el servidor no encuentra el archivo, revisa la ruta y el directorio desde el que se inició.
 
-Las solicitudes a otros dominios pueden estar sujetas a CORS. No intentes resolverlo con \`mode: "no-cors"\`: esa opción no permite leer normalmente el contenido de una respuesta opaca.
+Las solicitudes a otros dominios pueden estar sujetas a CORS. No intentes resolverlo con `mode: "no-cors"`: esa opción no permite leer normalmente el contenido de una respuesta opaca.
 
 ## 8. Errores frecuentes
 
 | Problema | Causa posible | Qué revisar |
 |---|---|---|
-| \`Cannot use import statement outside a module\` | El script no se cargó como módulo | \`type="module"\` y el entorno |
-| \`Failed to resolve module specifier\` | Ruta o nombre incorrecto | Extensión y ruta relativa |
+| `Cannot use import statement outside a module` | El script no se cargó como módulo | `type="module"` y el entorno |
+| `Failed to resolve module specifier` | Ruta o nombre incorrecto | Extensión y ruta relativa |
 | JSON inválido | Comillas, comas o estructura incorrectas | Valida el texto y usa try/catch |
-| La promesa no muestra el resultado | Falta \`then()\` o \`await\` | Dónde se consume la promesa |
-| Error no manejado | Falta \`catch()\` o try/catch | La cadena asíncrona completa |
-| Fetch muestra 404 | Recurso no encontrado | URL y \`response.ok\` |
+| La promesa no muestra el resultado | Falta `then()` o `await` | Dónde se consume la promesa |
+| Error no manejado | Falta `catch()` o try/catch | La cadena asíncrona completa |
+| Fetch muestra 404 | Recurso no encontrado | URL y `response.ok` |
 | Fetch falla desde file:// | La página se abrió como archivo | Usa un servidor HTTP local |
-| El resultado es una promesa | Se olvidó esperar su valor | Usa \`await\` o \`then()\` |
+| El resultado es una promesa | Se olvidó esperar su valor | Usa `await` o `then()` |
 
 ## 9. Práctica
 

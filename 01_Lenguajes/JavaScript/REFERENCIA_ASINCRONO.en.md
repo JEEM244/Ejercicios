@@ -39,7 +39,7 @@ Default import:
 import greet from "./greeting.js";
 ~~~
 
-Use relative paths such as \`./module.js\`. Test modules through a local HTTP server.
+Use relative paths such as `./module.js`. Test modules through a local HTTP server.
 
 ## JSON
 
@@ -48,10 +48,10 @@ const text = JSON.stringify({ name: "Mara" }, null, 2);
 const object = JSON.parse(text);
 ~~~
 
-- \`JSON.stringify()\`: JavaScript value → JSON text.
-- \`JSON.parse()\`: JSON text → JavaScript value.
+- `JSON.stringify()`: JavaScript value → JSON text.
+- `JSON.parse()`: JSON text → JavaScript value.
 
-Both may require error handling; \`JSON.parse()\` throws when the text is invalid.
+Both may require error handling; `JSON.parse()` throws when the text is invalid.
 
 ## Promises
 
@@ -78,7 +78,7 @@ async function request() {
 }
 ~~~
 
-An \`async\` function returns a promise. \`await\` waits for the result inside an asynchronous function or a module.
+An `async` function returns a promise. `await` waits for the result inside an asynchronous function or a module.
 
 ## Multiple promises
 
@@ -89,7 +89,7 @@ const [users, products] = await Promise.all([
 ]);
 ~~~
 
-\`Promise.all()\` rejects if one of its promises rejects.
+`Promise.all()` rejects if one of its promises rejects.
 
 ## Fetch
 
@@ -105,7 +105,7 @@ async function loadJSON(path) {
 }
 ~~~
 
-Check \`response.ok\`: an HTTP 404 response does not automatically reject \`fetch()\`.
+Check `response.ok`: an HTTP 404 response does not automatically reject `fetch()`.
 
 ## Sources
 

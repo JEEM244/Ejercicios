@@ -16,11 +16,11 @@ Modules let us reuse functions and keep each file focused on a task.
 
 ## 2. Export and import
 
-A module can share functions, variables, or classes with \`export\`. Another file can reuse them with \`import\`.
+A module can share functions, variables, or classes with `export`. Another file can reuse them with `import`.
 
 ### Named exports
 
-File \`operations.js\`:
+File `operations.js`:
 
 ~~~js
 export function add(a, b) {
@@ -30,7 +30,7 @@ export function add(a, b) {
 export const TAX = 0.16;
 ~~~
 
-File \`app.js\`:
+File `app.js`:
 
 ~~~js
 import { add, TAX } from "./operations.js";
@@ -70,19 +70,19 @@ To load a file as a browser module:
 <script type="module" src="app.js"></script>
 ~~~
 
-Modules run in their own scope and automatically use strict mode. \`import\` and \`export\` declarations are written at the top level of a module. Browsers load module scripts as deferred scripts, so you normally do not need to add \`defer\`.
+Modules run in their own scope and automatically use strict mode. `import` and `export` declarations are written at the top level of a module. Browsers load module scripts as deferred scripts, so you normally do not need to add `defer`.
 
 ### Module paths
 
-Use relative paths that begin with \`./\` or \`../\`:
+Use relative paths that begin with `./` or `../`:
 
 ~~~js
 import { add } from "./modules/operations.js";
 ~~~
 
-The path is resolved relative to the file containing the \`import\`, not relative to the HTML file that opened the page.
+The path is resolved relative to the file containing the `import`, not relative to the HTML file that opened the page.
 
-**Important:** test modules through a local HTTP server. Opening HTML directly with \`file://\` may prevent the browser from loading modules because of origin restrictions.
+**Important:** test modules through a local HTTP server. Opening HTML directly with `file://` may prevent the browser from loading modules because of origin restrictions.
 
 ## 3. JSON: exchanging data
 
@@ -111,7 +111,7 @@ const text = JSON.stringify(student);
 console.log(text);
 ~~~
 
-\`JSON.stringify()\` converts a JSON-compatible value into text. It can receive options to add indentation:
+`JSON.stringify()` converts a JSON-compatible value into text. It can receive options to add indentation:
 
 ~~~js
 const prettyText = JSON.stringify(student, null, 2);
@@ -126,7 +126,7 @@ const student = JSON.parse(text);
 console.log(student.name);
 ~~~
 
-\`JSON.parse()\` converts valid JSON text into a JavaScript value. It throws an error when the text is malformed, so use \`try...catch\` when the content is not under your control:
+`JSON.parse()` converts valid JSON text into a JavaScript value. It throws an error when the text is malformed, so use `try...catch` when the content is not under your control:
 
 ~~~js
 try {
@@ -137,7 +137,7 @@ try {
 }
 ~~~
 
-JSON supports objects, arrays, strings, numbers, booleans, and \`null\`. It does not support functions or comments. Do not confuse a JavaScript object with a JSON string: they are different types.
+JSON supports objects, arrays, strings, numbers, booleans, and `null`. It does not support functions or comments. Do not confuse a JavaScript object with a JSON string: they are different types.
 
 ## 4. Synchronous and asynchronous code
 
@@ -174,7 +174,7 @@ const task = new Promise((resolve, reject) => {
 });
 ~~~
 
-\`resolve()\` fulfills the promise and \`reject()\` rejects it. A promise can settle only once.
+`resolve()` fulfills the promise and `reject()` rejects it. A promise can settle only once.
 
 ### Consume a promise
 
@@ -191,17 +191,17 @@ task
     });
 ~~~
 
-- \`then()\`: handles the successful result.
-- \`catch()\`: handles a rejection or error in the chain.
-- \`finally()\`: runs when the operation finishes, whether it fulfills or rejects.
+- `then()`: handles the successful result.
+- `catch()`: handles a rejection or error in the chain.
+- `finally()`: runs when the operation finishes, whether it fulfills or rejects.
 
-Each \`then()\` returns a new promise. If a function inside \`then()\` returns another promise, the chain waits for its result.
+Each `then()` returns a new promise. If a function inside `then()` returns another promise, the chain waits for its result.
 
-Do not leave errors unhandled. A \`catch()\` placed too early can hide an error and allow the program to continue with a value that does not exist.
+Do not leave errors unhandled. A `catch()` placed too early can hide an error and allow the program to continue with a value that does not exist.
 
 ## 6. async and await
 
-Functions declared with \`async\` always return a promise. \`await\` lets you wait for a promise inside an asynchronous function.
+Functions declared with `async` always return a promise. `await` lets you wait for a promise inside an asynchronous function.
 
 ~~~js
 function wait(ms) {
@@ -236,11 +236,11 @@ async function loadData() {
 }
 ~~~
 
-Use \`try...catch\` when you need to handle errors from an expected operation. The \`finally\` block is useful for hiding a loading indicator or restoring a button.
+Use `try...catch` when you need to handle errors from an expected operation. The `finally` block is useful for hiding a loading indicator or restoring a button.
 
 ### Run several tasks
 
-If several operations do not depend on one another, start them together with \`Promise.all()\`:
+If several operations do not depend on one another, start them together with `Promise.all()`:
 
 ~~~js
 const [students, subjects] = await Promise.all([
@@ -249,11 +249,11 @@ const [students, subjects] = await Promise.all([
 ]);
 ~~~
 
-\`Promise.all()\` fulfills when all promises fulfill and rejects if any of them fails. Do not wait for one operation before starting another when there is no dependency between them.
+`Promise.all()` fulfills when all promises fulfill and rejects if any of them fails. Do not wait for one operation before starting another when there is no dependency between them.
 
 ## 7. Fetch API
 
-\`fetch()\` makes HTTP requests from the browser and returns a promise with a \`Response\` object.
+`fetch()` makes HTTP requests from the browser and returns a promise with a `Response` object.
 
 ~~~js
 async function loadFile() {
@@ -270,13 +270,13 @@ async function loadFile() {
 
 The process has several steps:
 
-1. \`fetch()\` requests the resource.
+1. `fetch()` requests the resource.
 2. The response includes an HTTP status.
-3. Check \`response.ok\`.
-4. \`response.json()\` reads and parses the response body.
+3. Check `response.ok`.
+4. `response.json()` reads and parses the response body.
 5. Use the received data.
 
-**Do not skip the \`ok\` check.** An HTTP response such as 404 does not automatically reject the \`fetch()\` promise; you must check the status.
+**Do not skip the `ok` check.** An HTTP response such as 404 does not automatically reject the `fetch()` promise; you must check the status.
 
 ### Handle fetch errors
 
@@ -298,11 +298,11 @@ async function loadFile() {
 }
 ~~~
 
-The \`json()\` method is also asynchronous and may fail if the body does not contain valid JSON.
+The `json()` method is also asynchronous and may fail if the body does not contain valid JSON.
 
 ### Fetch and local servers
 
-To test \`fetch()\` with a JSON file in the project, open the page from a local HTTP server, not from the file explorer. You can use Apache/XAMPP, a development server, or Python's server:
+To test `fetch()` with a JSON file in the project, open the page from a local HTTP server, not from the file explorer. You can use Apache/XAMPP, a development server, or Python's server:
 
 ~~~bash
 python -m http.server 8000
@@ -310,20 +310,20 @@ python -m http.server 8000
 
 Then open the local address provided by the server and navigate to the exercise folder. If the server cannot find the file, check the path and the directory from which the server was started.
 
-Requests to other domains may be subject to CORS. Do not try to bypass it with \`mode: "no-cors"\`: that option does not let you normally read an opaque response body.
+Requests to other domains may be subject to CORS. Do not try to bypass it with `mode: "no-cors"`: that option does not let you normally read an opaque response body.
 
 ## 8. Common errors
 
 | Problem | Possible cause | What to check |
 |---|---|---|
-| \`Cannot use import statement outside a module\` | The script was not loaded as a module | \`type="module"\` and the environment |
-| \`Failed to resolve module specifier\` | Incorrect path or filename | Extension and relative path |
+| `Cannot use import statement outside a module` | The script was not loaded as a module | `type="module"` and the environment |
+| `Failed to resolve module specifier` | Incorrect path or filename | Extension and relative path |
 | Invalid JSON | Incorrect quotes, commas, or structure | Validate the text and use try/catch |
-| Promise result does not appear | Missing \`then()\` or \`await\` | Where the promise is consumed |
-| Unhandled error | Missing \`catch()\` or try/catch | The full asynchronous chain |
-| Fetch returns 404 | Resource not found | URL and \`response.ok\` |
+| Promise result does not appear | Missing `then()` or `await` | Where the promise is consumed |
+| Unhandled error | Missing `catch()` or try/catch | The full asynchronous chain |
+| Fetch returns 404 | Resource not found | URL and `response.ok` |
 | Fetch fails from file:// | The page was opened as a file | Use a local HTTP server |
-| The result is a promise | Its value was not awaited | Use \`await\` or \`then()\` |
+| The result is a promise | Its value was not awaited | Use `await` or `then()` |
 
 ## 9. Practice
 

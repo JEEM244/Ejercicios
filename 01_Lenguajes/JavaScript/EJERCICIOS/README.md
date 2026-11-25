@@ -15,7 +15,7 @@ Para ejecutar ejercicios de Node.js, entra a su carpeta y usa:
 node ejercicio.js
 ~~~
 
-Para JS-013 a JS-020 y JS-024, inicia un servidor local (por ejemplo, Apache/XAMPP) y abre el archivo \`index.html\` desde la dirección local. No abras páginas con módulos o Fetch mediante \`file://\`.
+Para JS-013 a JS-020 y JS-024, inicia un servidor local (por ejemplo, Apache/XAMPP) y abre el archivo `index.html` desde la dirección local. No abras páginas con módulos o Fetch mediante `file://`.
 
 ## Ejercicios
 

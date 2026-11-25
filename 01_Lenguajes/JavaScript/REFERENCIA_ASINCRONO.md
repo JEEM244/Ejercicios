@@ -39,7 +39,7 @@ Importación predeterminada:
 import saludar from "./saludo.js";
 ~~~
 
-Usa rutas relativas como \`./modulo.js\`. Prueba módulos mediante un servidor HTTP local.
+Usa rutas relativas como `./modulo.js`. Prueba módulos mediante un servidor HTTP local.
 
 ## JSON
 
@@ -48,10 +48,10 @@ const texto = JSON.stringify({ nombre: "Mara" }, null, 2);
 const objeto = JSON.parse(texto);
 ~~~
 
-- \`JSON.stringify()\`: valor JavaScript → texto JSON.
-- \`JSON.parse()\`: texto JSON → valor JavaScript.
+- `JSON.stringify()`: valor JavaScript → texto JSON.
+- `JSON.parse()`: texto JSON → valor JavaScript.
 
-Ambos pueden requerir tratamiento de errores; \`JSON.parse()\` lanza una excepción si el texto no es válido.
+Ambos pueden requerir tratamiento de errores; `JSON.parse()` lanza una excepción si el texto no es válido.
 
 ## Promesas
 
@@ -78,7 +78,7 @@ async function consultar() {
 }
 ~~~
 
-Una función \`async\` devuelve una promesa. \`await\` espera el resultado dentro de una función asíncrona o de un módulo.
+Una función `async` devuelve una promesa. `await` espera el resultado dentro de una función asíncrona o de un módulo.
 
 ## Varias promesas
 
@@ -89,7 +89,7 @@ const [usuarios, productos] = await Promise.all([
 ]);
 ~~~
 
-\`Promise.all()\` falla si una de las promesas se rechaza.
+`Promise.all()` falla si una de las promesas se rechaza.
 
 ## Fetch
 
@@ -105,7 +105,7 @@ async function cargarJSON(ruta) {
 }
 ~~~
 
-Revisa \`response.ok\`: una respuesta HTTP 404 no rechaza automáticamente \`fetch()\`.
+Revisa `response.ok`: una respuesta HTTP 404 no rechaza automáticamente `fetch()`.
 
 ## Fuentes
 
