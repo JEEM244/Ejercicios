@@ -7,12 +7,12 @@ When the button is pressed, the page requests the local JSON file and creates on
 ## Explanation
 
 1. The button listener is declared as an asynchronous function.
-2. \`loadTasks()\` requests the file with \`fetch()\`.
-3. \`response.ok\` is checked to detect HTTP error statuses.
-4. \`response.json()\` reads and parses the body.
-5. \`Array.isArray()\` checks that a list was received.
-6. An \`li\` is created for each record and its content is assigned with \`textContent\`.
-7. \`try...catch...finally\` displays errors and enables the button again.
+2. `loadTasks()` requests the file with `fetch()`.
+3. `response.ok` is checked to detect HTTP error statuses.
+4. `response.json()` reads and parses the body.
+5. `Array.isArray()` checks that a list was received.
+6. An `li` is created for each record and its content is assigned with `textContent`.
+7. `try...catch...finally` displays errors and enables the button again.
 
 The path is relative to the HTML document and the file must be served over HTTP.
 
@@ -24,7 +24,7 @@ Place the folder inside Apache/XAMPP's public root or start a server from the ex
 python -m http.server 8000
 ~~~
 
-Open the local server URL and navigate to this folder. Do not open the HTML directly with \`file://\`.
+Open the local server URL and navigate to this folder. Do not open the HTML directly with `file://`.
 
 ## Files
 
