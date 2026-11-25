@@ -6,7 +6,7 @@ Two simulated operations run. One fulfills the promise and the other rejects it.
 
 ## Explanation
 
-1. `checkStatus()` returns a new `Promise` instance.
+1. `consultarEstado()` returns a new `Promise` instance.
 2. `setTimeout()` simulates a delay.
 3. `resolve()` reports a successful result.
 4. `reject()` reports an error through an `Error` object.

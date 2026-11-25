@@ -7,7 +7,7 @@ When the button is pressed, the page requests the local JSON file and creates on
 ## Explanation
 
 1. The button listener is declared as an asynchronous function.
-2. `loadTasks()` requests the file with `fetch()`.
+2. `cargarTareas()` requests the file with `fetch()`.
 3. `response.ok` is checked to detect HTTP error statuses.
 4. `response.json()` reads and parses the body.
 5. `Array.isArray()` checks that a list was received.
