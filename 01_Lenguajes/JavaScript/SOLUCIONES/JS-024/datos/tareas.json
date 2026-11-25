@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "titulo": "Leer la guía de JavaScript",
+        "completada": true
+    },
+    {
+        "id": 2,
+        "titulo": "Practicar promesas",
+        "completada": false
+    },
+    {
+        "id": 3,
+        "titulo": "Revisar el ejercicio de Fetch",
+        "completada": false
+    }
+]
