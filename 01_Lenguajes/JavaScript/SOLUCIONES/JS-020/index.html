@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-020 | Mensaje de bienvenida</title>
+    <style>
+        body { max-width: 680px; margin: 3rem auto; padding: 0 1rem; font-family: Arial, sans-serif; line-height: 1.6; }
+        form { display: flex; flex-wrap: wrap; gap: .5rem; }
+        input, button { padding: .7rem; font: inherit; }
+    </style>
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Mensaje de bienvenida</h1>
+        <form id="formulario">
+            <label for="nombre">Tu nombre</label>
+            <input id="nombre" type="text" autocomplete="given-name">
+            <button type="submit">Crear saludo</button>
+        </form>
+        <p id="resultado" aria-live="polite">El saludo aparecerá aquí.</p>
+    </main>
+</body>
+</html>
