@@ -30,6 +30,6 @@ Open the local server URL and navigate to this folder. Do not open the HTML dire
 
 - [index.html](index.html)
 - [app.js](app.js)
-- [tasks.json](datos/tareas.json)
+- [tareas.json](datos/tareas.json)
 
 The exercise only loads local data. It does not connect to an external service or store information.
