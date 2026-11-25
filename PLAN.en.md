@@ -8,7 +8,7 @@ CodeVault is developed in stages. Each phase should become useful before the sco
 | 1. Repository foundation | Structure, master documents, and bilingual templates | Complete |
 | 2. Fundamentals | Logic, algorithms, data structures, and problem solving | Preparing |
 | 3. Technical libraries | Guides and references for the 11 languages | In progress: HTML, CSS, and beginner-intermediate JavaScript |
-| 4. Practice | Exercises, challenges, debugging, and assessments | In progress: HTML-001 through HTML-010, CSS-001 through CSS-012, and JS-001 through JS-018 |
+| 4. Practice | Exercises, challenges, debugging, and assessments | In progress: HTML-001 through HTML-010, CSS-001 through CSS-012, and JS-001 through JS-024 |
 | 5. Projects | Integrated projects by difficulty | In progress: CSS-012 capstone project |
 | 6. CLI | Optional Python utility | Planned |
 | 7. Validation | Review links, examples, versions, and language consistency | Planned |
@@ -25,13 +25,14 @@ It contains two guides, two quick references, eleven guided practices, and the C
 
 ## JavaScript status
 
-JavaScript now has three study paths:
+JavaScript now has four study paths:
 
-1. **Fundamentals:** browser and Node.js execution, statements, variables, types, conversions, operators, conditionals, loops, and functions. Includes a guide, quick reference, and exercises JS-001 to JS-006.
+1. **Fundamentals:** execution, statements, variables, types, conversions, operators, conditionals, loops, and functions. Includes a guide, quick reference, and exercises JS-001 to JS-006.
 2. **Data structures and debugging:** arrays, methods, strings, objects, destructuring, scope, and debugging. Includes a guide, quick reference, and exercises JS-007 to JS-012.
-3. **DOM and events:** selectors, reading and updating content, classes, attributes, creating nodes, events, forms, FormData, and browser validation. Includes a guide, quick reference, and exercises JS-013 to JS-018 with HTML and JavaScript starter projects.
+3. **DOM and events:** selectors, content updates, classes, attributes, node creation, events, forms, FormData, and browser validation. Includes a guide, quick reference, and exercises JS-013 to JS-018.
+4. **Modules and asynchronous programming:** import/export, JSON, promises, async/await, Promise.all, and the Fetch API. Includes a guide, quick reference, and exercises JS-019 to JS-024.
 
-All eighteen exercises have bilingual prompts, starter files, and separate solutions. The first twelve can run with Node.js; JS-013 to JS-018 require a browser. No frameworks or external packages are required. The next stage will cover modules and asynchronous programming. Practical browser review and testing with different data and actions remain pending.
+All twenty-four exercises have bilingual prompts, starter files, and separate solutions. JS-001 to JS-012 and JS-021 to JS-023 can run with Node.js. Exercises using the DOM, browser modules, or Fetch require a browser; JS-019, JS-020, and JS-024 must be opened through a local HTTP server. No frameworks or external packages are required. Practical browser review of the module and Fetch pages, plus tests with different inputs, remains pending.
 
 ## Work order
 

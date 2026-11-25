@@ -48,7 +48,7 @@ La documentación está disponible en español y, progresivamente, en inglés. L
 
 ## Estado del proyecto
 
-La estructura y las reglas editoriales están preparadas. HTML cubre nivel básico-intermedio con diez ejercicios y un proyecto integrador. CSS incluye guías de fundamentos y layout, referencias rápidas, once prácticas guiadas y un proyecto integrador con soluciones separadas. JavaScript ya cubre fundamentos, estructuras y depuración, además de una unidad de DOM y eventos: dieciocho ejercicios con archivos iniciales y soluciones independientes.
+La estructura y las reglas editoriales están preparadas. HTML cubre nivel básico-intermedio con diez ejercicios y un proyecto integrador. CSS incluye guías de fundamentos y layout, referencias rápidas, once prácticas guiadas y un proyecto integrador con soluciones separadas. JavaScript cubre fundamentos, estructuras, DOM, módulos y programación asíncrona: veinticuatro ejercicios con archivos iniciales y soluciones independientes.
 
 Consulta [PLAN.md](PLAN.md) para ver las fases y [SPEC.md](SPEC.md) para las decisiones del proyecto.
 

@@ -37,7 +37,7 @@ Guides and exercises are prepared using official documentation, standards, manua
 
 ## Project status
 
-The repository structure, project rules, and templates are in place. The initial HTML path covers beginner-to-intermediate topics with ten exercises and a capstone project. CSS has fundamentals and layout guides, quick references, eleven guided exercises, and an integrated capstone with separate solutions. JavaScript now covers fundamentals, data structures, debugging, and a DOM and events unit: eighteen exercises with starter files and separate solutions.
+The repository structure, project rules, and templates are in place. The initial HTML path covers beginner-to-intermediate topics with ten exercises and a capstone project. CSS has fundamentals and layout guides, quick references, eleven guided exercises, and an integrated capstone with separate solutions. JavaScript now covers fundamentals, data structures, debugging, DOM, modules, and asynchronous programming: twenty-four exercises with starter files and separate solutions.
 
 See [the roadmap](PLAN.en.md) and [the specification](SPEC.en.md).
 

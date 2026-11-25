@@ -2,6 +2,20 @@
 
 Los cambios importantes de CodeVault se registran aquí.
 
+## 0.12.0 - 2026-11-25
+
+### Agregado
+- Cuarta ruta de JavaScript sobre módulos y programación asíncrona.
+- Guía y referencia rápida bilingües para import/export, JSON, promesas, async/await, Promise.all y Fetch API.
+- Ejercicios JS-019 a JS-024 con enunciados en español e inglés.
+- Proyectos iniciales y soluciones separadas para módulos de navegador, JSON, promesas y carga de datos local con Fetch.
+- Ejercicio Fetch con un archivo JSON local, sin dependencia de APIs externas.
+
+### Actualizado
+- README de JavaScript e índices: ahora incluyen cuatro rutas y veinticuatro ejercicios.
+- README principal, plan y registro de cambios.
+- Instrucciones de ejecución para Node.js y servidor HTTP local.
+
 ## 0.11.0 - 2026-11-24
 
 ### Agregado

@@ -1,21 +1,21 @@
 # Ejercicios de JavaScript
 
-Ruta de práctica desde fundamentos hasta estructuras, depuración y DOM. Cada ejercicio incluye un enunciado, un proyecto inicial y una solución independiente.
+Ruta de práctica desde fundamentos hasta módulos y programación asíncrona. Cada ejercicio incluye un enunciado, archivos iniciales y una solución independiente.
 
 ## Requisitos
 
 - Revisa las [guías de JavaScript](../README.md).
-- Un navegador moderno para JS-013 a JS-018.
-- Node.js opcional para ejecutar los primeros doce ejercicios desde la terminal.
-- Un editor de texto.
+- Node.js para JS-001 a JS-012 y JS-021 a JS-023.
+- Un navegador moderno para JS-013 a JS-020 y JS-024.
+- Un servidor HTTP local para los ejercicios que usan módulos y Fetch.
 
-Para ejecutar JS-001 a JS-012 desde la terminal, entra a la carpeta del ejercicio y usa:
+Para ejecutar ejercicios de Node.js, entra a su carpeta y usa:
 
 ~~~bash
 node ejercicio.js
 ~~~
 
-Para JS-013 a JS-018, abre el archivo `index.html` de la carpeta del ejercicio en el navegador.
+Para JS-013 a JS-020 y JS-024, inicia un servidor local (por ejemplo, Apache/XAMPP) y abre el archivo \`index.html\` desde la dirección local. No abras páginas con módulos o Fetch mediante \`file://\`.
 
 ## Ejercicios
 
@@ -39,11 +39,17 @@ Para JS-013 a JS-018, abre el archivo `index.html` de la carpeta del ejercicio e
 | [JS-016](JS-016.md) | Crear elementos de una lista | Intermedio inicial |
 | [JS-017](JS-017.md) | Procesar un formulario con FormData | Intermedio inicial |
 | [JS-018](JS-018.md) | Validar un formulario | Intermedio inicial |
+| [JS-019](JS-019.md) | Exportar e importar funciones | Intermedio inicial |
+| [JS-020](JS-020.md) | Exportación predeterminada y módulos | Intermedio inicial |
+| [JS-021](JS-021.md) | Convertir y validar datos JSON | Intermedio inicial |
+| [JS-022](JS-022.md) | Encadenar promesas | Intermedio inicial |
+| [JS-023](JS-023.md) | async, await y Promise.all | Intermedio |
+| [JS-024](JS-024.md) | Cargar datos locales con Fetch API | Intermedio |
 
 ## Forma de trabajo
 
 1. Lee el objetivo y los requisitos.
-2. Abre el archivo inicial dentro de la carpeta del ejercicio.
+2. Abre los archivos iniciales dentro de la carpeta del ejercicio.
 3. Completa los TODO o corrige los errores intencionales.
 4. Ejecuta el código en su entorno correspondiente.
 5. Prueba al menos un dato o acción diferente.
